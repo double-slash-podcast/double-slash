@@ -1,0 +1,7 @@
+{
+    "name": "gatsby-plugin-podcast-feed-mdx",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gatsby-node.js",
+    "scripts": {}
+}
