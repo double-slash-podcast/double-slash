@@ -62,20 +62,11 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
         },
       },
       {
-        "itunes:category": [
-          {
-            _attr: {
-              text: pluginOptions.category1,
-            },
+        "itunes:category": {
+          _attr: {
+            text: pluginOptions.category1,
           },
-          {
-            "itunes:category": {
-              _attr: {
-                text: pluginOptions.subCategory1,
-              },
-            },
-          },
-        ],
+        },
       },
       //   {
       //     "itunes:category": [

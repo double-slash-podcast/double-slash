@@ -6,7 +6,8 @@
 
 ---
 status: published
-guid: 2e2f6d1a-681d-4259-854b-a0f70584cb07
+slug: /prologue
+guid: 2e2f6d1a-681d-4259-854b-a0f70584cb07 => https://www.guidgen.com/
 title: Le prologue
 subtitle: Présentation du podcast et de l'équipe
 publicationDate: 2020-04-29
@@ -15,9 +16,9 @@ season: 1
 episodeNumber: 1
 episodeType: trailer
 excerpt: Présentation du podcast et de l'équipe.
-url: https://slash-podcast.fr/podcasts/prologue.mp3 => https://bit.ly/3dvJ270
-size: 13283732
-duration: 553
+url: https://slash-podcast.fr/podcasts/prologue.mp3
+size: 13283732 => size in bytes
+duration: 553 => seconds
 explicit: false
 categories:
   - Technology
