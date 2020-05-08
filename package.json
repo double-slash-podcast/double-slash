@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "double-slash",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
-  "license": "MIT",
+  "description": "Double slash podcast website and RSS Flux",
+  "version": "0.0.1",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -26,12 +25,5 @@
     "fs-extra": "^9.0.0",
     "prettier": "2.0.5",
     "rss": "^1.2.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

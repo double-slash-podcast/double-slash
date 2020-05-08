@@ -77,38 +77,38 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
           },
         ],
       },
-      {
-        "itunes:category": [
-          {
-            _attr: {
-              text: pluginOptions.category2,
-            },
-          },
-          {
-            "itunes:category": {
-              _attr: {
-                text: pluginOptions.subCategory2,
-              },
-            },
-          },
-        ],
-      },
-      {
-        "itunes:category": [
-          {
-            _attr: {
-              text: pluginOptions.category3,
-            },
-          },
-          {
-            "itunes:category": {
-              _attr: {
-                text: pluginOptions.subCategory3,
-              },
-            },
-          },
-        ],
-      },
+      //   {
+      //     "itunes:category": [
+      //       {
+      //         _attr: {
+      //           text: pluginOptions.category2,
+      //         },
+      //       },
+      //       {
+      //         "itunes:category": {
+      //           _attr: {
+      //             text: pluginOptions.subCategory2,
+      //           },
+      //         },
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     "itunes:category": [
+      //       {
+      //         _attr: {
+      //           text: pluginOptions.category3,
+      //         },
+      //       },
+      //       {
+      //         "itunes:category": {
+      //           _attr: {
+      //             text: pluginOptions.subCategory3,
+      //           },
+      //         },
+      //       },
+      //     ],
+      //   },
       { "googleplay:author": pluginOptions.authorName },
       { "googleplay:description": pluginOptions.summary.substring(0, 999) },
       { "googleplay:explicit": pluginOptions.explicit },
@@ -124,10 +124,8 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
       query {
         podcastEpisodes: allMdx(
           filter: {
-            frontmatter: {
-              status: { eq: "published" }
-              fileAbsolutePath: { regex: "/podcasts/" }
-            }
+            fileAbsolutePath: { regex: "/podcasts/" }
+            frontmatter: { status: { eq: "published" } }
           }
         ) {
           edges {
