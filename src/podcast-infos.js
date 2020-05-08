@@ -11,9 +11,7 @@ module.exports = {
   Retrouvez-nous régulièrement pour parler de sujets variés tels que la JAMStack, l’accessibilité, l’écoconception, React JS, Vue JS et des retours d’expériences sur des expériences.
   Également, des débats autour de sujets polémiques tels que la communication entre développeurs/designers ou comment avoir un discours compréhensible par les clients.
   Nous serons accompagnés de temps en temps par des invités experts dans leur domaine pour approfondir un sujet et avoir des retours d’expériences.
-  Faites-nous vos retours par mail sur  <![CDATA[
-    <a href="mailto:info@slash-podcast.fr">info@slash-podcast.fr</a>
-  ]]>
+  Faites-nous vos retours par mail sur <a href="mailto:info@slash-podcast.fr">info@slash-podcast.fr</a>
   `,
   // episodic || serial
   podcastType: `episodic`,
