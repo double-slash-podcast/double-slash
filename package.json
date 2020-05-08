@@ -18,7 +18,6 @@
     "@mdx-js/react": "^1.6.0",
     "gatsby": "^2.21.7",
     "gatsby-plugin-mdx": "^1.2.4",
-    "gatsby-plugin-podcast-feed-mdx": "0.1.0-alpha.7",
     "gatsby-source-filesystem": "^2.3.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
