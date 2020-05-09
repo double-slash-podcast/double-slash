@@ -8,7 +8,6 @@ Frontmatter example :
 
 ```md
 ---
-guid: 2e2f6d1a-681d-4259-854b-a0f70584cb07
 title: Le prologue
 subtitle: Présentation du podcast et de l'équipe
 publicationDate: 2020-04-29
