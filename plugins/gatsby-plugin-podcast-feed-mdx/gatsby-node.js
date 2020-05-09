@@ -1,6 +1,9 @@
 const RSS = require("rss")
 const path = require("path")
 const fs = require("fs-extra")
+const glob = require("glob")
+const mp3Duration = require("mp3-duration")
+const crypto = require("crypto")
 
 const wrapper = promise =>
   promise.then(result => {
@@ -9,6 +12,19 @@ const wrapper = promise =>
     }
     return result
   })
+
+Array.prototype.asyncForEach = async function (fn) {
+  for (let i = 0; i < this.length; i++) {
+    await fn(this[i], i)
+  }
+}
+
+/** get duration for mp3 file */
+const getDuration = file => {
+  return mp3Duration(file)
+    .then(r => r)
+    .catch(e => console.log(e))
+}
 
 // Create an rss feed for our podcast based on options from:
 //  - gatsby-config for the overall podcast itself, and
@@ -121,21 +137,20 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
         ) {
           edges {
             node {
+              fileAbsolutePath
               excerpt
               id
+              fields {
+                slug
+              }
               frontmatter {
                 title
-                slug
-                guid
                 subtitle
-                url
                 season
                 episodeNumber
                 episodeType
                 publicationDate
                 author
-                size
-                duration
                 explicit
                 categories
               }
@@ -148,13 +163,11 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
   const episodes = result.data.podcastEpisodes.edges
 
   // for each episode
-  episodes.forEach(edge => {
+  await episodes.asyncForEach(async ({ node }) => {
     // gather the options
-    const { excerpt } = edge.node
+    const { excerpt, fileAbsolutePath } = node
     const {
       title,
-      slug,
-      guid,
       subtitle,
       url,
       season,
@@ -162,11 +175,39 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
       episodeType,
       publicationDate,
       author,
-      size,
-      duration,
       explicit,
       categories,
-    } = edge.node.frontmatter
+    } = node.frontmatter
+    const { slug } = node.fields
+
+    // generate unique id from path
+    const guid = crypto.createHash("md5").update(fileAbsolutePath).digest("hex")
+
+    // find mp3 file in content podcast
+    const p = path.dirname(fileAbsolutePath)
+    let file = glob.sync(`${p}/*.mp3`, {})
+    if (!file || file.length < 1) {
+      throw new Error(`Can\'t find mp3 file for episode ${title}`)
+    }
+
+    /** size of mp3 */
+    const stats = fs.statSync(file[0])
+    const size = stats["size"]
+
+    /** tag duration mp3 */
+    const dataFile = fs.readFileSync(file[0])
+    const duration = await getDuration(dataFile)
+
+    const fileUrl = `podcasts/${path.basename(file[0])}`
+    // move file mp3 to public
+    fs.copyFileSync(file[0], `./public/${fileUrl}`, err => {
+      if (err) throw err
+      console.log(
+        `${file[0]} was copied to ${`./public/podcasts/${path.basename(
+          file[0]
+        )}`}`
+      )
+    })
 
     // add an episode item to the feed using the options
     feed.item({
@@ -182,7 +223,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
         { "itunes:subtitle": subtitle },
         season && { "itunes:season": season },
         episodeNumber && { "itunes:episode": episodeNumber },
-        { "itunes:duration": duration },
+        { "itunes:duration": Math.floor(duration) },
         { "itunes:episodeType": episodeType },
         { "itunes:explicit": explicit },
         { "itunes:summary": excerpt },
@@ -198,7 +239,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
         { "googleplay:explicit": explicit },
       ],
       enclosure: {
-        url,
+        url: `${pluginOptions.siteUrl}${fileUrl}`,
         size,
         type: "audio/mpeg",
       },
@@ -212,5 +253,6 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
   if (!(await fs.exists(outputDir))) {
     await fs.mkdirp(outputDir)
   }
+
   await fs.writeFile(outputPath, feed.xml())
 }

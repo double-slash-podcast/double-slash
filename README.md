@@ -4,23 +4,23 @@
 
 ## RSS for podcast
 
+Frontmatter example :
+
+```md
 ---
-status: published
-slug: /prologue
-guid: 2e2f6d1a-681d-4259-854b-a0f70584cb07 => https://www.guidgen.com/
+guid: 2e2f6d1a-681d-4259-854b-a0f70584cb07
 title: Le prologue
 subtitle: Présentation du podcast et de l'équipe
 publicationDate: 2020-04-29
+status: published
 author: Double slash
 season: 1
 episodeNumber: 1
 episodeType: trailer
-excerpt: Présentation du podcast et de l'équipe.
-url: https://slash-podcast.fr/podcasts/prologue.mp3
-size: 13283732 => size in bytes
-duration: 553 => seconds
 explicit: false
 categories:
   - Technology
 ---
+
+```
 
