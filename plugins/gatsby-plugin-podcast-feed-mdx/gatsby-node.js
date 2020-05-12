@@ -190,7 +190,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
     // generate unique id from path and last modified date
     const guid = crypto
       .createHash("md5")
-      .update(`${fileAbsolutePath} ${headers["last-modified"]}`)
+      .update(`${fileAbsolutePath}`)
       .digest("hex")
 
     const custom_elements = [
