@@ -28,3 +28,4 @@ bla bla description
 #### Frontmatter values
 
 duration: secondes
+url: set bitly short url
