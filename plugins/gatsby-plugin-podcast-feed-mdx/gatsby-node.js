@@ -1,8 +1,7 @@
 const RSS = require("rss")
 const path = require("path")
 const fs = require("fs-extra")
-const glob = require("glob")
-const mp3Duration = require("mp3-duration")
+const axios = require("axios")
 const crypto = require("crypto")
 
 const wrapper = promise =>
@@ -17,13 +16,6 @@ Array.prototype.asyncForEach = async function (fn) {
   for (let i = 0; i < this.length; i++) {
     await fn(this[i], i)
   }
-}
-
-/** get duration for mp3 file */
-const getDuration = file => {
-  return mp3Duration(file)
-    .then(r => r)
-    .catch(e => console.log(e))
 }
 
 // Create an rss feed for our podcast based on options from:
@@ -147,6 +139,8 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
                 title
                 subtitle
                 season
+                url
+                duration
                 episodeNumber
                 episodeType
                 publicationDate
@@ -170,6 +164,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
       title,
       subtitle,
       url,
+      duration,
       season,
       episodeNumber,
       episodeType,
@@ -180,35 +175,47 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
     } = node.frontmatter
     const { slug } = node.fields
 
-    // generate unique id from path
-    const guid = crypto.createHash("md5").update(fileAbsolutePath).digest("hex")
-
-    // find mp3 file in content podcast
-    const p = path.dirname(fileAbsolutePath)
-    let file = glob.sync(`${p}/*.mp3`, {})
-    if (!file || file.length < 1) {
-      throw new Error(`Can\'t find mp3 file for episode ${title}`)
+    if (!url) {
+      throw new Error(`not found url for episode "${title}"`)
     }
+    let response
+    try {
+      response = await axios.head(url)
+    } catch (e) {
+      throw new Error(e.message)
+    }
+    const { headers } = response
+    const size = headers["content-length"]
 
-    /** size of mp3 */
-    const stats = fs.statSync(file[0])
-    const size = stats["size"]
+    // generate unique id from path and last modified date
+    const guid = crypto
+      .createHash("md5")
+      .update(`${fileAbsolutePath} ${headers["last-modified"]}`)
+      .digest("hex")
 
-    /** tag duration mp3 */
-    const dataFile = fs.readFileSync(file[0])
-    const duration = await getDuration(dataFile)
+    const custom_elements = [
+      { "itunes:title": title },
+      { "itunes:subtitle": subtitle },
+      season && { "itunes:season": season },
+      episodeNumber && { "itunes:episode": episodeNumber },
+      { "itunes:episodeType": episodeType },
+      { "itunes:explicit": explicit },
+      { "itunes:summary": excerpt },
+      { "itunes:author": author },
+      {
+        "itunes:image": {
+          _attr: {
+            href: feedOptions.image_url,
+          },
+        },
+      },
+      { "googleplay:description": excerpt },
+      { "googleplay:explicit": explicit },
+    ]
 
-    const fileUrl = `podcasts/${path.basename(file[0])}`
-    // move file mp3 to public
-    fs.copyFileSync(file[0], `./public/${fileUrl}`, err => {
-      if (err) throw err
-      console.log(
-        `${file[0]} was copied to ${`./public/podcasts/${path.basename(
-          file[0]
-        )}`}`
-      )
-    })
-
+    if (duration) {
+      custom_elements.push({ "itunes:duration": duration })
+    }
     // add an episode item to the feed using the options
     feed.item({
       guid,
@@ -218,28 +225,9 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
       url: pluginOptions.siteUrl + slug,
       categories,
       author: author,
-      custom_elements: [
-        { "itunes:title": title },
-        { "itunes:subtitle": subtitle },
-        season && { "itunes:season": season },
-        episodeNumber && { "itunes:episode": episodeNumber },
-        { "itunes:duration": Math.floor(duration) },
-        { "itunes:episodeType": episodeType },
-        { "itunes:explicit": explicit },
-        { "itunes:summary": excerpt },
-        { "itunes:author": author },
-        {
-          "itunes:image": {
-            _attr: {
-              href: feedOptions.image_url,
-            },
-          },
-        },
-        { "googleplay:description": excerpt },
-        { "googleplay:explicit": explicit },
-      ],
+      custom_elements: custom_elements,
       enclosure: {
-        url: `${pluginOptions.siteUrl}${fileUrl}`,
+        url,
         size,
         type: "audio/mpeg",
       },

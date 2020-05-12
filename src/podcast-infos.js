@@ -1,3 +1,4 @@
+//https://help.apple.com/itc/podcasts_connect/#/itcb54353390
 // https://www.feedforall.com/itune-tutorial-tags.htm
 // https://theaudacitytopodcast.com/how-to-start-using-the-new-itunes-podcast-tags-for-ios-11-tap316/
 module.exports = {
