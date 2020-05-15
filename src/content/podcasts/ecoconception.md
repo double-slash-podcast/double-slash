@@ -1,6 +1,6 @@
 ---
 title: Écoconception et écologie
-subtitle: Un point sur le réchauffement climatique et un peu d'écoconception
+subtitle: Un point de l'impact de notre utilisation du numérique sur le réchauffement climatique et de l'écoconception
 publicationDate: 2020-04-21
 status: published
 url: https://double-slash.ams3.digitaloceanspaces.com/DS_002_eco_conception.mp3
@@ -16,8 +16,8 @@ categories:
 
 Dans ce podcast, nous parlons de l'impact de notre utilisation du numérique sur le  réchauffement climatique et d'écoconception.
 
-Podcast présenté par :  
-- Alexandre Duval [https://twitter.com/xlanex6](https://twitter.com/xlanex6)  
+Podcast présenté par :
+- Alexandre Duval [https://twitter.com/xlanex6](https://twitter.com/xlanex6)
 - Patrick Faramaz [https://twitter.com/PatrickFaramaz](https://twitter.com/PatrickFaramaz)
 
 Invité dans ce podcast :
@@ -31,8 +31,8 @@ Liens utiles sur l'écologie :
 
 Liens utiles sur l'écoconception :
 
-- Tester un site : [http://www.ecoindex.fr/](http://www.ecoindex.fr/)  
-- Formation en écoconception : [https://www.greenit.fr/](https://www.greenit.fr/)  
+- Tester un site : [http://www.ecoindex.fr/](http://www.ecoindex.fr/)
+- Formation en écoconception : [https://www.greenit.fr/](https://www.greenit.fr/)
 - Impact des plus gros services en ligne (par Greenpeace) : [http://www.clickclean.org/france/fr/](http://www.clickclean.org/france/fr/)
 
 Livres :
@@ -42,5 +42,5 @@ Livres :
 
 Vidéos :
 
-- "Combattre la complexité" - Rémi Guyot [https://www.youtube.com/watch?v=4lfW48_oDxo](https://www.youtube.com/watch?v=4lfW48_oDxo)  
+- "Combattre la complexité" - Rémi Guyot [https://www.youtube.com/watch?v=4lfW48_oDxo](https://www.youtube.com/watch?v=4lfW48_oDxo)
 - Ecologie et numérique: [https://www.youtube.com/watch?v=zmE0X2KKRjc&list=PL4piaFbHOpRc6jtB450EOo-6cc91sUzzz&index=2&t=0s](https://www.youtube.com/watch?v=zmE0X2KKRjc&list=PL4piaFbHOpRc6jtB450EOo-6cc91sUzzz&index=2&t=0s)
