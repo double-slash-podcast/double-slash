@@ -1,0 +1,9 @@
+@import '../../assets/variable.css';
+
+
+.footer_container {
+  max-width: var(--maxWidth);
+  margin: 2rem auto;
+  padding: 1rem .5rem;
+  font-size: .9rem;
+}

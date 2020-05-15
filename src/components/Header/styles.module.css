@@ -1,0 +1,13 @@
+@import '../../assets/variable.css';
+
+
+.header_container {
+  max-width: var(--maxWidth);
+  margin: 2rem auto;
+  padding: 1rem .5rem;
+  border-bottom: 1px solid #999;
+}
+
+.header_title {
+    font-size: 2.4rem;
+}

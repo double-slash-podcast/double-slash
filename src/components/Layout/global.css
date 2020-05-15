@@ -1,0 +1,15 @@
+@import '../../assets/variable.css';
+
+body {
+  font-family: var(--fontFamily);
+  font-size: var(--fontSizeBody);
+  color: var(--textColor);
+  margin: 0;
+  padding: 0;
+  background-color: var(--bgColor);
+  background-image: var(--bgImage);
+}
+
+a {
+  color: var(--accentColor);
+}

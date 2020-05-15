@@ -1,0 +1,31 @@
+@import '../../assets/variable.css';
+
+.episode_list {
+    position: relative;
+    min-height: 7rem;
+
+}
+
+.episode_list_title {
+
+
+    a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    }
+}
+
+.episode_list_info {
+    font-size: .9rem;
+    color: #777;
+
+    strong {
+        margin-right: 1rem;
+        font-weight: 400;
+    }
+}

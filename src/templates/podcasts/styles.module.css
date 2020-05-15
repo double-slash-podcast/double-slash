@@ -1,0 +1,12 @@
+@import '../../assets/variable.css';
+
+
+.episode_info {
+    font-size: .9rem;
+    color: #777;
+
+    strong {
+        margin-right: 1rem;
+        font-weight: 400;
+    }
+}
