@@ -223,7 +223,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
       guid,
       title,
       date: publicationDate,
-      description: excerpt,
+      description: html,
       url: pluginOptions.siteUrl + slug,
       categories,
       author: author,
