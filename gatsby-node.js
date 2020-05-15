@@ -29,6 +29,9 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
   createTypes(`type Mdx implements Node @infer {
     frontmatter: MdxFrontmatter!
   }`)
+  createTypes(`type MarkdownRemark implements Node @infer {
+    frontmatter: MdxFrontmatter!
+  }`)
   const typeDefs = [
     schema.buildObjectType({
       name: "MdxFrontmatter",
@@ -60,7 +63,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  if (node.internal.type === `Mdx`) {
+  if (node.internal.type === `Mdx` || node.internal.type === `MarkdownRemark`) {
     const { slug } = node.frontmatter
 
     // create slug

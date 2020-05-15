@@ -121,7 +121,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
   const result = await wrapper(
     graphql(`
       query {
-        podcastEpisodes: allMdx(
+        podcastEpisodes: allMarkdownRemark(
           filter: {
             fileAbsolutePath: { regex: "/podcasts/" }
             frontmatter: { status: { eq: "published" } }
@@ -130,7 +130,9 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
           edges {
             node {
               fileAbsolutePath
-              excerpt
+              summary(pruneLength: 4000)
+              excerpt(pruneLength: 255)
+              html
               id
               fields {
                 slug
@@ -159,7 +161,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
   // for each episode
   await episodes.asyncForEach(async ({ node }) => {
     // gather the options
-    const { excerpt, fileAbsolutePath } = node
+    const { excerpt, fileAbsolutePath, html } = node
     const {
       title,
       subtitle,
@@ -200,7 +202,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
       episodeNumber && { "itunes:episode": episodeNumber },
       { "itunes:episodeType": episodeType },
       { "itunes:explicit": explicit },
-      { "itunes:summary": excerpt },
+      { "itunes:summary": summary },
       { "itunes:author": author },
       {
         "itunes:image": {
@@ -209,7 +211,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
           },
         },
       },
-      { "googleplay:description": excerpt },
+      { "googleplay:description": summary },
       { "googleplay:explicit": explicit },
     ]
 
