@@ -130,7 +130,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
           edges {
             node {
               fileAbsolutePath
-              summary(pruneLength: 4000)
+              summary: excerpt(pruneLength: 4000)
               excerpt(pruneLength: 255)
               html
               id
@@ -161,7 +161,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
   // for each episode
   await episodes.asyncForEach(async ({ node }) => {
     // gather the options
-    const { excerpt, fileAbsolutePath, html } = node
+    const { excerpt, fileAbsolutePath, html, summary } = node
     const {
       title,
       subtitle,
