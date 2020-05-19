@@ -3,7 +3,7 @@ title: GitHub Ninja
 subtitle: Mieux utiliser les outils de GitHub dans notre quotidien
 publicationDate: 2020-05-19
 status: published
-url: https://double-slash.ams3.digitaloceanspaces.com/DS_005_gituhub_ninja.mp3
+url: https://double-slash.ams3.cdn.digitaloceanspaces.com/DS_005_gituhub_ninja.mp3
 author: Double slash
 duration: 2917
 season: 1
