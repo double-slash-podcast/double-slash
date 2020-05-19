@@ -14,7 +14,7 @@ categories:
   - Technology
 ---
 
-Petit retour sur la conférence annuelle de GitHub, les nouvelles fonctinnalitées et autres outils lié à GitHub.
+Petit retour sur la conférence annuelle de GitHub, les nouvelles fonctionnalités et autres outils liés à GitHub.
 
 ### GitHub Satellite
 Vidéos en ligne [GITHUB SATELITTE](https://githubsatellite.com/)
