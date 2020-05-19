@@ -12,6 +12,13 @@ const Header = () => {
         <Link to="/" className={styles.header_title}>
           {siteMetadata.titleDefault}
         </Link>
+        <strong className={styles.header_baseline}>
+          {siteMetadata.descriptionDefault}
+        </strong>
+        <div className={styles.logo}>
+          <span>{"//"}</span>
+          <span>{"."}</span>
+        </div>
       </div>
     </header>
   )

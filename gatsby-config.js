@@ -2,9 +2,9 @@ const podcastInfo = require("./src/podcast-infos")
 
 module.exports = {
   siteMetadata: {
-    titleDefault: "Double Slash Podcast",
+    titleDefault: "Double Slash",
     descriptionDefault:
-      "Le podcast dédié aux outils et aux techniques pour le développement web moderne",
+      "Le podcast sur le code, le développement web et les outils modernes.",
   },
   /* Your site config here */
   plugins: [

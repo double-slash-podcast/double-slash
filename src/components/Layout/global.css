@@ -1,4 +1,5 @@
 @import '../../assets/variable.css';
+@import url("https://use.typekit.net/xgd8uhq.css");
 
 body {
   font-family: var(--fontFamily);

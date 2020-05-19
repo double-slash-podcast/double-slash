@@ -2,12 +2,52 @@
 
 
 .header_container {
-  max-width: var(--maxWidth);
-  margin: 2rem auto;
-  padding: 1rem .5rem;
-  border-bottom: 1px solid #999;
+    display: grid;
+    grid-template-columns: 380px 50px 220px 1fr;
+    grid-template-rows: 130px 100px;
+    max-width: var(--maxWidth);
+    margin: 5rem auto 2rem;
+    padding: 1rem .5rem;
+    border-bottom: 1px solid #999;
+    overflow: hidden;
 }
 
 .header_title {
-    font-size: 2.4rem;
+    grid-column: 0/2;
+    grid-row: 0/2;
+    font-family: var(--fontFamilyTitle);
+    font-size: 9.5rem;
+    line-height: 7.5rem;
+    letter-spacing: .1rem;
+    color: var(----headerColor);
+    text-decoration: none;
+}
+
+.header_baseline {
+    grid-column: 2/4;
+    grid-row: 2;
+    align-self: end;
+    font-family: var(--fontFamily);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(----headerColor);
+}
+
+.logo {
+    align-self: start;
+    justify-self: end;
+    grid-column: 4;
+    grid-row: 1/3;
+    font-family: var(--fontFamilyTitle);
+    font-size: 21rem;
+    line-height: 17.5rem;
+    margin-right: -4rem;
+
+    span:first-child {
+        letter-spacing: -5rem;
+    }
+    span:last-child {
+        color: var(--accentColor);
+    }
 }
