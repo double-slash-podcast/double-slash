@@ -2,28 +2,6 @@ const path = require("path")
 const slugify = require("slugify")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-// exports.createSchemaCustomization = ({ actions, schema }) => {
-//   const { createTypes } = actions
-//   const typeDefs = `
-//     type Mdx implements Node @infer {
-//       frontmatter: MdxFrontmatter!
-//     }
-//     type MdxFrontmatter @infer {
-//       title: String!
-//       subtitle: String
-//       url: String!
-//       publicationDate: Date
-//       author: String
-//       duration: Int
-//       season: Int
-//       episodeNumber: Int
-//       explicit: Boolean
-//       active: Boolean @default
-//       categories: [String]
-//     }`
-//   createTypes(typeDefs)
-// }
-
 exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions
   createTypes(`type Mdx implements Node @infer {
@@ -75,6 +53,15 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       name: `slug`,
       value: _slug,
+    })
+  }
+  if (node.internal.type === "DataYaml") {
+    const filePath = createFilePath({ node, getNode, basePath: `content` })
+    const _type = filePath.match(/^\/(.+)\/./)
+    createNodeField({
+      node,
+      name: `type`,
+      value: _type.length > 1 ? _type[1] : null,
     })
   }
 }

@@ -4,8 +4,19 @@
   max-width: 100vw;
 }
 
-.main {
-  max-width: var(--maxWidth);
-  margin: 2rem auto;
-  padding: 0 .5rem;
+.main_content {
+    max-width: var(--maxWidth);
+    margin: 0 auto;
 }
+
+.top {
+    padding: 4rem 0;
+    background-color: #F6F4F8;
+}
+
+.main {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 1rem;
+}
+

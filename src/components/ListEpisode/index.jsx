@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { usePodcastsList } from "../../query/useQuery"
+import { usePodcastsList } from "../../query/usePodcastsList"
 import styles from "./styles.module.css"
 
 export default () => {

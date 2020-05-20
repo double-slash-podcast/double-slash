@@ -8,7 +8,6 @@
     max-width: var(--maxWidth);
     margin: 5rem auto 2rem;
     padding: 1rem .5rem;
-    border-bottom: 1px solid #999;
     overflow: hidden;
 }
 

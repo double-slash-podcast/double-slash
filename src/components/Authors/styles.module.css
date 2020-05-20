@@ -1,0 +1,47 @@
+@import '../../assets/variable.css';
+
+.authors {
+    display: flex;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    min-width: 200px;
+
+    strong {
+        font-size: 1.51rem;
+        font-family: var(--fontFamilyTitle);
+    }
+
+    a {
+        font-size: 1rem;
+        color: #B5B5B5;
+    }
+}
+
+.image {
+  width: 120px;
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.author:last-child {
+    flex-direction: row-reverse;
+    margin-left: 2rem;
+    .info {
+        text-align: left;
+    }
+
+    .image {
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+}
+

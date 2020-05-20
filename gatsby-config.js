@@ -24,6 +24,7 @@ module.exports = {
       resolve: `gatsby-plugin-podcast-feed-mdx`,
       options: podcastInfo,
     },
+    `gatsby-transformer-yaml`,
     `gatsby-remark-images`,
     {
       resolve: `gatsby-plugin-mdx`,
