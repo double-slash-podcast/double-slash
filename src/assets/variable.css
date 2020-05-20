@@ -10,7 +10,8 @@
   --fontFamilyTitle: Mono45-Headline,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
   --fontFamily: Nunito,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
   --bgColor: #FFD800;
-  --textColor: #313332;
+  --bgMain: #F6F4F8;
+  --textColor: #5A5A5A;
   --headerColor: #5A5A5A;
   --accentColor: #A700FF;
   --brandColor: rgba(255,217, 0, 1);

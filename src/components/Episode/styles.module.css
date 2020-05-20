@@ -1,0 +1,37 @@
+@import '../../assets/variable.css';
+
+.episode {
+    position: relative;
+    min-height: 7rem;
+    background-color: #fff;
+}
+
+.episode_title {
+    font-family: var(--fontFamilyTitle);
+    font-size: 2rem;
+
+    a {
+        color: var(--textColor);
+        text-decoration: none;
+    }
+
+    a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    }
+}
+
+.episode_info {
+    font-size: .9rem;
+    color: #777;
+
+    strong {
+        margin-right: 1rem;
+        font-weight: 400;
+    }
+}
