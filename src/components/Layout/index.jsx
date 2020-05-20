@@ -4,10 +4,10 @@ import Header from "../Header"
 import Footer from "../Footer"
 import SEO from "../Seo"
 import Authors from "../Authors"
+import Repositories from "../Repository"
 
 import "./global.css"
 import styles from "./styles.module.css"
-import Repositories from "../Repository"
 
 const Layout = ({ children }) => {
   return (
