@@ -10,6 +10,7 @@
 }
 
 .top {
+    display: flex;
     padding: 4rem 0;
     background-color: #F6F4F8;
 }

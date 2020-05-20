@@ -1,0 +1,12 @@
+@import '../../assets/variable.css';
+
+.repositories {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+        width: 50px;
+        height: 50px;
+        margin: .8rem
+    }
+}

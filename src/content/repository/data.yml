@@ -1,0 +1,6 @@
+- name: Spotify
+  url: https://open.spotify.com/show/539N9WvnUguUzMWluPp2UK
+  image: ./media/Spotify_logo.png
+- name: Apple Podcast
+  url: https://podcasts.apple.com/fr/podcast/double-slash/id1513703178
+  image: ./media/PodcastsConnect.png

@@ -26,10 +26,11 @@
     grid-column: 2/4;
     grid-row: 2;
     align-self: end;
-    font-family: var(--fontFamily);
+    font-family: monospace;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.8rem;
+    margin-bottom: .1rem;
     color: var(----headerColor);
 }
 

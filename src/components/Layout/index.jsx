@@ -7,6 +7,7 @@ import Authors from "../Authors"
 
 import "./global.css"
 import styles from "./styles.module.css"
+import Repositories from "../Repository"
 
 const Layout = ({ children }) => {
   return (
@@ -18,6 +19,7 @@ const Layout = ({ children }) => {
           <div className={styles.main_content}>
             <div className={styles.top}>
               <Authors />
+              <Repositories />
             </div>
             <main className={styles.main}>{children}</main>
           </div>
