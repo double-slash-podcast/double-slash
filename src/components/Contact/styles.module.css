@@ -1,0 +1,104 @@
+.contact_form {
+  display: grid;
+  position: relative;
+
+  form > div {
+    display: grid;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  label {
+    display: inline-block;
+    margin-bottom: .5rem;
+  }
+
+  input, textarea {
+    display: block;
+    max-width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+  input {
+    height: calc(1.5em + .75rem + 2px);
+  }
+
+  textarea {
+    min-height: 120px;
+    height: auto;
+    overflow: auto;
+    resize: vertical;
+  }
+}
+
+.action {
+
+  display: grid;
+  justify-items: end;
+}
+
+.error {
+  padding: .5rem 0;
+  color: red;
+}
+
+input.errorInput, textarea.errorInput {
+  border-color: red;
+}
+
+.thanks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(254, 254, 254, .4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    max-width: 70%;
+    background: #fff;
+    padding: 3rem 3rem 3rem;
+    box-shadow: 0 8px 24px rgba(231,235,237,.8);
+    text-align: center;
+
+    > div {
+      margin: 3rem 0 0 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  svg {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+}
+
+.check {
+    stroke: green;
+    stroke-dashoffset: 745.74853515625;
+    stroke-dasharray: 745.74853515625;
+    animation: dash 2s ease-out forwards;
+
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 745.74853515625;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+}

@@ -1,17 +1,17 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import useSiteMeta from "../../query/useSiteMeta"
+import React from 'react';
+import {Helmet} from 'react-helmet';
+import useSiteMeta from '../../query/useSiteMeta';
 
-const SEO = ({ description, meta, title }) => {
-  const { siteMetadata } = useSiteMeta()
-  const { titleDefault, descriptionDefault } = siteMetadata
-  const _lang = "fr"
+const SEO = ({description, meta, title}) => {
+  const {siteMetadata} = useSiteMeta();
+  const {titleDefault, descriptionDefault, siteName} = siteMetadata;
+  const _lang = 'fr';
   return (
     <Helmet
       htmlAttributes={{
         lang: _lang,
       }}
-      title={title || titleDefault}
+      title={`${title || titleDefault} | ${siteName}`}
       meta={[
         {
           name: `description`,
@@ -47,12 +47,12 @@ const SEO = ({ description, meta, title }) => {
         },
       ].concat(meta)}
     ></Helmet>
-  )
-}
+  );
+};
 
 SEO.defaultProps = {
   meta: [],
   description: ``,
-}
+};
 
-export default SEO
+export default SEO;

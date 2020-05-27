@@ -1,0 +1,27 @@
+@import '../../assets/variable.css';
+
+.repositories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @mixin small {
+    justify-content: center;
+  }
+
+  @mixin medium {
+    justify-content: flex-start;
+  }
+
+  a {
+    width: 40px;
+    height: 40px;
+    margin: 1rem;
+
+    @mixin medium {
+      width: 45px;
+      height: 45px;
+      margin: 0.8rem;
+    }
+  }
+}

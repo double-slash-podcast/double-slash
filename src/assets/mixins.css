@@ -19,3 +19,15 @@
   cursor: pointer;
   background-color: transparent;
 }
+
+@define-mixin small {
+  @media (min-width: 500px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin medium {
+  @media (min-width: 780px) {
+    @mixin-content;
+  }
+}

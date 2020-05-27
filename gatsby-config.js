@@ -1,10 +1,12 @@
-const podcastInfo = require("./src/podcast-infos")
+const podcastInfo = require('./src/podcast-infos');
 
 module.exports = {
   siteMetadata: {
-    titleDefault: "Double Slash Podcast",
+    siteUrl: `https://slash-podcast.fr`,
+    siteName: 'Double Slash Podcast',
+    titleDefault: 'Double Slash',
     descriptionDefault:
-      "Le podcast dédié aux outils et aux techniques pour le développement web moderne",
+      'Le podcast sur le code, le développement web et les outils modernes.',
   },
   /* Your site config here */
   plugins: [
@@ -13,6 +15,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,12 +27,16 @@ module.exports = {
       resolve: `gatsby-plugin-podcast-feed-mdx`,
       options: podcastInfo,
     },
+    `gatsby-transformer-yaml`,
     `gatsby-remark-images`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
         gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -40,4 +47,4 @@ module.exports = {
       },
     },
   ],
-}
+};
