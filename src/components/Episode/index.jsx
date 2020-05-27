@@ -1,3 +1,4 @@
+/* eslint "jsx-a11y/media-has-caption": 0 */
 import React, {useRef, useEffect} from 'react';
 import {Link} from 'gatsby';
 import Plyr from 'plyr';
@@ -24,10 +25,13 @@ const Episode = ({node}) => {
       <div className={styles.header}>
         <h2 className={styles.episode_title}>
           <Link to={slug}>
-            {'//.'}
-            {episodeNumber}
-            {' - '}
-            {title}
+            <span>{'//'}</span>
+            <span>{'.'}</span>
+            <span>
+              {episodeNumber}
+              {' - '}
+              {title}
+            </span>
           </Link>
         </h2>
         <strong>{d.toLocaleDateString('fr-FR', options)}</strong>

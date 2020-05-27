@@ -4,7 +4,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 70px 1fr 100px;
+  grid-template-rows: minmax(60px, 100px) 1fr 100px;
   min-height: 220px;
   padding: 2rem;
   margin: 2rem 0;
@@ -30,8 +30,9 @@
   }
 
   strong {
-    margin-right: 1.2rem;
+    margin: 0.5rem 0 1.2rem 0;
     font-weight: 400;
+
     @mixin medium {
       margin-left: auto;
     }
@@ -40,12 +41,24 @@
 
 .episode_title {
   font-family: var(--fontFamilyTitle);
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0 0 0.5rem 0;
 
   a {
     color: var(--textColor);
     text-decoration: none;
+  }
+
+  span:first-child {
+    letter-spacing: -0.3rem;
+  }
+  span:nth-child(2) {
+    color: var(--accentColor);
+    margin-right: 1rem;
+  }
+
+  @mixin small {
+    font-size: 2rem;
   }
 }
 
@@ -71,7 +84,7 @@
 .link {
   display: flex;
   align-items: center;
-  margin-top: 2rem;
+  margin: 2rem 0;
   font-size: 1.2rem;
   font-weight: 300;
   text-decoration: none;
@@ -85,6 +98,10 @@
     width: 20px;
     height: 20px;
     background: url('./arrow-left.svg') no-repeat;
+  }
+
+  @mixin small {
+    margin: 2rem 0 0 0;
   }
 }
 
