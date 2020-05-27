@@ -22,10 +22,22 @@ explicit: false
 categories:
   - Technology
 ---
+
 bla bla description
 ```
 
 #### Frontmatter values
 
 duration: secondes
-url: set bitly short url
+
+## Repository podcast
+
+Update values in src/content/repository/data.yml
+
+## Authors infos
+
+Update values in src/content/authors/
+
+## Pages
+
+Update and add pages in src/content/pages/

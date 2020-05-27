@@ -8,9 +8,9 @@
   padding: 0;
 
   > div:last-child {
-    margin: 1rem 0;
+    margin: 1rem 0 2rem 0;
     padding: 0 0.5rem 0.5rem;
-    border-bottom: 2px solid var(--bgColor);
+    border-bottom: 2px solid #b5b5b5;
   }
 
   @mixin medium {
