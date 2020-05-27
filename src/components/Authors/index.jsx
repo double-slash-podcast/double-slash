@@ -7,10 +7,10 @@ import {useAuthorsList} from '../../query/useAuthorsList';
 import styles from './styles.module.css';
 
 const Authors = () => {
-  const {allDataYaml} = useAuthorsList();
+  const {mainAuthors} = useAuthorsList();
   return (
     <div className={styles.authors}>
-      {allDataYaml.edges.map(({node}) => {
+      {mainAuthors.edges.map(({node}) => {
         const {name, twitter, website, image} = node;
         const twname = twitter
           ? twitter.substring(twitter.lastIndexOf('/') + 1)

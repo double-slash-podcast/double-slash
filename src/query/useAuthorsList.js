@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby"
+import {graphql, useStaticQuery} from 'gatsby';
 
 /**
  * for authors list
@@ -6,7 +6,22 @@ import { graphql, useStaticQuery } from "gatsby"
 export const useAuthorsList = () =>
   useStaticQuery(graphql`
     query Authors {
-      allDataYaml(filter: { fields: { type: { eq: "authors" } } }) {
+      authors: allDataYaml(filter: {fields: {type: {eq: "authors"}}}) {
+        edges {
+          node {
+            twitter
+            website
+            name
+            id
+          }
+        }
+      }
+      mainAuthors: allDataYaml(
+        filter: {
+          fields: {type: {eq: "authors"}}
+          name: {regex: "/(Alex|Patrick)/"}
+        }
+      ) {
         edges {
           node {
             twitter
@@ -25,4 +40,4 @@ export const useAuthorsList = () =>
         }
       }
     }
-  `)
+  `);
