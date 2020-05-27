@@ -1,10 +1,10 @@
-const podcastInfo = require("./src/podcast-infos")
+const podcastInfo = require('./src/podcast-infos');
 
 module.exports = {
   siteMetadata: {
-    titleDefault: "Double Slash",
+    titleDefault: 'Double Slash',
     descriptionDefault:
-      "Le podcast sur le code, le développement web et les outils modernes.",
+      'Le podcast sur le code, le développement web et les outils modernes.',
   },
   /* Your site config here */
   plugins: [
@@ -32,6 +32,9 @@ module.exports = {
         extensions: [`.mdx`, `.md`],
         gatsbyRemarkPlugins: [
           {
+            resolve: `gatsby-remark-prismjs`,
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1100,
@@ -41,4 +44,4 @@ module.exports = {
       },
     },
   ],
-}
+};
