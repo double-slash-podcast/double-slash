@@ -1,5 +1,6 @@
 @import '../../assets/variable.css';
-@import url("https://use.typekit.net/xgd8uhq.css");
+@import '../../../node_modules/plyr/dist/plyr.css';
+@import url('https://use.typekit.net/xgd8uhq.css');
 
 body {
   font-family: var(--fontFamily);
@@ -13,4 +14,10 @@ body {
 
 a {
   color: var(--accentColor);
+}
+
+.plyr {
+  border-radius: 4px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  margin: 16px auto;
 }

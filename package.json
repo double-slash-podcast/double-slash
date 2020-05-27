@@ -15,6 +15,7 @@
   "dependencies": {
     "gatsby": "^2.22.1",
     "gatsby-cli": "^2.12.34",
+    "plyr": "^3.6.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0"

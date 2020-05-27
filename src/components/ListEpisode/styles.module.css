@@ -1,2 +1,5 @@
 @import '../../assets/variable.css';
 
+.episodes {
+  padding: 0.5rem 0;
+}

@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby"
+import {graphql, useStaticQuery} from 'gatsby';
 
 /**
  * for podcasts list
@@ -8,15 +8,15 @@ export const usePodcastsList = () =>
     query PodcastList {
       podcastEpisodes: allMdx(
         filter: {
-          frontmatter: { active: { eq: true } }
-          fileAbsolutePath: { regex: "/podcasts/" }
+          frontmatter: {active: {eq: true}}
+          fileAbsolutePath: {regex: "/podcasts/"}
         }
-        sort: { fields: frontmatter___publicationDate, order: DESC }
+        sort: {fields: frontmatter___publicationDate, order: DESC}
       ) {
         edges {
           node {
             id
-            excerpt
+            excerpt(pruneLength: 300)
             fields {
               slug
             }
@@ -26,10 +26,10 @@ export const usePodcastsList = () =>
               url
               season
               episodeNumber
-              publicationDate(formatString: "DD/MM/YYYY")
+              publicationDate
             }
           }
         }
       }
     }
-  `)
+  `);
