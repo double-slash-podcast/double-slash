@@ -1,6 +1,5 @@
 /* eslint "jsx-a11y/media-has-caption": 0 */
 import React, {useEffect, useRef} from 'react';
-import Plyr from 'plyr';
 import {MDXRenderer} from 'gatsby-plugin-mdx';
 import {graphql} from 'gatsby';
 import SEO from '../../components/Seo';
@@ -21,7 +20,9 @@ const Podcast = ({data}) => {
 
   const d = new Date(publicationDate);
   useEffect(() => {
-    new Plyr(player.current);
+    if (window.Plyr) {
+      new window.Plyr(player.current);
+    }
   }, []);
   return (
     <>

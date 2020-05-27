@@ -1,7 +1,6 @@
 /* eslint "jsx-a11y/media-has-caption": 0 */
 import React, {useRef, useEffect} from 'react';
 import {Link} from 'gatsby';
-import Plyr from 'plyr';
 
 import styles from './styles.module.css';
 
@@ -18,7 +17,9 @@ const Episode = ({node}) => {
   const d = new Date(publicationDate);
   const {slug} = fields;
   useEffect(() => {
-    new Plyr(player.current);
+    if (window.Plyr) {
+      new window.Plyr(player.current);
+    }
   }, []);
   return (
     <div className={styles.episode} key={id}>
