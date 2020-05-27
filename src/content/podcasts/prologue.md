@@ -17,7 +17,7 @@ categories:
 Le premier épidode double slash, l'épisode "Pilote", qui présente l'équipe et le podcast.
 Pourquoi un podcast, quels sujets allons-nous développer et les thèmes principaux du podcast.
 
-Podcast présenté par :  
-- Alexandre Duval [https://twitter.com/xlanex6](https://twitter.com/xlanex6)	
-- Patrick Faramaz [https://twitter.com/PatrickFaramaz](https://twitter.com/PatrickFaramaz)
+Podcast présenté par :
 
+- Alexandre Duval [https://twitter.com/xlanex6](https://twitter.com/xlanex6)
+- Patrick Faramaz [https://twitter.com/PatrickFaramaz](https://twitter.com/PatrickFaramaz)
