@@ -1,15 +1,13 @@
-import React from "react"
-import { WrapRootElement } from "../mdx"
-import Header from "../Header"
-import Footer from "../Footer"
-import SEO from "../Seo"
-import Authors from "../Authors"
-import Repositories from "../Repository"
+import React from 'react';
+import {WrapRootElement} from '../mdx';
+import Header from '../Header';
+import Footer from '../Footer';
+import SEO from '../Seo';
 
-import "./global.css"
-import styles from "./styles.module.css"
+import './global.css';
+import styles from './styles.module.css';
 
-const Layout = ({ children }) => {
+const Layout = ({children}) => {
   return (
     <>
       <WrapRootElement>
@@ -17,17 +15,13 @@ const Layout = ({ children }) => {
         <Header />
         <div className={styles.content}>
           <div className={styles.main_content}>
-            <div className={styles.top}>
-              <Authors />
-              <Repositories />
-            </div>
             <main className={styles.main}>{children}</main>
           </div>
         </div>
         <Footer />
       </WrapRootElement>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

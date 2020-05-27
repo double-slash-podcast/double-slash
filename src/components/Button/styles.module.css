@@ -1,0 +1,90 @@
+.button {
+    display: inline-block;
+    padding: .375rem .75rem;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border-radius: .25rem;
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+.a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.disabled {
+    cursor: default;
+    opacity: .65;
+}
+
+.primary {
+    color: #FFF;
+    background-color: rgb(4, 113, 216);
+    border-color: rgb(3, 99, 202);
+}
+
+.success {
+    color: #FFF;
+    background-color: rgb(17, 133, 44);
+    border-color: rgb(30, 141, 56);
+}
+
+.danger {
+    color: #FFF;
+    background-color: #DC3545;
+    border-color: #DC3545;
+}
+
+.warning {
+    color: #212529;
+    background-color: #FFC107;
+    border-color: #FFC107;
+}
+
+.light {
+    color: #212529;
+    background-color: rgb(211, 214, 216);
+    border-color: rgb(208, 210, 211);
+}
+
+.link {
+    font-weight: 400;
+    color: rgb(11, 101, 197);
+    background-color: transparent;
+}
+
+.outline {
+    color: rgb(4, 113, 216);
+    background-color: transparent;
+    background-image: none;
+}
+
+.primary.outline {
+    color: rgb(4, 113, 216);
+}
+
+.success.outline {
+    color: rgb(17, 133, 44);
+}
+
+.danger.outline {
+    color: #DC3545;
+}
+
+.warning.outline {
+    color: rgb(99, 74, 1);
+}
+
+.light.outline {
+    color: #212529;
+}

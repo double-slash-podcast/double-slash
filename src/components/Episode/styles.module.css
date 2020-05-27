@@ -74,8 +74,7 @@
   }
 
   p {
-    font-family: sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1rem;
     line-height: 1.2rem;
   }
@@ -86,10 +85,9 @@
   align-items: center;
   margin: 2rem 0;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
   text-decoration: none;
   color: #b5b5b5;
-  font-family: sans-serif;
 
   &:after {
     content: '';

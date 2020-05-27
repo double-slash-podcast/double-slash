@@ -1,9 +1,22 @@
 @import '../../assets/variable.css';
 
-
 .footer_container {
+  display: flex;
+  flex-direction: column;
   max-width: var(--maxWidth);
   margin: 2rem auto;
-  padding: 1rem .5rem;
-  font-size: .9rem;
+  padding: 1rem 0.5rem;
+  font-size: 1rem;
+
+  > div {
+    flex: 1;
+  }
+
+  > div:last-child {
+    text-align: left;
+  }
+
+  @mixin small {
+    flex-direction: row;
+  }
 }

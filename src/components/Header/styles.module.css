@@ -107,5 +107,6 @@
   span:last-child {
     justify-self: start;
     color: var(--accentColor);
+    margin-left: -1rem;
   }
 }

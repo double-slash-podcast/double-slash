@@ -5,6 +5,7 @@ import {graphql} from 'gatsby';
 import SEO from '../../components/Seo';
 
 import styles from './styles.module.css';
+import BreadCrumb from '../../components/Breadcrumb';
 
 const options = {
   year: 'numeric',
@@ -12,7 +13,7 @@ const options = {
   day: 'numeric',
 };
 
-const Podcast = ({data}) => {
+const Podcast = ({data, location}) => {
   const player = useRef(null);
   const {mdx} = data;
   const {frontmatter} = mdx;
@@ -31,6 +32,8 @@ const Podcast = ({data}) => {
         description={subtitle && subtitle !== '' ? subtitle : mdx.excerpt}
       />
       <div className={styles.episode}>
+        <BreadCrumb location={location} title={title} />
+
         <h1 className={styles.title}>
           <span>{'//'}</span>
           <span>{'.'}</span>

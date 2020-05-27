@@ -1,0 +1,24 @@
+.breadcrumb {
+  display: flex;
+  overflow-x: auto;
+  margin: 1rem 0.2rem 2rem;
+
+  > * {
+    margin: 0 0.5rem 0 0;
+    white-space: nowrap;
+    text-decoration: none;
+
+    &::before {
+      content: '/';
+      padding: 0 0.5rem 0;
+      color: #999;
+    }
+  }
+
+  > :first-child {
+    margin-left: 0;
+    &::before {
+      display: none;
+    }
+  }
+}
