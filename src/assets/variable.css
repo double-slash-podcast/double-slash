@@ -1,9 +1,6 @@
-@import './normalize.css'
+@import './normalize.css';
 @import './mixins.css';
 
-@custom-media --medium-viewport (min-width: 500px);
-
-@custom-media --large-viewport (min-width: 780px);
 
 :root {
   --maxWidth: 1080px;

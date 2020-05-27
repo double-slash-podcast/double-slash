@@ -5,21 +5,38 @@
 }
 
 .main_content {
-    max-width: var(--maxWidth);
-    margin: 0 auto;
-    box-shadow: 0px 3px 6px #00000029;
-
+  max-width: var(--maxWidth);
+  margin: 0 auto;
+  box-shadow: 0px 3px 6px #00000029;
 }
 
 .top {
-    display: flex;
-    padding: 4rem 0;
-    background-color: var(--bgMain);
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: var(--bgMain);
+  margin: 0;
+  padding: 0;
+
+  > div:last-child {
+    margin: 1rem 0;
+    padding: 0 0.5rem 0.5rem;
+    border-bottom: 2px solid var(--bgColor);
+  }
+
+  @mixin medium {
+    padding: 4rem 0 2rem 0;
+    flex-direction: row;
+
+    > div:last-child {
+      margin: 0;
+      padding: 0;
+      border-bottom: none;
+    }
+  }
 }
 
 .main {
-    background-color: var(--bgMain);
+  background-color: var(--bgMain);
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 0;
 }
-
