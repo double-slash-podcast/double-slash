@@ -9,18 +9,7 @@ exports.wrapPageElement = ({element, props}) => {
  */
 exports.onRenderBody = ({setPostBodyComponents}, pluginOptions = {}) => {
   const components = [
-    <script
-      key="plyr-script"
-      async
-      src="https://cdn.plyr.io/3.6.2/plyr.js"
-    ></script>,
-    <script
-      key="passive-event-script"
-      type="text/javascript"
-      dangerouslySetInnerHTML={{
-        __html: `document.addEventListener('touchstart', onTouchStart, {passive: true});`,
-      }}
-    />,
+    <script key="plyr-script" src="https://cdn.plyr.io/3.6.2/plyr.js"></script>,
   ];
   // <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />,
 
