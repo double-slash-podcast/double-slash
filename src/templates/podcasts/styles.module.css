@@ -26,10 +26,10 @@
 .episode_info {
   font-size: 0.9rem;
   color: #777;
+  margin: 1rem 1.2rem 0 0;
 
   strong {
     font-size: 1.3rem;
-    margin: 0 1.2rem 0 0;
     font-weight: 400;
   }
 }

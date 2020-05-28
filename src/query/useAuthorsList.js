@@ -31,8 +31,8 @@ export const useAuthorsList = () =>
             image {
               publicURL
               childImageSharp {
-                fluid(maxWidth: 120) {
-                  ...GatsbyImageSharpFluid
+                fixed(width: 120, quality: 100) {
+                  ...GatsbyImageSharpFixed
                 }
               }
             }

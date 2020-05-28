@@ -44,7 +44,7 @@ const Podcast = ({data, location}) => {
           </span>
         </h1>
         <div className={styles.episode_info}>
-          <strong>{d.toLocaleDateString('fr-FR', options)}</strong>
+          <strong>Le {d.toLocaleDateString('fr-FR', options)}</strong>
         </div>
         <div className={styles.player}>
           <audio ref={player} controls>

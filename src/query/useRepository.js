@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby"
+import {graphql, useStaticQuery} from 'gatsby';
 
 /**
  * for repositories list
@@ -6,7 +6,7 @@ import { graphql, useStaticQuery } from "gatsby"
 export const useRepository = () =>
   useStaticQuery(graphql`
     query Repository {
-      allDataYaml(filter: { fields: { type: { eq: "repository" } } }) {
+      allDataYaml(filter: {fields: {type: {eq: "repository"}}}) {
         edges {
           node {
             url
@@ -15,7 +15,7 @@ export const useRepository = () =>
             image {
               publicURL
               childImageSharp {
-                fixed(width: 50) {
+                fixed(width: 50, quality: 100) {
                   ...GatsbyImageSharpFixed
                 }
               }
@@ -24,4 +24,4 @@ export const useRepository = () =>
         }
       }
     }
-  `)
+  `);

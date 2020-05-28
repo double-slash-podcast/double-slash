@@ -28,7 +28,7 @@ const Authors = () => {
               </a>
             </div>
             <div className={styles.image}>
-              <Img fluid={image.childImageSharp.fluid} alt={name} />
+              <Img fixed={image.childImageSharp.fixed} alt={name} />
             </div>
           </div>
         );

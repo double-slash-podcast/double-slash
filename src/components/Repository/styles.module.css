@@ -3,11 +3,7 @@
 .repositories {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-
-  @mixin small {
-    justify-content: center;
-  }
+  justify-content: center;
 
   @mixin medium {
     justify-content: flex-start;
