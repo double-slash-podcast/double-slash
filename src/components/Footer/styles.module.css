@@ -20,3 +20,19 @@
     flex-direction: row;
   }
 }
+
+.links {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @mixin small {
+    margin-top: 0;
+  }
+
+  button {
+    text-align: left;
+    color: var(--accentColor);
+    padding: 0;
+  }
+}

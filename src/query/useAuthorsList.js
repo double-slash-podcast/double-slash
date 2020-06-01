@@ -32,7 +32,7 @@ export const useAuthorsList = () =>
               publicURL
               childImageSharp {
                 fixed(width: 120, quality: 100) {
-                  ...GatsbyImageSharpFixed
+                  ...GatsbyImageSharpFixed_withWebp
                 }
               }
             }
