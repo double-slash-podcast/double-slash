@@ -1,16 +1,18 @@
 @import './normalize.css';
 @import './mixins.css';
 
-
 :root {
   --maxWidth: 1080px;
   --fontSizeBody: 16px;
-  --fontFamilyTitle: Mono45-Headline,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
-  --fontFamily: Nunito,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
-  --bgColor: #FFD800;
-  --bgMain: #F6F4F8;
-  --textColor: #5A5A5A;
-  --headerColor: #5A5A5A;
-  --accentColor: #A700FF;
-  --brandColor: rgba(255,217, 0, 1);
+  --fontFamilyTitle: Mono45-Headline, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  --fontFamily: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  --bgColor: #ffd800;
+  --bgMain: #f6f4f8;
+  --textColor: #5a5a5a;
+  --headerColor: #5a5a5a;
+  --accentColor: #a700ff;
+  --linkColor: #a700ff;
+  --brandColor: rgba(255, 217, 0, 1);
 }

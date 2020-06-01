@@ -1,17 +1,20 @@
+@import '../../assets/variable.css';
+@import '../../assets/variable.css';
+
 .button {
-    display: inline-block;
-    padding: .375rem .75rem;
-    border: 1px solid transparent;
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    user-select: none;
-    border-radius: .25rem;
-    -webkit-appearance: button;
-    cursor: pointer;
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border-radius: 0.25rem;
+  -webkit-appearance: button;
+  cursor: pointer;
 }
 
 .a {
@@ -23,68 +26,69 @@
 }
 
 .disabled {
-    cursor: default;
-    opacity: .65;
+  cursor: default;
+  opacity: 0.65;
 }
 
 .primary {
-    color: #FFF;
-    background-color: rgb(4, 113, 216);
-    border-color: rgb(3, 99, 202);
+  color: #fff;
+  background-color: rgb(4, 113, 216);
+  border-color: rgb(3, 99, 202);
 }
 
 .success {
-    color: #FFF;
-    background-color: rgb(17, 133, 44);
-    border-color: rgb(30, 141, 56);
+  color: #fff;
+  background-color: rgb(17, 133, 44);
+  border-color: rgb(30, 141, 56);
 }
 
 .danger {
-    color: #FFF;
-    background-color: #DC3545;
-    border-color: #DC3545;
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
 }
 
 .warning {
-    color: #212529;
-    background-color: #FFC107;
-    border-color: #FFC107;
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
 }
 
 .light {
-    color: #212529;
-    background-color: rgb(211, 214, 216);
-    border-color: rgb(208, 210, 211);
+  color: #212529;
+  background-color: rgb(211, 214, 216);
+  border-color: rgb(208, 210, 211);
 }
 
 .link {
-    font-weight: 400;
-    color: rgb(11, 101, 197);
-    background-color: transparent;
+  font-weight: 400;
+  color: inherit;
+  text-decoration: underline;
+  background-color: transparent;
 }
 
 .outline {
-    color: rgb(4, 113, 216);
-    background-color: transparent;
-    background-image: none;
+  color: rgb(4, 113, 216);
+  background-color: transparent;
+  background-image: none;
 }
 
 .primary.outline {
-    color: rgb(4, 113, 216);
+  color: rgb(4, 113, 216);
 }
 
 .success.outline {
-    color: rgb(17, 133, 44);
+  color: rgb(17, 133, 44);
 }
 
 .danger.outline {
-    color: #DC3545;
+  color: #dc3545;
 }
 
 .warning.outline {
-    color: rgb(99, 74, 1);
+  color: rgb(99, 74, 1);
 }
 
 .light.outline {
-    color: #212529;
+  color: #212529;
 }
