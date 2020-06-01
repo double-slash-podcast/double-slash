@@ -1,0 +1,7 @@
+{
+    "name": "gatsby-plugin-gdpr-cookies",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gatsby-ssr.js",
+    "scripts": {}
+}

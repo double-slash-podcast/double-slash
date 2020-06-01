@@ -6,7 +6,6 @@ import SEO from '../Seo';
 
 import './global.css';
 import styles from './styles.module.css';
-
 const Layout = ({children}) => {
   return (
     <>
