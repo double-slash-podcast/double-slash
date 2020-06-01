@@ -16,7 +16,7 @@ export const useRepository = () =>
               publicURL
               childImageSharp {
                 fixed(width: 50, quality: 100) {
-                  ...GatsbyImageSharpFixed
+                  ...GatsbyImageSharpFixed_withWebp
                 }
               }
             }
