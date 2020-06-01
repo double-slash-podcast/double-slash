@@ -16,19 +16,35 @@ categories:
 
 # JAMStack Conf London 27 mai 2020
 
-Site de la Conference
+Cette année, la conférence JAMStack de Londres est passée complètement online du à la crise du COVID-19.
+Nous avons assisté à la conférence le 27 mai 2020 et nous vous faisons un petit résumé sur l’événement et les annonces des acteurs présents.
+
+Site de la Conférence :
 
 [Lien pour le LIVE](https://app.hopin.to/events/jamstack-conf-virtual/reception)
 
 [REPLAY sur Youtube](https://www.youtube.com/playlist?list=PL58Wk5g77lF8jzqp_1cViDf-WilJsAvqT)
 
-# Expo brands
+### Strapi
+
+[https://strapi.io/](https://strapi.io/)
+
+Annonce : enfin une version stable !
+
+### Prismic
+
+[https://prismic.io/](https://prismic.io/)
+
+Annonce : La Slice Machine
+
+Slice Machine, système pour gérer les slices (blocks) entre le repository Prismic et le site. Ligne de commande pour générer des slices. Automatiquement lié au repo via la ligne de commande. Seulement sur Nuxt pour le moment. D'autres librairies sont en cours de dev.
+
+[https://github.com/prismicio/slice-machine](https://github.com/prismicio/slice-machine)
 
 ### Netlify
 
 - Edge Handlers
 - build plugins
-
 
 ### Commerce Layer
 
@@ -61,29 +77,13 @@ Le site est en anglais.
 
 - Video CMS + livestream avec OBS
 
-### Prismic
-
-[https://prismic.io/](https://prismic.io/)
-
-Annonce : La Slice Machine
-
-Slice Machine, système pour gérer les slices (blocks) entre le repository Prismic et le site. Ligne de commande pour générer des slices. Automatiquement lié au repo via la ligne de commande. Seulement sur Nuxt pour le moment. D'autres librairies sont en cours de dev.
-
-[https://github.com/prismicio/slice-machine](https://github.com/prismicio/slice-machine)
-
 ### RedwoodJS
 
 [https://redwoodjs.com/](https://redwoodjs.com/)
 
 React, GraphQL and Prisma pour faire le Ruby on Rails du JS.
 
-
-### Strapi
-
-[https://strapi.io/](https://strapi.io/)
-
-Annonce : version stable !
-
 Podcast présenté par :
+
 - Alexandre Duval [@xlanex6](https://twitter.com/xlanex6)
 - Patrick Faramaz [@PatrickFaramaz](https://twitter.com/PatrickFaramaz)
