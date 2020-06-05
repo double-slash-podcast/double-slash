@@ -31,6 +31,13 @@ Site de la Conférence :
 
 Annonce : enfin une version stable !
 
+[Edit] Complément d'infos par [Jim Laurie](https://twitter.com/laurie_jim?s=20), co-fondateur et CTO de Strapi : [https://twitter.com/laurie_jim/status/1268457168862412801](https://twitter.com/laurie_jim/status/1268457168862412801)
+
+- Strapi utilise Koa.js et pas hapi.js pour la couche framework Node.js
+- En effet on est community driven, les features que l'on sort sont votés par la communauté.
+- Pour la monétisation, c'est un system de plugin. Du coup des features free et payante. Avec des systems de limitation aussi sur certaine features.
+  Avec un peu de support possible aussi si besoin.
+
 ### Prismic
 
 [https://prismic.io/](https://prismic.io/)
