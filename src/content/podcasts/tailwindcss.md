@@ -1,6 +1,6 @@
 ---
 title: TailwindCSS - Evolution ou Révoltion ?
-subtitle: On retrouve Patrick et Alex qui echange sur le framework CSS Tailwind, son fonctionnement, son paradigne.
+subtitle: On retrouve Patrick et Alex qui échange sur le framework CSS Tailwind, son fonctionnement, son paradigme.
 publicationDate: 2020-06-19
 status: published
 url: https://double-slash.ams3.cdn.digitaloceanspaces.com/DS_007_tailwindcss.mp3
