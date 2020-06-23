@@ -1,6 +1,6 @@
 ---
-title: TailwindCSS - Evolution ou Révoltion ?
-subtitle: On retrouve Patrick et Alex qui échange sur le framework CSS Tailwind, son fonctionnement, son paradigme.
+title: TailwindCSS - Évolution ou Révolution ?
+subtitle: On retrouve Patrick et Alex qui échange sur le framework CSS Tailwind, son fonctionnement et son paradigme.
 publicationDate: 2020-06-19
 status: published
 url: https://double-slash.ams3.cdn.digitaloceanspaces.com/DS_007_tailwindcss.mp3
@@ -14,10 +14,22 @@ categories:
   - Technology
 ---
 
-Le site de [TailwindCSS](https://tailwindcss.com/).
+Dans cet épisode, on retrouve Patrick et Alex qui échange sur le framework CSS **Tailwind**. Quels sont les avantages à utiliser encore un framework. Quel est le fonctionnement de **Tailwind**.
+Tailwind est différent des frameworks CSS existants et Alex va vous expliquer pourquoi.
 
-Le livre Best Practices Design[Refactoring UI](https://refactoringui.com/book).
+Voici les liens donnés dans l'épisode :
 
-Le repo [AWESOME TailwindCSS](https://github.com/aniftyco/awesome-tailwindcss).
+- Le site de [TailwindCSS](https://tailwindcss.com/).
 
-Le  [Color shade generator](https://javisperez.github.io/tailwindcolorshades/#/).
+- Plus d'infos sur [Post CSS](https://postcss.org/)
+
+- Le livre Best Practices Design [Refactoring UI](https://refactoringui.com/book).
+
+- Le repo [AWESOME TailwindCSS](https://github.com/aniftyco/awesome-tailwindcss).
+
+- Le [Color shade generator](https://javisperez.github.io/tailwindcolorshades/#/).
+
+Podcast présenté par :
+
+- Alexandre Duval [@xlanex6](https://twitter.com/xlanex6)
+- Patrick Faramaz [@PatrickFaramaz](https://twitter.com/PatrickFaramaz)
