@@ -27,7 +27,7 @@ const Podcast = ({data, location}) => {
       setTimeout(() => {
         new window.Plyr(player.current);
         setPlayerHidden(false);
-      }, 500);
+      }, 300);
     }
   }, []);
   return (

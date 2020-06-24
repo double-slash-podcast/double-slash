@@ -23,7 +23,7 @@ const Episode = ({node}) => {
       setTimeout(() => {
         new window.Plyr(player.current);
         setPlayerHidden(false);
-      }, 700);
+      }, 300);
     }
   }, []);
   return (
