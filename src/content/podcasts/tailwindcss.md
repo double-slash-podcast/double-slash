@@ -14,7 +14,7 @@ categories:
   - Technology
 ---
 
-Dans cet épisode, on retrouve Patrick et Alex qui échange sur le framework CSS **Tailwind**. Quels sont les avantages à utiliser encore un framework. Quel est le fonctionnement de **Tailwind**.
+Dans cet épisode, on retrouve Patrick et Alex qui échange sur le framework CSS **Tailwind**. Quels sont les avantages à utiliser encore un framework CSS ? Quel est le fonctionnement de **Tailwind** ?
 Tailwind est différent des frameworks CSS existants et Alex va vous expliquer pourquoi.
 
 Voici les liens donnés dans l'épisode :
