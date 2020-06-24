@@ -1,6 +1,7 @@
 /* eslint "jsx-a11y/media-has-caption": 0 */
-import React, {useRef, useEffect} from 'react';
+import React, {useRef, useEffect, useState} from 'react';
 import {Link} from 'gatsby';
+import Loader from '../Loader';
 
 import styles from './styles.module.css';
 
@@ -11,6 +12,7 @@ const options = {
 };
 
 const Episode = ({node}) => {
+  const [playerHidden, setPlayerHidden] = useState(true);
   const player = useRef(null);
   const {frontmatter, excerpt, fields} = node;
   const {title, id, url, episodeNumber, publicationDate} = frontmatter;
@@ -18,7 +20,10 @@ const Episode = ({node}) => {
   const {slug} = fields;
   useEffect(() => {
     if (window.Plyr) {
-      new window.Plyr(player.current);
+      setTimeout(() => {
+        new window.Plyr(player.current);
+        setPlayerHidden(false);
+      }, 500);
     }
   }, []);
   return (
@@ -44,9 +49,22 @@ const Episode = ({node}) => {
         </Link>
       </div>
       <div className={styles.player}>
-        <audio ref={player} controls>
+        <audio
+          preload="none"
+          ref={player}
+          controls
+          style={{
+            visibility: `${playerHidden === true ? 'hidden' : 'visible'}`,
+            height: `${playerHidden === true ? '0px' : 'auto'}`,
+          }}
+        >
           <source src={url} type="audio/mp3" />
         </audio>
+        <Loader
+          style={{
+            visibility: `${playerHidden === false ? 'hidden' : 'visible'}`,
+          }}
+        />
       </div>
     </div>
   );
