@@ -16,6 +16,6 @@ exports.onInitialClientRender = (_, pluginOptions = {}) => {
   // load after for keep callback
   setTimeout(() => {
     initGdprCookie.default(_options.defaultLang);
-    console.log('ready');
+    // console.log('ready');
   }, 500);
 };

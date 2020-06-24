@@ -30,7 +30,7 @@ exports.createSchemaCustomization = ({actions, schema}) => {
         explicit: 'Boolean',
         active: {
           type: 'Boolean',
-          resolve: source => source.receivedSwag || true,
+          resolve: source => source.active || true,
         },
       },
       interfaces: ['Node'],

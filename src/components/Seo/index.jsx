@@ -46,17 +46,16 @@ const SEO = ({description, meta, title}) => {
           content: description || descriptionDefault,
         },
       ].concat(meta)}
-    >
-      <link rel="dns-prefetch" href="//cdn.plyr.io/" />
-      <link rel="preconnect" href="https://cdn.plyr.io/" crossorigin />
-      <link rel="dns-prefetch" href="//use.typekit.net/" />
-      <link rel="preconnect" href="https://use.typekit.net/" crossorigin />
-      <link rel="dns-prefetch" href="//p.typekit.net/" />
-      <link rel="preconnect" href="https://p.typekit.net/" crossorigin />
-    </Helmet>
+    ></Helmet>
   );
 };
 
+// <link rel="dns-prefetch" href="//cdn.plyr.io/" />
+// <link rel="preconnect" href="https://cdn.plyr.io/" crossorigin />
+// <link rel="dns-prefetch" href="//use.typekit.net/" />
+// <link rel="preconnect" href="https://use.typekit.net/" crossorigin />
+// <link rel="dns-prefetch" href="//p.typekit.net/" />
+// <link rel="preconnect" href="https://p.typekit.net/" crossorigin />
 SEO.defaultProps = {
   meta: [],
   description: ``,
