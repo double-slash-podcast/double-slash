@@ -2,7 +2,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {MDXRenderer} from 'gatsby-plugin-mdx';
 import {graphql} from 'gatsby';
-import useIsInViewport from 'use-is-in-viewport';
 import SEO from '../../components/Seo';
 import BreadCrumb from '../../components/Breadcrumb';
 import Loader from '../../components/Loader';
@@ -18,7 +17,6 @@ const options = {
 const Podcast = ({data, location}) => {
   const player = useRef(null);
   // load player only if has visible
-  const [isInViewport, playerContainer] = useIsInViewport({threshold: 50});
   const [playerHidden, setPlayerHidden] = useState(true);
   const {mdx} = data;
   const {frontmatter} = mdx;
@@ -26,11 +24,11 @@ const Podcast = ({data, location}) => {
 
   const d = new Date(publicationDate);
   useEffect(() => {
-    if (window.Plyr && isInViewport && playerHidden) {
+    if (window.Plyr) {
       new window.Plyr(player.current);
       setPlayerHidden(false);
     }
-  }, [isInViewport, playerHidden]);
+  }, []);
   return (
     <>
       <SEO
@@ -52,7 +50,7 @@ const Podcast = ({data, location}) => {
         <div className={styles.episode_info}>
           <strong>{d.toLocaleDateString('fr-FR', options)}</strong>
         </div>
-        <div ref={playerContainer} className={styles.player}>
+        <div className={styles.player}>
           <audio
             preload="none"
             ref={player}
