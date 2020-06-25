@@ -1,5 +1,6 @@
 /* eslint "jsx-a11y/media-has-caption": 0 */
 import React, {useRef, useEffect, useState} from 'react';
+import useIsInViewport from 'use-is-in-viewport';
 import {Link} from 'gatsby';
 import Loader from '../Loader';
 
@@ -12,20 +13,20 @@ const options = {
 };
 
 const Episode = ({node}) => {
-  const [playerHidden, setPlayerHidden] = useState(true);
   const player = useRef(null);
+  // load player only if has visible
+  const [isInViewport, playerContainer] = useIsInViewport({threshold: 100});
+  const [playerHidden, setPlayerHidden] = useState(true);
   const {frontmatter, excerpt, fields} = node;
   const {title, id, url, episodeNumber, publicationDate} = frontmatter;
   const d = new Date(publicationDate);
   const {slug} = fields;
   useEffect(() => {
-    if (window.Plyr) {
-      setTimeout(() => {
-        new window.Plyr(player.current);
-        setPlayerHidden(false);
-      }, 500);
+    if (window.Plyr && isInViewport && playerHidden) {
+      new window.Plyr(player.current);
+      setPlayerHidden(false);
     }
-  }, []);
+  }, [isInViewport, playerHidden]);
   return (
     <div className={styles.episode} key={id}>
       <div className={styles.header}>
@@ -48,7 +49,7 @@ const Episode = ({node}) => {
           Voir les notes de l'épisode
         </Link>
       </div>
-      <div className={styles.player}>
+      <div ref={playerContainer} className={styles.player}>
         <audio
           preload="none"
           ref={player}

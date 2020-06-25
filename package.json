@@ -32,7 +32,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.0.0",
-    "url-search-params-polyfill": "^8.1.0"
+    "url-search-params-polyfill": "^8.1.0",
+    "use-is-in-viewport": "^1.0.9"
   },
   "devDependencies": {
     "@mdx-js/mdx": "^1.6.1",
