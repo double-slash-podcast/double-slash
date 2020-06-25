@@ -85,6 +85,7 @@
   font-size: 19rem;
   line-height: 14.5rem;
   letter-spacing: -4.7rem;
+  margin-top: -0.8rem;
 
   @mixin small {
     grid-template-columns: 170px 90px;
@@ -93,6 +94,7 @@
     font-size: 26.5rem;
     line-height: 21.5rem;
     letter-spacing: -7rem;
+    margin-top: -1.4rem;
   }
 
   @mixin medium {
