@@ -1,11 +1,11 @@
 ---
-title: SEO avec Nicolas Baldi
-subtitle: Comment penser le SEO dès le début d'un projet web, les bonnes pratiques en 2020 avec tous les outils qui vont bien. 
+title: Le SEO en 2020, avec Nicolas Baldi
+subtitle: Le SEO en 2020, les methodes, les outils, les bonnes pratiques. Comment penser le projet "SEO Friendly" dès sa construction.
 publicationDate: 2020-07-10
 status: published
 author: Double slash
 url: https://double-slash.ams3.cdn.digitaloceanspaces.com/DS_008_seo.mp3
-categories: 
+categories:
   - Technology
 duration: 7080
 episodeNumber: 8
@@ -13,18 +13,36 @@ episodeType: full
 explicit: false
 season: 1
 ---
-Discussion avec [Nicolas Baldi](https://www.linkedin.com/in/nicolasbaldi/)  sur le SEO en 2020, comment faire, comment penser le projet seo friendly dès sa construction.
 
-## Outils évoqué  dans l'épisode :
+Un épisode avec autour du SEO (Search Engine Optimisation). Le SEO en 2020, les methodes, les outils, les bonnes pratiques. Comment penser le projet "SEO Friendly" dès sa construction.
 
-- [Yooda Insights](https://insight.yooda.com/)
+Épisode avec un invité : [Nicolas Baldi](https://www.linkedin.com/in/nicolasbaldi/), expert SEO.
+
+## Liste des outils évoqués durant l'épisode :
+
+### Outils pour le choix des mots clés :
+
+Pour savoir quels mots-clés choisir, on utilise des outils comme :
+
+[Yooda Insights](https://insight.yooda.com/) (39€/mois)  
+[Keyword.io](https://www.keyword.io/) (29€/mois)  
+[Neil Patel / Ubersuggest](https://neilpatel.com/fr/ubersuggest/) (29€/mois)  
+[Keyword Finder](https://kwfinder.com/) (29€/mois)  
+
+### Les outils Google
+
+- [Google Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=fr)
+- [Google Analytics](https://analytics.google.com/analytics/web/)
+- [Google Search Console](https://search.google.com/search-console/about)
+
+### Les outils d'analyse :
+
 - [SEM Rush](https://fr.semrush.com/)
-- Google Page Speed Insights
-- [SEO Image Optimizer](https://developers.google.com/speed/pagespeed/insights/?hl=fr)
-- WP Google Page Speed Insights Image Optimizer
-- Google Analytics
-- Google Search Console
 - [Screaming Frog](https://www.screamingfrog.co.uk/seo-spider/)
-- Xenu
-- Redirection WP
-- Seo Mofo Snippet Optimizer
+- [Xenu](http://home.snafu.de/tilman/xenulink.html)
+- [Seo Mofo Snippet Optimizer](https://seomofo.com/snippet-optimizer.html)
+
+## Podcast présenté par :
+
+- Alexandre Duval [@xlanex6](https://twitter.com/xlanex6)
+- Patrick Faramaz [@PatrickFaramaz](https://twitter.com/PatrickFaramaz)
