@@ -19,6 +19,7 @@ Le SEO en 2020, les méthodes, les outils, les bonnes pratiques.
 Comment penser le projet "SEO Friendly" dès sa construction. 
 Nous en discutons avec notre invité, expert SEO : [Nicolas Baldi](https://www.linkedin.com/in/nicolasbaldi/)
 
+
 ## Liste des outils évoqués durant l'épisode :
 
 ### Outils pour le choix des mots clés :
