@@ -1,6 +1,6 @@
 ---
 title: Le SEO en 2020, avec Nicolas Baldi
-subtitle: Le SEO en 2020, les methodes, les outils, les bonnes pratiques. Comment penser le projet "SEO Friendly" dès sa construction.
+subtitle: Le SEO en 2020, les méthodes, les outils, les bonnes pratiques. Comment penser le projet "SEO Friendly" dès sa construction.
 publicationDate: 2020-07-10
 status: published
 author: Double slash
@@ -14,9 +14,7 @@ explicit: false
 season: 1
 ---
 
-Un épisode avec autour du SEO (Search Engine Optimisation). Le SEO en 2020, les methodes, les outils, les bonnes pratiques. Comment penser le projet "SEO Friendly" dès sa construction.
-
-Épisode avec un invité : [Nicolas Baldi](https://www.linkedin.com/in/nicolasbaldi/), expert SEO.
+Un épisode avec autour du SEO (Search Engine Optimisation). Le SEO en 2020, les méthodes, les outils, les bonnes pratiques. Comment penser le projet "SEO Friendly" dès sa construction. Nous en discutons avec notre invité, expert SEO : [Nicolas Baldi](https://www.linkedin.com/in/nicolasbaldi/)
 
 ## Liste des outils évoqués durant l'épisode :
 
