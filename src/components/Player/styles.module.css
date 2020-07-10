@@ -1,0 +1,35 @@
+@import '../../assets/variable.css';
+
+.player {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  padding: 0 2rem;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.episode_title {
+  font-family: var(--fontFamilyTitle);
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem 0;
+
+  a {
+    color: var(--textColor);
+    text-decoration: none;
+  }
+
+  span:first-child {
+    letter-spacing: -0.3rem;
+  }
+  span:nth-child(2) {
+    color: var(--accentColor);
+    margin-right: 1rem;
+  }
+
+  @mixin small {
+    font-size: 1.2rem;
+  }
+}
