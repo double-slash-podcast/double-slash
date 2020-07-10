@@ -5,43 +5,68 @@ import {StoreContext} from '../../store';
 import styles from './styles.module.css';
 import {Link} from 'gatsby';
 
+const options = {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+};
+
 const Player = () => {
-  const {current} = useContext(StoreContext);
+  const {state} = useContext(StoreContext);
+  const {current} = state;
   const player = useRef(null);
   const instance = useRef(null);
   // load player only if has visible
   const [playerHidden, setPlayerHidden] = useState(true);
   useEffect(() => {
-    if (window.Plyr && playerHidden && current !== null) {
-      if (instance.current) {
-        instance.current.destroy();
+    if (window.Plyr && current !== null) {
+      const source = {
+        type: 'audio',
+        title: current.node.frontmatter.title,
+        sources: [
+          {
+            src: current.node.frontmatter.url,
+            type: 'audio/mp3',
+          },
+        ],
+      };
+      if (instance.current !== null && playerHidden === false) {
+        instance.current.source = source;
+        instance.current.restart();
+      } else {
+        instance.current = new window.Plyr(player.current, {
+          // debug: true,
+        });
+        instance.current.source = source;
+        setPlayerHidden(false);
       }
-      instance.current = new window.Plyr(player.current);
-      setPlayerHidden(false);
     }
   }, [playerHidden, current]);
+  const d = new Date(current.node.frontmatter.publicationDate);
   return (
     <div className={styles.player}>
       {current.node && (
-        <p className={styles.episode_title}>
-          <Link to={current.node.slug}>
-            <span>{'//'}</span>
-            <span>{'.'}</span>
-            <span>
-              {current.node.frontmatter.episodeNumber}
-              {' - '}
-              {current.node.frontmatter.title}
-            </span>
-          </Link>
-        </p>
+        <div className={styles.episode_infos}>
+          <p className={styles.episode_title}>
+            <Link to={current.node.slug}>
+              <span>{'//'}</span>
+              <span>{'.'}</span>
+              <span>
+                {current.node.frontmatter.episodeNumber}
+                {' - '}
+                {current.node.frontmatter.title}
+              </span>
+            </Link>
+          </p>
+          <strong>{d.toLocaleDateString('fr-FR', options)}</strong>
+        </div>
       )}
       <audio
         preload="none"
         ref={player}
         controls
         style={{
-          visibility: `${playerHidden === true ? 'hidden' : 'visible'}`,
-          height: `${playerHidden === true ? '0px' : 'auto'}`,
+          display: `${playerHidden === false ? 'none' : ''}`,
         }}
       >
         <source

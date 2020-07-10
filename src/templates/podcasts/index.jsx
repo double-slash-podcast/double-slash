@@ -1,10 +1,10 @@
 /* eslint "jsx-a11y/media-has-caption": 0 */
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {MDXRenderer} from 'gatsby-plugin-mdx';
 import {graphql} from 'gatsby';
 import SEO from '../../components/Seo';
 import BreadCrumb from '../../components/Breadcrumb';
-import Loader from '../../components/Loader';
+import {StoreContext} from '../../store';
 
 import styles from './styles.module.css';
 
@@ -15,18 +15,18 @@ const options = {
 };
 
 const Podcast = ({data, location}) => {
-  const player = useRef(null);
-  // load player only if has visible
-  const [playerHidden, setPlayerHidden] = useState(true);
+  const {state, dispatch} = useContext(StoreContext);
   const {mdx} = data;
-  const {frontmatter} = mdx;
-  const {title, subtitle, url, episodeNumber, publicationDate} = frontmatter;
+  const {frontmatter, id} = mdx;
+  const {title, subtitle, episodeNumber, publicationDate} = frontmatter;
 
   const d = new Date(publicationDate);
   useEffect(() => {
-    if (window.Plyr) {
-      new window.Plyr(player.current);
-      setPlayerHidden(false);
+    if (!state.podcastEnter) {
+      dispatch({
+        type: 'setPodcastEnter',
+        payload: id,
+      });
     }
   }, []);
   return (
@@ -51,22 +51,17 @@ const Podcast = ({data, location}) => {
           <strong>{d.toLocaleDateString('fr-FR', options)}</strong>
         </div>
         <div className={styles.player}>
-          <audio
-            preload="none"
-            ref={player}
-            controls
-            style={{
-              visibility: `${playerHidden === true ? 'hidden' : 'visible'}`,
-              height: `${playerHidden === true ? '0px' : 'auto'}`,
-            }}
+          {' '}
+          <button
+            onClick={() =>
+              dispatch({
+                type: 'setCurrent',
+                payload: id,
+              })
+            }
           >
-            <source src={url} type="audio/mp3" />
-          </audio>
-          <Loader
-            style={{
-              visibility: `${playerHidden === false ? 'hidden' : 'visible'}`,
-            }}
-          />
+            Ecouter le podcast
+          </button>
         </div>
         <div className={styles.notes}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
@@ -89,6 +84,7 @@ export const query = graphql`
         season
         episodeNumber
       }
+      id
       body
       excerpt(pruneLength: 270, truncate: true)
     }

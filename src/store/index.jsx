@@ -4,6 +4,7 @@ import {usePodcastsList} from '../query/usePodcastsList';
 export const initialState = {
   current: null,
   podcasts: [],
+  podcastEnter: null,
 };
 
 // create context for dispatch
@@ -11,10 +12,26 @@ export const StoreContext = createContext(initialState);
 
 const reducer = (state, action) => {
   switch ((state, action.type)) {
+    case 'setPodcastEnter':
+      return {...state, ...{podcastEnter: action.payload}};
     case 'setPodcasts':
       return {...state, ...{podcasts: action.payload}};
+    case 'initCurrent':
+      return {
+        ...state,
+        ...{
+          current: state.podcasts.find(
+            e => e.node.id === (state.podcastEnter || action.payload),
+          ),
+        },
+      };
     case 'setCurrent':
-      return {...state, ...{current: action.payload}};
+      return {
+        ...state,
+        ...{
+          current: state.podcasts.find(e => e.node.id === action.payload),
+        },
+      };
     default:
       return state;
   }
@@ -27,12 +44,17 @@ const StoreProvider = ({children}) => {
   useEffect(() => {
     if (podcastEpisodes) {
       dispatch({type: 'setPodcasts', payload: podcastEpisodes.edges});
-      dispatch({type: 'setCurrent', payload: podcastEpisodes.edges[0]});
+      dispatch({
+        type: 'initCurrent',
+        payload: podcastEpisodes.edges[0].node.id,
+      });
     }
   }, [podcastEpisodes]);
 
   return (
-    <StoreContext.Provider value={state}>{children}</StoreContext.Provider>
+    <StoreContext.Provider value={{state, dispatch}}>
+      {children}
+    </StoreContext.Provider>
   );
 };
 
