@@ -1,8 +1,9 @@
 ---
-publicationDate: 2020-04-09
+publicationDate: 2020-08-04
 status: published
 author: Double Slash
-categories: - Technology
+categories:
+  - Technology
 duration: 3611
 url: https://double-slash.ams3.cdn.digitaloceanspaces.com/DS_009_jquery.mp3
 episodeNumber: 9
@@ -10,56 +11,72 @@ episodeType: full
 explicit: false
 season: 1
 title: jQuery en 2020
-subtitle: Utiliser jQuery ou pas ? pas de réponse absolu, on en discute...
+subtitle: Faut-il encore utiliser jQuery en 2020 ? Pas de réponse absolue et tranchée. On pèse le pour et le contre, puis on vous livre notre avis.
 ---
-**Pourquoi jQuery ?**
 
-Article de github sur la suppression de JQUERY
+Faut-il encore utiliser jQuery en 2020 ? Pas de réponse absolue et tranchée. On pèse le pour et le contre, puis on vous livre notre avis.
 
+Avec l’évolution des navigateurs, l’uniformisation et la standardisation de JavaScript. Est ce qu’il est encore vraiment nécessaire d’embarquer et d’utiliser jQuery sur nos sites web ?
+
+**Les principales Librairies créées entre 2004 et 2010**
+
+[Dojo](https://fr.wikipedia.org/wiki/Dojo_Toolkit) : 2004
+[Prototype](http://prototypejs.org/) : 2005
+[jQuery](https://jquery.com/) : 2006
+[MooTools](https://mootools.net/) : 2006
+[script.aculo.us](http://script.aculo.us/) : 2010
+
+**Supprimer jQuery sur un code existant**
+
+Un article de github sur la suppression de JQUERY sur GitHub en 2018.
 [https://github.blog/2018-09-06-removing-jquery-from-github-frontend/](https://github.blog/2018-09-06-removing-jquery-from-github-frontend/)
 
-
-**Les principales Lib  / Historique**
-
-Dojo 2004
-Prototype 2005
-jQuery 2006
-*MooTools 2006*
-script.aculo.us 2010
-
-
-[https://love2dev.com/blog/jquery-obsolete/](https://love2dev.com/blog/jquery-obsolete/)
+**Remplacer jQuery par une autre librarie (joke)**
 
 [http://vanilla-js.com/](http://vanilla-js.com/)
 
-**Exemple de fonction/méthode :**
+## Réponse de la communauté
 
-Dans les versions Internet Explorer versions avant IE 9, vous devez utiliser [attachEvent](https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener), plutôt que la méthode standard addEventListener.
+Les réponses de la question posée sur [Linkedin](https://www.linkedin.com/posts/alexduval71_jquery-et-2020-ami-ou-ennemi-perso-si-activity-6688330120941314048-JB8a) :
 
-**querySelectorAll**
+- Dépendance à Wordpress. Sachant que wp utilise encore la version 1
+- Dépendance à bootstrap
+- Utilisé par habitude
+- Toujours enseigné dans certaines formations
+- Encore bien utilisé dans certaine entreprise
 
-**elementNodeReference.classList**
+Notes perso :
 
-**=> [http://youmightnotneedjquery.com/](http://youmightnotneedjquery.com/)**
+- Dans l'idéal, utiliser un mix de vanilla et de jQuery si il est chargé par défaut (WP)
+- JQuery est plus lent que vanilla JS
+- En règle générale, il faut éviter les manipulations du DOM. Utiliser une lib type Vue JS ou React qui change uniquement les éléments qui ont changé.
+- Éviter les animations en JS.
 
-**Les “plugins” ou les frameworks dépendants**
+Petit sondage sur [Twitter](https://mobile.twitter.com/PatrickFaramaz/status/1281517173396189184) :
 
-[https://kenwheeler.github.io/slick/](https://kenwheeler.github.io/slick/)
+jQuery, est-ce que vous en avez encore besoin dans vos projets en 2020 ?
+27 votes :
 
-[https://getbootstrap.com/](https://getbootstrap.com/)
+- oui 15%
+- non 66%
+- ça dépend 18%
 
-[Communauté](https://www.notion.so/Communaut-1780a193e1264e7a869b70b7ae62941b)
+## Liste de Liens:
 
+**Comparaison entre méthodes jQuery et pure JS :**
 
-## Note public:
+- [http://youmightnotneedjquery.com/](http://youmightnotneedjquery.com/)
+- [https://github.com/pablorgarcia/vanilla-js-vs-jquery](https://github.com/pablorgarcia/vanilla-js-vs-jquery)
 
-[http://youmightnotneedjquery.com/](http://youmightnotneedjquery.com/)
+**Article sur la fragmentation des version de jQuery :**
 
-[https://love2dev.com/blog/jquery-obsolete/](https://love2dev.com/blog/jquery-obsolete/)
+- [https://love2dev.com/blog/jquery-obsolete/](https://love2dev.com/blog/jquery-obsolete/)
 
-[https://github.blog/2018-09-06-removing-jquery-from-github-frontend/](https://github.blog/2018-09-06-removing-jquery-from-github-frontend/)
+**Stats sur jQuery et Bootstrap :**
 
-[https://w3techs.com/technologies/comparison/js-bootstrap,js-jquery](https://w3techs.com/technologies/comparison/js-bootstrap,js-jquery)
+- [https://w3techs.com/technologies/comparison/js-bootstrap,js-jquery](https://w3techs.com/technologies/comparison/js-bootstrap,js-jquery)
 
-[https://github.com/pablorgarcia/vanilla-js-vs-jquery](https://github.com/pablorgarcia/vanilla-js-vs-jquery)
+### Podcast présenté par :
 
+- Alexandre Duval [@xlanex6](https://twitter.com/xlanex6)
+- Patrick Faramaz [@PatrickFaramaz](https://twitter.com/PatrickFaramaz)
