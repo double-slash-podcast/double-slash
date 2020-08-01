@@ -1,5 +1,5 @@
 ---
-publicationDate: 2020-08-04
+publicationDate: 2020-08-01
 status: published
 author: Double Slash
 categories:
@@ -17,6 +17,10 @@ subtitle: Faut-il encore utiliser jQuery en 2020 ? Pas de réponse absolue et tr
 Faut-il encore utiliser jQuery en 2020 ? Pas de réponse absolue et tranchée. On pèse le pour et le contre, puis on vous livre notre avis.
 
 Avec l’évolution des navigateurs, l’uniformisation et la standardisation de JavaScript. Est ce qu’il est encore vraiment nécessaire d’embarquer et d’utiliser jQuery sur nos sites web ?
+
+**Correction** : Wordpress ne charge pas jQuery par défaut. Il est disponible, mais il faut l'ajouter dans le code du thème pour l'utiliser en front.
+
+[listes des scripts par défaut dans wordpress](https://developer.wordpress.org/reference/functions/wp_enqueue_script/#default-scripts-and-js-libraries-included-and-registered-by-wordpress)
 
 **Les principales Librairies créées entre 2004 et 2010**
 
