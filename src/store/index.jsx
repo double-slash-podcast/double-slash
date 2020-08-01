@@ -42,6 +42,8 @@ const StoreProvider = ({children}) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   // update state
   useEffect(() => {
+    console.log(podcastEpisodes);
+
     if (podcastEpisodes) {
       dispatch({type: 'setPodcasts', payload: podcastEpisodes.edges});
       dispatch({

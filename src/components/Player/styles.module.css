@@ -9,6 +9,11 @@
   margin: 0;
   background-color: #fff;
   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+
+  audio {
+    width: 100%;
+    margin: 1rem 0;
+  }
 }
 
 .episode_infos {

@@ -28,7 +28,7 @@ const Podcast = ({data, location}) => {
         payload: id,
       });
     }
-  }, []);
+  }, [id, state, dispatch]);
   return (
     <>
       <SEO

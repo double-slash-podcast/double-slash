@@ -1,7 +1,15 @@
 const React = require('react');
 const Layout = require('./src/components/Layout').default;
+const {default: StoreProvider} = require('./src/store');
 exports.wrapPageElement = ({element, props}) => {
   return <Layout {...props}>{element}</Layout>;
+};
+
+/**
+ * wrapp app with provider for dispatch cart and customer infos
+ */
+exports.wrapRootElement = ({element}) => {
+  return <StoreProvider>{element}</StoreProvider>;
 };
 
 /**
