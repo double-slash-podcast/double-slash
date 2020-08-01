@@ -1,6 +1,6 @@
 ---
-Record Date: Jul 28, 2020
-Status: Mix
+publicationDate: 2020-04-09
+status: published
 author: Double Slash
 categories: - Technology
 duration: 3611
@@ -10,6 +10,7 @@ episodeType: full
 explicit: false
 season: 1
 title: jQuery en 2020
+subtitle: Utiliser jQuery ou pas ? pas de réponse absolu, on en discute...
 ---
 **Pourquoi jQuery ?**
 
