@@ -59,23 +59,8 @@
   word-wrap: break-word;
 }
 
-.button_play {
-  @mixin cleanButton;
-  transition: 0.3s;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-}
-
-.PLAY {
-  path {
-    fill: #777;
-  }
-}
-
-.PAUSE {
-  path {
-    fill: #1db954;
-  }
+.pr {
+  font-size: 0.9rem;
+  color: #999;
+  padding: 1rem;
 }

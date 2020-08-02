@@ -110,7 +110,7 @@
   &:after {
     content: '';
     display: block;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     width: 20px;
     height: 20px;
     background: url('./arrow-left.svg') no-repeat;

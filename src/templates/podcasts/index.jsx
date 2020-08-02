@@ -9,6 +9,7 @@ import {secondToTime} from '../../helpers/time';
 
 import styles from './styles.module.css';
 import EpisodeButton from '../../components/EpisodeButton';
+import {getGitUrl} from '../../helpers/git';
 
 const options = {
   year: 'numeric',
@@ -19,7 +20,7 @@ const options = {
 const Podcast = ({data, location}) => {
   const {state, dispatch} = useContext(StoreContext);
   const {mdx} = data;
-  const {frontmatter, id} = mdx;
+  const {frontmatter, id, fileAbsolutePath} = mdx;
   const {
     title,
     subtitle,
@@ -70,6 +71,18 @@ const Podcast = ({data, location}) => {
         <div className={styles.notes}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </div>
+        <div className={styles.pr}>
+          Si vous voyez une erreur ou une faute sur cette page, vous pouvez
+          ouvrir une PR directement sur le repository github du site.
+          <br /> Le fichier se trouve ici :{' '}
+          <a
+            href={getGitUrl(fileAbsolutePath)}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {getGitUrl(fileAbsolutePath)}
+          </a>
+        </div>
       </div>
     </>
   );
@@ -80,6 +93,7 @@ export default Podcast;
 export const query = graphql`
   query PodcatsQuery($slug: String!) {
     mdx(fields: {slug: {eq: $slug}}) {
+      fileAbsolutePath
       frontmatter {
         title
         subtitle
