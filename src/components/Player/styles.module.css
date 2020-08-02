@@ -1,0 +1,53 @@
+@import '../../assets/variable.css';
+
+.player {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  padding: 0 0.7rem;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+
+  @mixin medium {
+    padding: 0 2rem;
+  }
+
+  audio {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  > div:last-child {
+    margin-top: 0;
+  }
+}
+
+.episode_infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin: 0;
+  font-family: var(--fontFamilyTitle);
+
+  @mixin small {
+    font-size: 1.2rem;
+  }
+}
+
+.episode_title {
+  a {
+    color: var(--textColor);
+    text-decoration: none;
+  }
+
+  span:first-child {
+    letter-spacing: -0.3rem;
+  }
+  span:nth-child(2) {
+    color: var(--accentColor);
+    margin-right: 1rem;
+  }
+}

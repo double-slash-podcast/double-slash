@@ -2,6 +2,7 @@ import React from 'react';
 import {WrapRootElement} from '../mdx';
 import Header from '../Header';
 import Footer from '../Footer';
+import Player from '../Player';
 import SEO from '../Seo';
 
 import './global.css';
@@ -18,6 +19,7 @@ const Layout = ({children}) => {
           </div>
         </div>
         <Footer />
+        <Player />
       </WrapRootElement>
     </>
   );
