@@ -16,6 +16,14 @@ a {
   color: var(--accentColor);
 }
 
+a:focus,
+button:focus {
+  border-color: #eee;
+  border-style: dotted;
+  outline-color: #eee;
+  border-width: thin;
+}
+
 /** player **/
 .plyr {
   border-radius: 4px;
