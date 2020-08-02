@@ -2,6 +2,9 @@
 import React, {useContext} from 'react';
 import {Link} from 'gatsby';
 import {StoreContext} from '../../store';
+import {secondToTime} from '../../helpers/time';
+import Pause from '../Pause';
+import Play from '../Play';
 
 import styles from './styles.module.css';
 
@@ -12,12 +15,25 @@ const options = {
 };
 
 const Episode = ({node}) => {
-  const {dispatch} = useContext(StoreContext);
-
+  const {state, dispatch} = useContext(StoreContext);
   const {frontmatter, excerpt, fields, id} = node;
-  const {title, episodeNumber, publicationDate} = frontmatter;
+  const {title, episodeNumber, duration, publicationDate} = frontmatter;
   const d = new Date(publicationDate);
+  const isOnAir = state.current ? id === state.current.node.id : false;
+  const {playerStatus} = state;
   const {slug} = fields;
+
+  const setEpisode = () => {
+    dispatch({
+      type: 'setCurrent',
+      payload: id,
+    });
+    if (state.player && state.playerStatus === 'PLAY') {
+      state.player.pause();
+    } else if (state.player && state.playerStatus === 'PAUSE') {
+      state.player.play();
+    }
+  };
   return (
     <div className={styles.episode} key={id}>
       <div className={styles.header}>
@@ -42,15 +58,15 @@ const Episode = ({node}) => {
       </div>
       <div className={styles.player}>
         <button
-          onClick={() =>
-            dispatch({
-              type: 'setCurrent',
-              payload: id,
-            })
-          }
+          className={`${styles.button_play} ${
+            playerStatus === 'PLAY' ? styles.PLAY : styles.PAUSE
+          }`}
+          onClick={setEpisode}
+          aria-label="Ecouter le podcast"
         >
-          Ecouter le podcast
+          {isOnAir && playerStatus === 'PLAY' ? <Pause /> : <Play />}
         </button>
+        <span>{`Épisode "${title}". Durée : ${secondToTime(duration)}`}</span>
       </div>
     </div>
   );

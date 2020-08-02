@@ -35,12 +35,18 @@
 }
 
 .player {
+  display: flex;
+  align-items: center;
   margin: 1rem 0;
   padding: 1rem;
 
   @mixin small {
     margin: 2rem 0;
     padding: 1rem 2rem;
+  }
+
+  span {
+    margin: 1rem;
   }
 }
 
@@ -51,4 +57,25 @@
   max-width: 100vw;
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+
+.button_play {
+  @mixin cleanButton;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.PLAY {
+  path {
+    fill: #777;
+  }
+}
+
+.PAUSE {
+  path {
+    fill: #1db954;
+  }
 }

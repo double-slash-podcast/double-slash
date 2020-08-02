@@ -1,4 +1,5 @@
-import React, {useEffect, useRef, useContext} from 'react';
+/* eslint jsx-a11y/media-has-caption:0 */
+import React, {useLayoutEffect, useRef, useContext} from 'react';
 import Loader from '../Loader';
 import {StoreContext} from '../../store';
 import {Link} from 'gatsby';
@@ -12,14 +13,12 @@ const options = {
 };
 
 const Player = () => {
-  const {state} = useContext(StoreContext);
+  const {state, dispatch} = useContext(StoreContext);
   const player = useRef(null);
   const instance = useRef(null);
-  // load player only if has visible
-  // const [playerHidden, setPlayerHidden] = useState(true);
-  useEffect(() => {
-    if (window.Plyr && state) {
-      const {current} = state;
+  const {current} = state;
+  useLayoutEffect(() => {
+    if (window.Plyr && current) {
       const source = {
         type: 'audio',
         title: current.node.frontmatter.title,
@@ -33,15 +32,28 @@ const Player = () => {
       if (instance.current !== null) {
         instance.current.source = source;
         instance.current.restart();
+        // play only after user action
+        instance.current.play();
       } else {
         instance.current = new window.Plyr(player.current, {
           // debug: true,
         });
         instance.current.source = source;
+        // set player in store :)
+        dispatch({type: 'setPlayer', payload: instance.current});
+        // listen status player for store state status
+        instance.current.on('ready', event => {
+          // attach event on play
+          instance.current.on('playing', event => {
+            dispatch({type: 'setPlayerStatus', payload: 'PLAY'});
+          });
+          instance.current.on('pause', event => {
+            dispatch({type: 'setPlayerStatus', payload: 'PAUSE'});
+          });
+        });
       }
     }
-  }, [state]);
-  console.log(state);
+  }, [current, dispatch]);
 
   if (!state.current) {
     return (

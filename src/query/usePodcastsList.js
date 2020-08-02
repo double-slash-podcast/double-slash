@@ -23,6 +23,7 @@ export const usePodcastsList = () =>
             frontmatter {
               title
               subtitle
+              duration
               url
               season
               episodeNumber

@@ -2,6 +2,8 @@ import React, {createContext, useReducer, useEffect} from 'react';
 import {usePodcastsList} from '../query/usePodcastsList';
 
 export const initialState = {
+  player: null,
+  playerStatus: 'PAUSE',
   current: null,
   podcasts: [],
   podcastEnter: null,
@@ -12,8 +14,12 @@ export const StoreContext = createContext(initialState);
 
 const reducer = (state, action) => {
   switch ((state, action.type)) {
+    case 'setPlayer':
+      return {...state, ...{player: action.payload}};
     case 'setPodcastEnter':
       return {...state, ...{podcastEnter: action.payload}};
+    case 'setPlayerStatus':
+      return {...state, ...{playerStatus: action.payload}};
     case 'setPodcasts':
       return {...state, ...{podcasts: action.payload}};
     case 'initCurrent':
@@ -42,8 +48,6 @@ const StoreProvider = ({children}) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   // update state
   useEffect(() => {
-    console.log(podcastEpisodes);
-
     if (podcastEpisodes) {
       dispatch({type: 'setPodcasts', payload: podcastEpisodes.edges});
       dispatch({
