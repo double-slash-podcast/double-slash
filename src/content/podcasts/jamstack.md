@@ -48,5 +48,3 @@ Outils pour développer un site statique :
 Entre temps, Gatsby a annoncé l'incremental builds :
 
 [https://www.gatsbyjs.com/docs/incremental-builds/](https://www.gatsbyjs.com/docs/incremental-builds/)
-
-[test](/)

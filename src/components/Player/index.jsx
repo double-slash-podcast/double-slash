@@ -62,7 +62,8 @@ const Player = () => {
       </div>
     );
   }
-  const {frontmatter, slug} = state.current.node;
+  const {frontmatter} = state.current.node;
+  const {slug} = state.current.node.fields;
   const d = new Date(frontmatter.publicationDate);
   return (
     <div className={styles.player}>
