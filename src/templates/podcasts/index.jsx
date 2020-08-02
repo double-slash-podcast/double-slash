@@ -5,11 +5,10 @@ import {graphql} from 'gatsby';
 import SEO from '../../components/Seo';
 import BreadCrumb from '../../components/Breadcrumb';
 import {StoreContext} from '../../store';
-import Pause from '../../components/Pause';
-import Play from '../../components/Play';
 import {secondToTime} from '../../helpers/time';
 
 import styles from './styles.module.css';
+import EpisodeButton from '../../components/EpisodeButton';
 
 const options = {
   year: 'numeric',
@@ -28,8 +27,6 @@ const Podcast = ({data, location}) => {
     duration,
     publicationDate,
   } = frontmatter;
-  const isOnAir = state.current ? id === state.current.node.id : false;
-  const {playerStatus} = state;
   const d = new Date(publicationDate);
 
   useEffect(() => {
@@ -41,17 +38,6 @@ const Podcast = ({data, location}) => {
     }
   }, [id, state, dispatch]);
 
-  const setEpisode = () => {
-    dispatch({
-      type: 'setCurrent',
-      payload: id,
-    });
-    if (state.player && state.playerStatus === 'PLAY') {
-      state.player.pause();
-    } else if (state.player && state.playerStatus === 'PAUSE') {
-      state.player.play();
-    }
-  };
   return (
     <>
       <SEO
@@ -74,16 +60,12 @@ const Podcast = ({data, location}) => {
           <strong>{d.toLocaleDateString('fr-FR', options)}</strong>
         </div>
         <div className={styles.player}>
-          <button
-            className={`${styles.button_play} ${
-              playerStatus === 'PLAY' ? styles.PLAY : styles.PAUSE
-            }`}
-            onClick={setEpisode}
-            aria-label="Écouter le podcast"
-          >
-            {isOnAir && playerStatus === 'PLAY' ? <Pause /> : <Play />}
-          </button>
-          <span>{`Épisode "${title}". Durée : ${secondToTime(duration)}`}</span>
+          <EpisodeButton id={id} />
+          <span>
+            {`Épisode "${title}"`}
+            <br />
+            {`Durée : ${secondToTime(duration)}`}
+          </span>
         </div>
         <div className={styles.notes}>
           <MDXRenderer>{mdx.body}</MDXRenderer>

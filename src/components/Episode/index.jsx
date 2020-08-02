@@ -1,10 +1,8 @@
 /* eslint "jsx-a11y/media-has-caption": 0 */
-import React, {useContext} from 'react';
+import React from 'react';
 import {Link} from 'gatsby';
-import {StoreContext} from '../../store';
 import {secondToTime} from '../../helpers/time';
-import Pause from '../Pause';
-import Play from '../Play';
+import EpisodeButton from '../EpisodeButton';
 
 import styles from './styles.module.css';
 
@@ -15,25 +13,11 @@ const options = {
 };
 
 const Episode = ({node}) => {
-  const {state, dispatch} = useContext(StoreContext);
   const {frontmatter, excerpt, fields, id} = node;
   const {title, episodeNumber, duration, publicationDate} = frontmatter;
   const d = new Date(publicationDate);
-  const isOnAir = state.current ? id === state.current.node.id : false;
-  const {playerStatus} = state;
   const {slug} = fields;
 
-  const setEpisode = () => {
-    dispatch({
-      type: 'setCurrent',
-      payload: id,
-    });
-    if (state.player && state.playerStatus === 'PLAY') {
-      state.player.pause();
-    } else if (state.player && state.playerStatus === 'PAUSE') {
-      state.player.play();
-    }
-  };
   return (
     <div className={styles.episode} key={id}>
       <div className={styles.header}>
@@ -57,16 +41,12 @@ const Episode = ({node}) => {
         </Link>
       </div>
       <div className={styles.player}>
-        <button
-          className={`${styles.button_play} ${
-            playerStatus === 'PLAY' ? styles.PLAY : styles.PAUSE
-          }`}
-          onClick={setEpisode}
-          aria-label="Ecouter le podcast"
-        >
-          {isOnAir && playerStatus === 'PLAY' ? <Pause /> : <Play />}
-        </button>
-        <span>{`Épisode "${title}". Durée : ${secondToTime(duration)}`}</span>
+        <EpisodeButton id={id} />
+        <span>
+          {`Épisode "${title}"`}
+          <br />
+          {`Durée : ${secondToTime(duration)}`}
+        </span>
       </div>
     </div>
   );

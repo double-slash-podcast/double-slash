@@ -20,22 +20,19 @@ Comment la JAMStack fonctionne, quelle est la différence avec les sites dynamiq
 
 [https://jamstack.org/](https://jamstack.org/)
 
+Podcast présenté par :
 
-Podcast présenté par :  
-- Alexandre Duval [https://twitter.com/xlanex6](https://twitter.com/xlanex6)	
+- Alexandre Duval [https://twitter.com/xlanex6](https://twitter.com/xlanex6)
 - Patrick Faramaz [https://twitter.com/PatrickFaramaz](https://twitter.com/PatrickFaramaz)
-
 
 Service d'hébergement JAMStack:
 
-[Netlify](https://www.netlify.com/)  
+[Netlify](https://www.netlify.com/)
 [Vercel(now)](https://vercel.com/)
-
 
 Liste de liens vers les services autour de la JAMStack :
 
 - [https://github.com/automata/awesome-jamstack](https://github.com/automata/awesome-jamstack)
-
 
 Outils pour développer un site statique :
 
@@ -44,12 +41,12 @@ Outils pour développer un site statique :
 - Pure HTML : [https://www.11ty.dev/](https://www.11ty.dev/)
 - GO : [https://gohugo.io/](https://gohugo.io/)
 
-
 Événement autour de la JAMStack
 
 - [https://jamstackconf.com/](https://jamstackconf.com/)
 
-
-Entre temps, Gatsby a annoncé l'incremental builds : 
+Entre temps, Gatsby a annoncé l'incremental builds :
 
 [https://www.gatsbyjs.com/docs/incremental-builds/](https://www.gatsbyjs.com/docs/incremental-builds/)
+
+[test](/)
