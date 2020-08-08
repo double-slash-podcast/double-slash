@@ -35,12 +35,18 @@
 }
 
 .player {
+  display: flex;
+  align-items: center;
   margin: 1rem 0;
   padding: 1rem;
 
   @mixin small {
     margin: 2rem 0;
     padding: 1rem 2rem;
+  }
+
+  span {
+    margin: 1rem;
   }
 }
 
@@ -51,4 +57,10 @@
   max-width: 100vw;
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+
+.pr {
+  font-size: 0.9rem;
+  color: #999;
+  padding: 1rem;
 }
