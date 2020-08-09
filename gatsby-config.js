@@ -91,6 +91,7 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         defaultLang: 'fr',
+        keepCookies: ['theme'],
       },
     },
     {
