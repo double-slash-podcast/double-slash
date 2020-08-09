@@ -1,5 +1,5 @@
 .page {
   padding: 2rem;
-  background-color: #fff;
+  background-color: var(--bgMain);
   min-height: 300px;
 }

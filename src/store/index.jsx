@@ -1,4 +1,5 @@
 import React, {createContext, useReducer, useEffect} from 'react';
+import Cookies from 'js-cookie';
 import {usePodcastsList} from '../query/usePodcastsList';
 
 export const initialState = {
@@ -7,6 +8,7 @@ export const initialState = {
   current: null,
   podcasts: [],
   podcastEnter: null,
+  theme: '',
 };
 
 // create context for dispatch
@@ -14,6 +16,9 @@ export const StoreContext = createContext(initialState);
 
 const reducer = (state, action) => {
   switch ((state, action.type)) {
+    case 'setTheme':
+      Cookies.set('theme', action.payload);
+      return {...state, ...{theme: action.payload}};
     case 'setPlayer':
       return {...state, ...{player: action.payload}};
     case 'setPodcastEnter':
@@ -56,6 +61,17 @@ const StoreProvider = ({children}) => {
       });
     }
   }, [podcastEpisodes]);
+
+  // init theme
+  useEffect(() => {
+    const theme = Cookies.get('theme');
+    const userPrefersDark =
+      window.matchMedia &&
+      window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if ((userPrefersDark && theme === undefined) || theme === 'dark') {
+      dispatch({type: 'setTheme', payload: 'dark'});
+    }
+  }, []);
 
   return (
     <StoreContext.Provider value={{state, dispatch}}>

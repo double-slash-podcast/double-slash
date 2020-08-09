@@ -11,12 +11,12 @@
 
 .PLAY {
   path {
-    fill: var(--brandColor);
+    fill: var(--playBtn);
   }
 }
 
 .PAUSE {
   path {
-    fill: var(--accentColor);
+    fill: var(--pauseBtn);
   }
 }

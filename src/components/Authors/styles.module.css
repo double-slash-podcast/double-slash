@@ -28,11 +28,12 @@
   strong {
     font-size: 1.51rem;
     font-family: var(--fontFamilyTitle);
+    color: var(--textColor);
   }
 
   a {
     font-size: 1rem;
-    color: #b5b5b5;
+    color: var(--authorLinkColor);
   }
 }
 

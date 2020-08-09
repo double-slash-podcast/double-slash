@@ -57,7 +57,7 @@
   font-size: 1rem;
   line-height: 1rem;
   margin-bottom: 0.1rem;
-  color: var(----headerColor);
+  color: var(--headerColor);
 
   @mixin small {
     grid-column: 1;
@@ -82,6 +82,7 @@
   grid-column: 2;
   grid-row: 1/2;
   font-family: var(--fontFamilyTitle);
+  color: var(--headerColor);
   font-size: 19rem;
   line-height: 14.5rem;
   letter-spacing: -4.7rem;

@@ -1,7 +1,7 @@
 @import '../../assets/variable.css';
 
 .episode {
-  background-color: #fff;
+  background-color: var(--bgMain);
   padding: 1rem;
 }
 
@@ -25,7 +25,7 @@
 
 .episode_info {
   font-size: 0.9rem;
-  color: #777;
+  color: var(--textEpisode);
   margin: 1rem 1.2rem 0 0;
 
   strong {
