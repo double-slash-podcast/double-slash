@@ -21,7 +21,7 @@ exports.onRenderBody = ({setPostBodyComponents}, pluginOptions = {}) => {
     },
     ..._options.options,
   };
-
+  console.log(_gdpr_options);
   const components = [
     // insert script
     <script

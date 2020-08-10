@@ -2,6 +2,10 @@ import React, {createContext, useReducer, useEffect} from 'react';
 import Cookies from 'js-cookie';
 import {usePodcastsList} from '../query/usePodcastsList';
 
+const userPrefersDark = () =>
+  window.matchMedia &&
+  window.matchMedia('(prefers-color-scheme: dark)').matches;
+
 export const initialState = {
   player: null,
   playerStatus: 'PAUSE',
@@ -17,7 +21,6 @@ export const StoreContext = createContext(initialState);
 const reducer = (state, action) => {
   switch ((state, action.type)) {
     case 'setTheme':
-      Cookies.set('theme', action.payload);
       return {...state, ...{theme: action.payload}};
     case 'setPlayer':
       return {...state, ...{player: action.payload}};
@@ -51,6 +54,7 @@ const reducer = (state, action) => {
 const StoreProvider = ({children}) => {
   const {podcastEpisodes} = usePodcastsList();
   const [state, dispatch] = useReducer(reducer, initialState);
+  const {theme} = state;
   // update state
   useEffect(() => {
     if (podcastEpisodes) {
@@ -62,15 +66,25 @@ const StoreProvider = ({children}) => {
     }
   }, [podcastEpisodes]);
 
-  // init theme
+  // init theme with prefere-color-sheme or cookie
   useEffect(() => {
-    const theme = Cookies.get('theme');
-    const userPrefersDark =
-      window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches;
-    if ((userPrefersDark && theme === undefined) || theme === 'dark') {
+    const _theme = Cookies.get('theme');
+    if (userPrefersDark() || _theme === 'dark') {
       dispatch({type: 'setTheme', payload: 'dark'});
     }
+  }, []);
+
+  // save theme on change
+  useEffect(() => {
+    Cookies.set('theme', theme);
+  }, [theme]);
+
+  // listen change prefers-color-scheme
+  useEffect(() => {
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(() => {
+      console.log('change');
+      dispatch({type: 'setTheme', payload: userPrefersDark() ? 'dark' : ''});
+    });
   }, []);
 
   return (
