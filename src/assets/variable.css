@@ -10,10 +10,42 @@
     Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
   --bgColor: #ffd800;
   --bgMain: #f6f4f8;
+  --bgEpisodeList: #fff;
+  --authorLinkColor: #777;
+  --linkEpisode: #b5b5b5;
+  --textEpisode: #777;
   --textColor: #5a5a5a;
   --headerColor: #5a5a5a;
+  --footerColor: #5a5a5a;
   --accentColor: #a700ff;
   --linkColor: #a700ff;
   --brandColor: rgba(255, 217, 0, 1);
+  --playerShadowColor: rgba(0, 0, 0, 0.1);
   --plyr-color-main: #a700ff;
+  --playBtn: #ffd800;
+  --pauseBtn: #a700ff;
+  --sunIconColor: rgb(232, 155, 12);
+  --moonIconColor: #777;
+}
+
+[data-theme='dark'] {
+  --bgColor: rgb(100, 18, 145);
+  --bgMain: rgb(65, 77, 85);
+  --bgEpisodeList: rgb(61, 63, 65);
+  --headerColor: #e2e0e0;
+  --footerColor: #e2e0e0;
+  --linkEpisode: #e2e0e0;
+  --textEpisode: #f0f0f0;
+  --textColor: #f6f4f8;
+  --accentColor: #ffd800;
+  --linkColor: #ffd800;
+  --authorLinkColor: #d0ced1;
+  --playerShadowColor: rgba(65, 63, 63, 0.5);
+  --plyr-color-main: #a700ff;
+  --plyr-audio-controls-background: rgb(77, 88, 95);
+  --plyr-audio-control-color: #f6f4f8;
+  --playBtn: #a700ff;
+  --pauseBtn: #ffd800;
+  --sunIconColor: gold;
+  --moonIconColor: #fff;
 }

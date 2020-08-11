@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import useSiteMeta from '../../query/useSiteMeta';
 import Button from '../Button';
 
 import styles from './styles.module.css';
 import {Link} from 'gatsby';
+import SwitchMode from '../SwitchMode';
+import {StoreContext} from '../../store';
 
 const Footer = () => {
   const {siteMetadata} = useSiteMeta();
+  const {state, dispatch} = useContext(StoreContext);
+
   return (
     <footer>
       <div className={styles.footer_container}>
@@ -25,6 +29,16 @@ const Footer = () => {
           >
             Préférences des cookies
           </Button>
+          <br />
+          <div>
+            Mode sombre{' '}
+            <SwitchMode
+              defaultState={state.theme === 'dark'}
+              onChange={s => {
+                dispatch({type: 'setTheme', payload: s ? 'dark' : ''});
+              }}
+            />
+          </div>
         </div>
       </div>
     </footer>
