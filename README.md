@@ -1,10 +1,26 @@
+![double-slash.png](double-slash.png)
+
+# Double Slash Podcast Website
+
+Website developed with [Gatsby JS](https://www.gatsbyjs.org/).
+Hosted on [Netlify](https://www.netlify.com/).
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a77f591b-7350-47a5-9864-aaa68996e9bf/deploy-status)](https://app.netlify.com/sites/goofy-mccarthy-79e233/deploys)
 
-### Double Slash Website
+## Libraries used
 
-## RSS for podcast
+- [Preact JS](https://preactjs.com/) / [React JS](https://fr.reactjs.org/) for UI.
+- [plyr](https://plyr.io/) for the player
+- [prismjs](https://prismjs.com/) for the snippets code
+- [postcss](https://postcss.org/) for compile the css
 
-#### Frontmatter example :
+## How to add a new podcast ?
+
+Add a new .md file in src/content/podcasts
+Add in this file, the required informations in the frontmatter.
+Follow the example :
+
+### Frontmatter example :
 
 ```md
 ---
@@ -26,15 +42,19 @@ categories:
 bla bla description
 ```
 
-#### Frontmatter values
+_Specific frontmatter values_
 
-duration: secondes
+duration: in secondes
 
 ## Repository podcast
+
+Informations for all the podcast platforms.
 
 Update values in src/content/repository/data.yml
 
 ## Authors infos
+
+Informations for the authors.
 
 Update values in src/content/authors/
 
