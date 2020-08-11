@@ -42,6 +42,7 @@ const Podcast = ({data, location}) => {
   return (
     <>
       <SEO
+        withSocial
         title={title}
         description={subtitle && subtitle !== '' ? subtitle : mdx.excerpt}
       />

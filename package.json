@@ -36,6 +36,7 @@
     "use-is-in-viewport": "^1.0.9"
   },
   "devDependencies": {
+    "@jlengstorf/get-share-image": "^0.7.1",
     "@mdx-js/mdx": "^1.6.1",
     "@mdx-js/react": "^1.6.1",
     "axios": "^0.19.2",
