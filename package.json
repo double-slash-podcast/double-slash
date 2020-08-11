@@ -1,8 +1,7 @@
 {
   "name": "double-slash",
-  "private": true,
   "description": "Double slash podcast website and RSS Flux",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
