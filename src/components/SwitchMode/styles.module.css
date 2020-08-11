@@ -1,9 +1,28 @@
+.switcher {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 1.5rem;
+    fill: var(--sunIconColor);
+  }
+
+  svg:last-child {
+    position: relative;
+    top: -2px;
+    left: -5px;
+    width: 1.3rem;
+    fill: var(--moonIconColor);
+  }
+}
+
 .container {
   display: inline-flex;
   position: relative;
   align-items: center;
-  height: 25px;
-  margin: 0 8px;
+  height: 1.5rem;
+  margin: 0 0.2rem;
 }
 
 .container > input {

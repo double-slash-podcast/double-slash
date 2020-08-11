@@ -24,6 +24,8 @@
   --plyr-color-main: #a700ff;
   --playBtn: #ffd800;
   --pauseBtn: #a700ff;
+  --sunIconColor: rgb(232, 155, 12);
+  --moonIconColor: #777;
 }
 
 [data-theme='dark'] {
@@ -44,4 +46,6 @@
   --plyr-audio-control-color: #f6f4f8;
   --playBtn: #a700ff;
   --pauseBtn: #ffd800;
+  --sunIconColor: gold;
+  --moonIconColor: #fff;
 }
