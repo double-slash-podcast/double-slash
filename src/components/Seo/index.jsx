@@ -1,22 +1,32 @@
 import React from 'react';
-import {Helmet} from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import useSiteMeta from '../../query/useSiteMeta';
-import {getSocialImage} from '../../helpers/getSocial';
+// import { getSocialImage } from '../../helpers/getSocial';
 
-const SEO = ({description, meta, title, withSocial}) => {
-  const {siteMetadata} = useSiteMeta();
-  const {titleDefault, descriptionDefault, siteName} = siteMetadata;
+
+
+
+
+const SEO = ({ description, meta, title, withSocial, episode }) => {
+  const socialImageParams = {
+    cloudName: 'doubleslash',
+    color: 'a700ff',
+    episode
+  }
+  const socialImageUrl = `https://res.cloudinary.com/${socialImageParams.cloudName}/image/upload/co_rgb:${socialImageParams.color},g_east,l_text:mono.otf_120_letter_spacing_-5:%23${socialImageParams.episode},x_54/co_rgb:${socialImageParams.color},g_east,l_text:mono.otf_120_letter_spacing_-5:${title},x_54,y_150/v1597238012/FACEBOOK_-_OG_Card_RAW_eu5xdv.png`
+  const { siteMetadata } = useSiteMeta();
+  const { titleDefault, descriptionDefault, siteName } = siteMetadata;
   const _lang = 'fr';
   const _meta = [];
 
   // generate social image
-  if (withSocial === true) {
-    const twitter = getSocialImage({
-      title: title || titleDefault,
-      size: 'twitter',
-    });
-    _meta.push({name: 'twitter:image', content: twitter});
-  }
+  // if (withSocial === true) {
+  //   const twitter = getSocialImage({
+  //     title: title || titleDefault,
+  //     size: 'twitter',
+  //   });
+  //   _meta.push({ name: 'twitter:image', content: twitter });
+  // }
 
   return (
     <Helmet
@@ -31,6 +41,10 @@ const SEO = ({description, meta, title, withSocial}) => {
             content: description || descriptionDefault,
           },
           {
+            name: `image`,
+            content: socialImageUrl,
+          },
+          {
             property: `og:title`,
             content: title || titleDefault,
           },
@@ -39,12 +53,20 @@ const SEO = ({description, meta, title, withSocial}) => {
             content: description || descriptionDefault,
           },
           {
+            property: `og:image`,
+            content: socialImageUrl,
+          },
+          {
             property: `og:type`,
             content: `website`,
           },
           {
             name: `twitter:card`,
             content: `summary`,
+          },
+          {
+            property: `twitter:image`,
+            content: socialImageUrl,
           },
           // {
           //   name: `twitter:creator`,
