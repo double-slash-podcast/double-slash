@@ -10,8 +10,6 @@ import { secondToTime } from '../../helpers/time';
 import styles from './styles.module.css';
 import EpisodeButton from '../../components/EpisodeButton';
 import { getGitUrl } from '../../helpers/git';
-// should be optimize
-import encoding from 'encoding'
 
 const options = {
   year: 'numeric',
@@ -41,7 +39,7 @@ const Podcast = ({ data, location }) => {
     }
   }, [id, state, dispatch]);
 
-  const encodedTitle = encoding.convert(title, 'UTF-8')
+  const encodedTitle = encodeURI(title)
 
   const episodeSocialImageUrl = `https://res.cloudinary.com/doubleslash/image/upload/co_rgb:a700ff,g_east,l_text:mono.otf_120_letter_spacing_-5:%23${episodeNumber},x_54/co_rgb:a700ff,g_east,l_text:mono.otf_120_letter_spacing_-5:${encodedTitle},x_54,y_150,w_1000/v1597238012/FACEBOOK_-_OG_Card_RAW_eu5xdv.png`
 
