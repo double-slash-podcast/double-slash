@@ -1,26 +1,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import useSiteMeta from '../../query/useSiteMeta';
-// import { getSocialImage } from '../../helpers/getSocial';
 
-
-
-
-
-const SEO = ({ description, meta, title, withSocial, image }) => {
+const SEO = ({ description, meta, title, image }) => {
   const { siteMetadata } = useSiteMeta();
   const { titleDefault, descriptionDefault, siteName, imageDefault } = siteMetadata;
   const _lang = 'fr';
   const _meta = [];
-
-  // generate social image
-  // if (withSocial === true) {
-  //   const twitter = getSocialImage({
-  //     title: title || titleDefault,
-  //     size: 'twitter',
-  //   });
-  //   _meta.push({ name: 'twitter:image', content: socialImageUrl });
-  // }
 
   return (
     <Helmet
