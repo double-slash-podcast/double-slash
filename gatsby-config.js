@@ -5,8 +5,8 @@ module.exports = {
     siteUrl: `https://slash-podcast.fr`,
     siteName: 'Double Slash Podcast',
     titleDefault: 'Double Slash',
-    descriptionDefault:
-      'Le podcast sur le code, le développement web et les outils modernes.',
+    imageDefault: 'https://res.cloudinary.com/doubleslash/image/upload/v1597260128/doubleSlashDefault_kyl8s9.png',
+    descriptionDefault: 'Le podcast sur le code, le développement web et les outils modernes.',
   },
   /* Your site config here */
   plugins: [
@@ -74,8 +74,7 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
-        gatsbyRemarkPlugins: [
-          {
+        gatsbyRemarkPlugins: [{
             resolve: `gatsby-remark-prismjs`,
           },
           {
