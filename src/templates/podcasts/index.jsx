@@ -92,7 +92,7 @@ const Podcast = ({data, location}) => {
 export default Podcast;
 
 export const query = graphql`
-  query PodcatsQuery($slug: String!) {
+  query PodcastQuery($slug: String!) {
     mdx(fields: {slug: {eq: $slug}}) {
       fileAbsolutePath
       frontmatter {

@@ -27,8 +27,11 @@ button:focus {
 /** player **/
 .plyr {
   border-radius: 4px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   margin: 16px auto;
+  .plyr__controls__item:first-child {
+    margin-right: 20px;
+    transform: scale(1.5);
+  }
 }
 
 /** prismjs **/

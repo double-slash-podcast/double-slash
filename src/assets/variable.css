@@ -20,6 +20,7 @@
   --accentColor: #a700ff;
   --linkColor: #a700ff;
   --brandColor: rgba(255, 217, 0, 1);
+  --plyr-audio-controls-background: var(--bgMain);
   --playerShadowColor: rgba(0, 0, 0, 0.1);
   --plyr-color-main: #a700ff;
   --playBtn: #ffd800;
@@ -42,7 +43,7 @@
   --authorLinkColor: #d0ced1;
   --playerShadowColor: rgba(65, 63, 63, 0.5);
   --plyr-color-main: #a700ff;
-  --plyr-audio-controls-background: rgb(77, 88, 95);
+  --plyr-audio-controls-background: var(--bgMain);
   --plyr-audio-control-color: #f6f4f8;
   --playBtn: #a700ff;
   --pauseBtn: #ffd800;

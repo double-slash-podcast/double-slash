@@ -82,7 +82,7 @@ exports.createPages = async attr => {
 
   const result = await graphql(`
     query {
-      products: allMdx(
+      podcasts: allMdx(
         filter: {
           frontmatter: {active: {ne: false}}
           fileAbsolutePath: {regex: "/(/podcasts/)/"}
@@ -112,7 +112,7 @@ exports.createPages = async attr => {
       }
     }
   `);
-  result.data.products.edges.forEach(({node}) => {
+  result.data.podcasts.edges.forEach(({node}) => {
     // create page for product
     actions.createPage({
       path: node.fields.slug,
