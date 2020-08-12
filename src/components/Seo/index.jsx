@@ -7,15 +7,9 @@ import useSiteMeta from '../../query/useSiteMeta';
 
 
 
-const SEO = ({ description, meta, title, withSocial, episode }) => {
-  const socialImageParams = {
-    cloudName: 'doubleslash',
-    color: 'a700ff',
-    episode
-  }
-  const socialImageUrl = `https://res.cloudinary.com/${socialImageParams.cloudName}/image/upload/co_rgb:${socialImageParams.color},g_east,l_text:mono.otf_120_letter_spacing_-5:%23${socialImageParams.episode},x_54/co_rgb:${socialImageParams.color},g_east,l_text:mono.otf_120_letter_spacing_-5:${title},x_54,y_150/v1597238012/FACEBOOK_-_OG_Card_RAW_eu5xdv.png`
+const SEO = ({ description, meta, title, withSocial, image }) => {
   const { siteMetadata } = useSiteMeta();
-  const { titleDefault, descriptionDefault, siteName } = siteMetadata;
+  const { titleDefault, descriptionDefault, siteName, imageDefault } = siteMetadata;
   const _lang = 'fr';
   const _meta = [];
 
@@ -25,7 +19,7 @@ const SEO = ({ description, meta, title, withSocial, episode }) => {
   //     title: title || titleDefault,
   //     size: 'twitter',
   //   });
-  //   _meta.push({ name: 'twitter:image', content: twitter });
+  //   _meta.push({ name: 'twitter:image', content: socialImageUrl });
   // }
 
   return (
@@ -41,20 +35,12 @@ const SEO = ({ description, meta, title, withSocial, episode }) => {
             content: description || descriptionDefault,
           },
           {
-            name: `image`,
-            content: socialImageUrl,
-          },
-          {
             property: `og:title`,
             content: title || titleDefault,
           },
           {
             property: `og:description`,
             content: description || descriptionDefault,
-          },
-          {
-            property: `og:image`,
-            content: socialImageUrl,
           },
           {
             property: `og:type`,
@@ -65,8 +51,16 @@ const SEO = ({ description, meta, title, withSocial, episode }) => {
             content: `summary`,
           },
           {
+            name: `image`,
+            content: image || imageDefault,
+          },
+          {
+            property: `og:image`,
+            content: image || imageDefault,
+          },
+          {
             property: `twitter:image`,
-            content: socialImageUrl,
+            content: image || imageDefault,
           },
           // {
           //   name: `twitter:creator`,
