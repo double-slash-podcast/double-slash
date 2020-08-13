@@ -1,11 +1,13 @@
 import React from 'react';
-import {Helmet} from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import useSiteMeta from '../../query/useSiteMeta';
 
-const SEO = ({description, meta, title}) => {
-  const {siteMetadata} = useSiteMeta();
-  const {titleDefault, descriptionDefault, siteName} = siteMetadata;
+const SEO = ({ description, meta, title, image }) => {
+  const { siteMetadata } = useSiteMeta();
+  const { titleDefault, descriptionDefault, siteName, imageDefault } = siteMetadata;
   const _lang = 'fr';
+  const _meta = [];
+
   return (
     <Helmet
       htmlAttributes={{
@@ -13,38 +15,53 @@ const SEO = ({description, meta, title}) => {
       }}
       title={`${title || titleDefault} | ${siteName}`}
       meta={[
-        {
-          name: `description`,
-          content: description || descriptionDefault,
-        },
-        {
-          property: `og:title`,
-          content: title || titleDefault,
-        },
-        {
-          property: `og:description`,
-          content: description || descriptionDefault,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        // {
-        //   name: `twitter:creator`,
-        //   content: author,
-        // },
-        {
-          name: `twitter:title`,
-          content: title || titleDefault,
-        },
-        {
-          name: `twitter:description`,
-          content: description || descriptionDefault,
-        },
+        ...[
+          {
+            name: `description`,
+            content: description || descriptionDefault,
+          },
+          {
+            property: `og:title`,
+            content: title || titleDefault,
+          },
+          {
+            property: `og:description`,
+            content: description || descriptionDefault,
+          },
+          {
+            property: `og:type`,
+            content: `website`,
+          },
+          {
+            name: `twitter:card`,
+            content: `summary_large_image`,
+          },
+          {
+            name: `image`,
+            content: image || imageDefault,
+          },
+          {
+            property: `og:image`,
+            content: image || imageDefault,
+          },
+          {
+            property: `twitter:image`,
+            content: image || imageDefault,
+          },
+          // {
+          //   name: `twitter:creator`,
+          //   content: author,
+          // },
+          {
+            name: `twitter:title`,
+            content: title || titleDefault,
+          },
+          {
+            name: `twitter:description`,
+            content: description || descriptionDefault,
+          },
+        ],
+        ..._meta,
       ].concat(meta)}
     ></Helmet>
   );
@@ -59,6 +76,7 @@ const SEO = ({description, meta, title}) => {
 SEO.defaultProps = {
   meta: [],
   description: ``,
+  withSocial: false,
 };
 
 export default SEO;

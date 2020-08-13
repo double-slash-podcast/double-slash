@@ -10,11 +10,11 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "preload-fonts": "gatsby-preload-fonts",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "jest"
   },
   "dependencies": {
     "gatsby": "^2.22.1",
-    "gatsby-cli": "^2.12.34",
+    "gatsby-cli": "^2.12.85",
     "gatsby-plugin-manifest": "^2.4.14",
     "gatsby-plugin-offline": "^3.2.13",
     "gatsby-plugin-preact": "^4.0.5",
@@ -36,6 +36,7 @@
     "use-is-in-viewport": "^1.0.9"
   },
   "devDependencies": {
+    "@jlengstorf/get-share-image": "^0.7.1",
     "@mdx-js/mdx": "^1.6.1",
     "@mdx-js/react": "^1.6.1",
     "axios": "^0.19.2",
@@ -52,6 +53,7 @@
     "gatsby-transformer-remark": "^2.8.13",
     "gatsby-transformer-sharp": "^2.5.2",
     "gatsby-transformer-yaml": "^2.4.1",
+    "jest": "^26.4.0",
     "postcss-import": "^12.0.1",
     "postcss-mixins": "^6.2.3",
     "postcss-preset-env": "^6.7.0",
@@ -60,5 +62,21 @@
     "prettier": "2.0.5",
     "rss": "^1.2.2",
     "slugify": "^1.4.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "<rootDir>/jest/jest-preprocess.js"
+    },
+    "moduleNameMapper": {
+      ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
+      ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/file-mock.js"
+    },
+    "testPathIgnorePatterns": ["node_modules", "\\.cache", "<rootDir>.*/public"],
+    "transformIgnorePatterns": ["node_modules/(?!(gatsby)/)"],
+    "globals": {
+      "__PATH_PREFIX__": ""
+    },
+    "testURL": "http://localhost",
+    "setupFiles": ["<rootDir>/jest/loadershim.js"]
   }
 }

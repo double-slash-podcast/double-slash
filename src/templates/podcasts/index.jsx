@@ -4,18 +4,25 @@ import {MDXRenderer} from 'gatsby-plugin-mdx';
 import {graphql} from 'gatsby';
 import SEO from '../../components/Seo';
 import BreadCrumb from '../../components/Breadcrumb';
+import EpisodeButton from '../../components/EpisodeButton';
 import {StoreContext} from '../../store';
 import {secondToTime} from '../../helpers/time';
+import {getGitUrl} from '../../helpers/git';
+import {cleanAndEncodeURI} from '../../helpers/cleanURI';
 
 import styles from './styles.module.css';
-import EpisodeButton from '../../components/EpisodeButton';
-import {getGitUrl} from '../../helpers/git';
 
 const options = {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
 };
+
+// create url for image share
+const getImgURL = ({episodeNumber, title}) =>
+  `https://res.cloudinary.com/doubleslash/image/upload/co_rgb:a700ff,g_east,l_text:mono.otf_120_letter_spacing_-5:%23${episodeNumber},x_54/co_rgb:a700ff,g_east,l_text:mono.otf_120_letter_spacing_-5:${cleanAndEncodeURI(
+    title,
+  )},x_54,y_150,w_1000/v1597238012/FACEBOOK_-_OG_Card_RAW_eu5xdv.png`;
 
 const Podcast = ({data, location}) => {
   const {state, dispatch} = useContext(StoreContext);
@@ -43,11 +50,11 @@ const Podcast = ({data, location}) => {
     <>
       <SEO
         title={title}
+        image={getImgURL({episodeNumber, title})}
         description={subtitle && subtitle !== '' ? subtitle : mdx.excerpt}
       />
       <div className={styles.episode}>
         <BreadCrumb location={location} title={title} />
-
         <h1 className={styles.title}>
           <span>{'//'}</span>
           <span>{'.'}</span>
@@ -83,6 +90,22 @@ const Podcast = ({data, location}) => {
             {getGitUrl(fileAbsolutePath)}
           </a>
         </div>
+        <div className={styles.image_share}>
+          <a
+            href={getImgURL({episodeNumber, title})}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M2 9.5A3.5 3.5 0 005.5 13H9v2.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 15.586V13h2.5a4.5 4.5 0 10-.616-8.958 4.002 4.002 0 10-7.753 1.977A3.5 3.5 0 002 9.5zm9 3.5H9V8a1 1 0 012 0v5z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>Image pour l'épisode</span>
+          </a>
+        </div>
       </div>
     </>
   );
@@ -91,7 +114,7 @@ const Podcast = ({data, location}) => {
 export default Podcast;
 
 export const query = graphql`
-  query PodcatsQuery($slug: String!) {
+  query PodcastQuery($slug: String!) {
     mdx(fields: {slug: {eq: $slug}}) {
       fileAbsolutePath
       frontmatter {

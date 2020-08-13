@@ -56,16 +56,20 @@ exports.onCreateNode = ({node, getNode, actions}) => {
       _slug = s[1];
     }
 
+    // detect if page is home
     if (isHome === true) {
       _slug = '/';
     }
 
+    // add slug in field
     createNodeField({
       node,
       name: `slug`,
       value: _slug,
     });
   }
+
+  // create type for yaml
   if (node.internal.type === 'DataYaml') {
     const filePath = createFilePath({node, getNode, basePath: `content`});
     const _type = filePath.match(/^\/(.+)\/./);
@@ -82,7 +86,7 @@ exports.createPages = async attr => {
 
   const result = await graphql(`
     query {
-      products: allMdx(
+      podcasts: allMdx(
         filter: {
           frontmatter: {active: {ne: false}}
           fileAbsolutePath: {regex: "/(/podcasts/)/"}
@@ -112,7 +116,7 @@ exports.createPages = async attr => {
       }
     }
   `);
-  result.data.products.edges.forEach(({node}) => {
+  result.data.podcasts.edges.forEach(({node}) => {
     // create page for product
     actions.createPage({
       path: node.fields.slug,
