@@ -64,3 +64,21 @@
   color: #999;
   padding: 1rem;
 }
+
+.image_share {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+  color: #999;
+  padding: 1rem;
+
+  svg {
+    width: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+}

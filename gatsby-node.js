@@ -56,16 +56,20 @@ exports.onCreateNode = ({node, getNode, actions}) => {
       _slug = s[1];
     }
 
+    // detect if page is home
     if (isHome === true) {
       _slug = '/';
     }
 
+    // add slug in field
     createNodeField({
       node,
       name: `slug`,
       value: _slug,
     });
   }
+
+  // create type for yaml
   if (node.internal.type === 'DataYaml') {
     const filePath = createFilePath({node, getNode, basePath: `content`});
     const _type = filePath.match(/^\/(.+)\/./);
