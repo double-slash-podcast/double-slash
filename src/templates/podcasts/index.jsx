@@ -4,18 +4,25 @@ import {MDXRenderer} from 'gatsby-plugin-mdx';
 import {graphql} from 'gatsby';
 import SEO from '../../components/Seo';
 import BreadCrumb from '../../components/Breadcrumb';
+import EpisodeButton from '../../components/EpisodeButton';
 import {StoreContext} from '../../store';
 import {secondToTime} from '../../helpers/time';
+import {getGitUrl} from '../../helpers/git';
+import {cleanAndEncodeURI} from '../../helpers/cleanURI';
 
 import styles from './styles.module.css';
-import EpisodeButton from '../../components/EpisodeButton';
-import {getGitUrl} from '../../helpers/git';
 
 const options = {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
 };
+
+// create url for image share
+const getImgURL = ({episodeNumber, title}) =>
+  `https://res.cloudinary.com/doubleslash/image/upload/co_rgb:a700ff,g_east,l_text:mono.otf_120_letter_spacing_-5:%23${episodeNumber},x_54/co_rgb:a700ff,g_east,l_text:mono.otf_120_letter_spacing_-5:${cleanAndEncodeURI(
+    title,
+  )},x_54,y_150,w_1000/v1597238012/FACEBOOK_-_OG_Card_RAW_eu5xdv.png`;
 
 const Podcast = ({data, location}) => {
   const {state, dispatch} = useContext(StoreContext);
@@ -39,20 +46,15 @@ const Podcast = ({data, location}) => {
     }
   }, [id, state, dispatch]);
 
-  const encodedTitle = encodeURIComponent(title);
-
-  const episodeSocialImageUrl = `https://res.cloudinary.com/doubleslash/image/upload/co_rgb:a700ff,g_east,l_text:mono.otf_120_letter_spacing_-5:%23${episodeNumber},x_54/co_rgb:a700ff,g_east,l_text:mono.otf_120_letter_spacing_-5:${encodedTitle},x_54,y_150,w_1000/v1597238012/FACEBOOK_-_OG_Card_RAW_eu5xdv.png`;
-
   return (
     <>
       <SEO
         title={title}
-        image={episodeSocialImageUrl}
+        image={getImgURL({episodeNumber, title})}
         description={subtitle && subtitle !== '' ? subtitle : mdx.excerpt}
       />
       <div className={styles.episode}>
         <BreadCrumb location={location} title={title} />
-
         <h1 className={styles.title}>
           <span>{'//'}</span>
           <span>{'.'}</span>
