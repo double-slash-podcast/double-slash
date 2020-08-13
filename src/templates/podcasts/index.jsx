@@ -1,15 +1,15 @@
 /* eslint "jsx-a11y/media-has-caption": 0 */
-import React, { useContext, useEffect } from 'react';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
-import { graphql } from 'gatsby';
+import React, {useContext, useEffect} from 'react';
+import {MDXRenderer} from 'gatsby-plugin-mdx';
+import {graphql} from 'gatsby';
 import SEO from '../../components/Seo';
 import BreadCrumb from '../../components/Breadcrumb';
-import { StoreContext } from '../../store';
-import { secondToTime } from '../../helpers/time';
+import {StoreContext} from '../../store';
+import {secondToTime} from '../../helpers/time';
 
 import styles from './styles.module.css';
 import EpisodeButton from '../../components/EpisodeButton';
-import { getGitUrl } from '../../helpers/git';
+import {getGitUrl} from '../../helpers/git';
 
 const options = {
   year: 'numeric',
@@ -17,10 +17,10 @@ const options = {
   day: 'numeric',
 };
 
-const Podcast = ({ data, location }) => {
-  const { state, dispatch } = useContext(StoreContext);
-  const { mdx } = data;
-  const { frontmatter, id, fileAbsolutePath } = mdx;
+const Podcast = ({data, location}) => {
+  const {state, dispatch} = useContext(StoreContext);
+  const {mdx} = data;
+  const {frontmatter, id, fileAbsolutePath} = mdx;
   const {
     title,
     subtitle,
@@ -39,9 +39,9 @@ const Podcast = ({ data, location }) => {
     }
   }, [id, state, dispatch]);
 
-  const encodedTitle = encodeURI(title)
+  const encodedTitle = encodeURIComponent(title);
 
-  const episodeSocialImageUrl = `https://res.cloudinary.com/doubleslash/image/upload/co_rgb:a700ff,g_east,l_text:mono.otf_120_letter_spacing_-5:%23${episodeNumber},x_54/co_rgb:a700ff,g_east,l_text:mono.otf_120_letter_spacing_-5:${encodedTitle},x_54,y_150,w_1000/v1597238012/FACEBOOK_-_OG_Card_RAW_eu5xdv.png`
+  const episodeSocialImageUrl = `https://res.cloudinary.com/doubleslash/image/upload/co_rgb:a700ff,g_east,l_text:mono.otf_120_letter_spacing_-5:%23${episodeNumber},x_54/co_rgb:a700ff,g_east,l_text:mono.otf_120_letter_spacing_-5:${encodedTitle},x_54,y_150,w_1000/v1597238012/FACEBOOK_-_OG_Card_RAW_eu5xdv.png`;
 
   return (
     <>
