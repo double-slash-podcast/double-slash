@@ -24,9 +24,9 @@ const Header = () => {
         <Link to="/" className={styles.header_title}>
           {siteMetadata.titleDefault}
         </Link>
-        <strong className={styles.header_baseline}>
+        <h1 className={styles.header_baseline}>
           {siteMetadata.descriptionDefault}
-        </strong>
+        </h1>
         <div className={styles.logo}>
           <span>{'//'}</span>
           <span>{'.'}</span>

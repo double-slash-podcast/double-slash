@@ -1,0 +1,3 @@
+Sitemap: https://slash-podcast.fr/sitemap.xml
+User-agent: *
+Disallow:
