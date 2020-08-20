@@ -8,7 +8,7 @@ module.exports = {
     imageDefault:
       'https://res.cloudinary.com/doubleslash/image/upload/v1597260128/doubleSlashDefault_kyl8s9.png',
     descriptionDefault:
-      'Le podcast sur le code, le développement web et les outils modernes. SEO, JAMStack, Javascript, Wordpress, Git, Écoconception...',
+      'Le podcast sur le code, le développement web et les outils modernes.',
   },
   /* Your site config here */
   plugins: [
