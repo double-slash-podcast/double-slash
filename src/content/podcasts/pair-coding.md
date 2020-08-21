@@ -18,7 +18,7 @@ Dans cet épisode, nous faisons un retour sur l'utilisation de l'extension Live 
 Nous revenons sur quelques actualités concernant les outils web diffusés durant l'été. Notamment la sortie de WordPress 5.5, les évolutions de Next et Nuxt sur la génération de site statique. Petite découverte également, avec Stormkit, un service d'hébergement équivalent à Netlify.
 
 
-[Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) pour VScode.
+[Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) pour Visual Studio Code.
 
 ## Les news de l'épisode
 
