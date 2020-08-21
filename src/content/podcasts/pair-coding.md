@@ -10,21 +10,47 @@ episodeNumber: 10
 episodeType: full
 explicit: false
 season: 1
-title: Pair Coding & News
-subtitle: Utilisation de l'extansion Live Share sur VSCode pour faire du pair-coding a distance. On parle aussi des actualités de web de cete é†é.
+title: Live Share pour Visual Studio Code et des news
+subtitle: Un retour sur l'utilisation de l'extension Live Share pour Visual Studio Code. Une extension qui permet de faire du pair programming à distance. Nous revenons sur quelques actualités concernant les outils web diffusés durant l'été.
 ---
+
+Dans cet épisode, nous faisons un retour sur l'utilisation de l'extension Live Share pour Visual Studio Code. Une extension qui permet de faire du pair programming à distance. 
+Nous revenons sur quelques actualités concernant les outils web diffusés durant l'été. Notamment la sortie de WordPress 5.5, les évolutions de Next et Nuxt sur la génération de site statique. Petite découverte également, avec Stormkit, un service d'hébergement équivalent à Netlify.
+
 
 [Live Share Extension Pack](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack) pour VScode.
 
-News de l'été
+## Les news de l'épisode
 
-Worpress passe [en version 5.5](https://www.notion.so/doubleslash/10-Pair-Coding-distance-522c3919e47e42edba626a5d67ca3f73#74725703a65a4e6594ced70a3e0180e4)
+### Worpress passe en version 5.5 :
 
-Incremental build pour Nuxt et Next
+- Mise à jour automatique des plugins et des thèmes
+- plan de site XML en natif
+- lazy loading des images
+- Améliorations de gutenberg (A11y)
+- Block Directory. Installer et trouver facilement un bloc pour gutenberg.
 
-Article de blog de [Nuxt 2.14](https://nuxtjs.org/blog/nuxt-static-improvements)  
+En tout, 165 améliorations, 310 correctifs de bugs.
 
-Next [version 9.5](https://nextjs.org/blog/next-9-5#stable-incremental-static-regeneration)
+### Incremental build pour Nuxt et Next :
+
+#### Nuxt
+Avec la version 2.14 sortie fin juillet, la commande ```nuxt generate``` ne lance pas de build webpack si le code n'a pas changé, mais génère juste les nouvelles pages statiques. Un gros gain de vitesse pour générer un site statique.
+
+Article de blog de [Nuxt version 2.14](https://nuxtjs.org/blog/nuxt-static-improvements)
+
+
+#### Next
+
+Next propose également l'Incremental Static Generation. Comme nuxt, il ajoute une page de contenu sans faire un build complet si le code n'a pas changé.
+Mais avec la version 9.5, next propose l'Incremental Static Re-generation.
+Une mise à jour du contenu lors du rendu via un paramètre (revalidate: 1). Plus besoin de regénérer le site. Supporté uniquement par Vercel pour le moment.
+
+[Next version 9.5](https://nextjs.org/blog/next-9-5#stable-incremental-static-regeneration)
+
+#### StormKit
+
+Un service équivalent à Netlify pour déployer vos sites statique ou SPA automatiquement. Par contre, c'est un service européen (Suisse). Ils utilisent AWS avec des serveurs à Francfort.
 
 [Stormkit](https://www.stormkit.io/)
 
