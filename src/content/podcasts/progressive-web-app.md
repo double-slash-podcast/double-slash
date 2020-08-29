@@ -71,7 +71,10 @@ Les blocages de la part de safari :
 - cache capacity 50MB (pas bloquant)
 - Background sync 
 - IOS purge le cache (indexDB, localstorage) et maintenant iOS [purge aussi les cookies](https://tracedock.com/blog/2019/11/29/24hours-cookies-impact/) après un jour ou une semaine selon la version webkit..
-- Navigateurs iOS différents de Safari tourne sous une webview version de Webkit et non pas les fonctionnalités PWA (ex: impossible d'ajouter la PWA à l'écran d'accueil via iOS chrome ou d'utiliser les SW)
+
+**Note spécifique sur IOS :**
+Apple interdit de développer un navigateur pour IOS avec un moteur de rendu différent de WebKit. Donc les navigateurs disponibles sur IOS sont en réalité des applications composées de WebViews WebKit. 
+Ils n'ont donc pas les fonctionnalités PWA (ex: impossible d'ajouter la PWA à l'écran d'accueil via iOS chrome ou d'utiliser les Services Workers)
 
 
 ### Podcast présenté par :
