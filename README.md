@@ -2,11 +2,11 @@
 
 ## :studio_microphone: Last episodes
 <!-- BLOG-POST-LIST:START -->
+- [Les Progressive Web Apps avec Stéphanie Alix](https://slash-podcast.fr/podcasts/progressive-web-app/)
 - [Live Share pour Visual Studio Code et des news](https://slash-podcast.fr/podcasts/pair-coding/)
 - [jQuery en 2020](https://slash-podcast.fr/podcasts/jquery/)
 - [Le SEO en 2020, avec Nicolas Baldi](https://slash-podcast.fr/podcasts/seo/)
 - [TailwindCSS - Évolution ou Révolution ?](https://slash-podcast.fr/podcasts/tailwindcss/)
-- [JAMstack CONF. London](https://slash-podcast.fr/podcasts/jamstack-conf/)
 <!-- BLOG-POST-LIST:END -->
 
 # Double Slash Podcast Website
