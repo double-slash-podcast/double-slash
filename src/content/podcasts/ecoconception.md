@@ -3,7 +3,7 @@ title: Écoconception et écologie
 subtitle: Un point de l'impact de notre utilisation du numérique sur le réchauffement climatique et de l'écoconception
 publicationDate: 2020-04-21
 status: published
-url: https://chtbl.com/track/79E812/ double-slash.ams3.digitaloceanspaces.com/DS_002_eco_conception.mp3
+url: https://chtbl.com/track/79E812/double-slash.ams3.digitaloceanspaces.com/DS_002_eco_conception.mp3
 author: Double slash
 duration: 4161
 season: 1

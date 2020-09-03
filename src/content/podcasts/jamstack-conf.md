@@ -3,7 +3,7 @@ title: JAMstack CONF. London
 subtitle: Retour de la JAMstack Conf. de Londres 27 - 28 Mai 2020
 publicationDate: 2020-06-01
 status: published
-url: https://chtbl.com/track/79E812/ double-slash.ams3.cdn.digitaloceanspaces.com/DS_006_janstack_conf.mp3
+url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_006_janstack_conf.mp3
 author: Double slash
 duration: 4483
 season: 1
