@@ -2,7 +2,7 @@
 title: Le prologue
 subtitle: Présentation du podcast et de l'équipe
 publicationDate: 2020-04-01
-url: https://double-slash.ams3.digitaloceanspaces.com/DS_000_prologue.mp3
+url: https://chtbl.com/track/79E812/ double-slash.ams3.digitaloceanspaces.com/DS_000_prologue.mp3
 status: published
 author: Double slash
 duration: 553

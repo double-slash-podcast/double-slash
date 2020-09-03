@@ -5,7 +5,7 @@ author: Double Slash
 categories:
   - Technology
 duration: 2600
-url: https://double-slash.ams3.cdn.digitaloceanspaces.com/DS_010_pair_coding.mp3
+url: https://chtbl.com/track/79E812/ double-slash.ams3.cdn.digitaloceanspaces.com/DS_010_pair_coding.mp3
 episodeNumber: 10
 episodeType: full
 explicit: false

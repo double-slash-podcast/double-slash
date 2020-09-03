@@ -3,7 +3,7 @@ title: Présentation de la JAMStack
 subtitle: Présentation de la JAMStack, avantages et concepts
 publicationDate: 2020-04-09
 status: published
-url: https://double-slash.ams3.digitaloceanspaces.com/DS_001_jamstack.mp3
+url: https://chtbl.com/track/79E812/ double-slash.ams3.digitaloceanspaces.com/DS_001_jamstack.mp3
 author: Double slash
 duration: 4825
 season: 1

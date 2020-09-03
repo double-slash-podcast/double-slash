@@ -5,7 +5,7 @@ author: Double Slash
 categories:
   - Technology
 duration: 3611
-url: https://double-slash.ams3.cdn.digitaloceanspaces.com/DS_009_jquery.mp3
+url: https://chtbl.com/track/79E812/ double-slash.ams3.cdn.digitaloceanspaces.com/DS_009_jquery.mp3
 episodeNumber: 9
 episodeType: full
 explicit: false
