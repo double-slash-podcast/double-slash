@@ -3,7 +3,7 @@ title: TailwindCSS - Évolution ou Révolution ?
 subtitle: On retrouve Patrick et Alex qui échange sur le framework CSS Tailwind, son fonctionnement et son paradigme.
 publicationDate: 2020-06-19
 status: published
-url: https://double-slash.ams3.cdn.digitaloceanspaces.com/DS_007_tailwindcss.mp3
+url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_007_tailwindcss.mp3
 author: Double slash
 duration: 3907
 season: 1
