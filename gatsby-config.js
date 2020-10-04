@@ -109,17 +109,21 @@ module.exports = {
         anonymize: true,
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Double Slash Podcast`,
-        short_name: `Double Slash`,
-        start_url: `/`,
-        background_color: `#ffd800`,
-        theme_color: `#a700ff`,
-        display: `standalone`,
-        icon: `static/double-slash.png`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `Double Slash Podcast`,
+    //     short_name: `Double Slash`,
+    //     start_url: `/`,
+    //     background_color: `#ffd800`,
+    //     theme_color: `#a700ff`,
+    //     display: `standalone`,
+    //     icon: `static/double-slash.png`,
+    //     icon_options: {
+    //       // For all the options available, please see the additional resources below.
+    //       purpose: `any maskable`,
+    //     },
+    //   },
+    // },
   ],
 };

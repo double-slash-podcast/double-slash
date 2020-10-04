@@ -1,0 +1,22 @@
+{
+  "name": "Double Slash Podcast",
+  "short_name": "Double Slash",
+  "start_url": "/",
+  "background_color": "#ffd800",
+  "theme_color": "#a700ff",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "maskable/manifest-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "maskable/manifest-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}
