@@ -12,8 +12,8 @@
     "preload-fonts": "gatsby-preload-fonts",
     "test": "jest",
     "generate:assets": "npm run generate:splash  && npm run generate:iconm",
-    "generate:splash": "pwa-asset-generator --splash-only true --type png --padding 0 --quality 80 --background \"linear-gradient(to bottom, #fad84d 0%, #f5db4d 100%)\" ./static/double-slash.png ./static",
-    "generate:iconm": "pwa-asset-generator --maskable true --type png --padding 0 --icon-only true --quality 100 --background \"linear-gradient(to bottom, #fad84d 0%, #f5db4d 100%)\" ./static/icon-double-slash.png -m ./static/manifest.webmanifest ./static/maskable"
+    "generate:splash": "pwa-asset-generator --splash-only true --type png --padding 0 --quality 80 --background \"linear-gradient(#ffd800 0%, #ffe800 40.89%, #fee801 61.08%, #f6da05 100%)\" ./static/splash.png ./static/splash",
+    "generate:iconm": "pwa-asset-generator --maskable true --type png --padding 0 --icon-only true --quality 100 --background \"linear-gradient(#ffd800 0%, #ffe800 40.89%, #fee801 61.08%, #f6da05 100%)\" ./static/round-ready.png -m ./static/manifest.webmanifest ./static/maskable"
   },
   "dependencies": {
     "gatsby": "^2.22.1",
