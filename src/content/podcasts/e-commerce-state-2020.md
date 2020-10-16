@@ -6,7 +6,7 @@ categories:
   - Technology
 duration: 3464
 url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_013_graphql.mp3
-episodeNumber: 13
+episodeNumber: 14
 episodeType: full
 explicit: false
 season: 1
