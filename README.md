@@ -2,11 +2,11 @@
 
 ## :studio_microphone: Last episodes
 <!-- BLOG-POST-LIST:START -->
+- [Les plateformes e-commerce en 2020 avec Aurélien Lavorel](https://slash-podcast.fr/podcasts/e-commerce-state-2020/)
 - [GraphQL, Hype ou Révolution](https://slash-podcast.fr/podcasts/graphql-hype-or-revolution/)
 - [Utiliser le Github README comme Portfolio](https://slash-podcast.fr/podcasts/github-readme/)
 - [Les Progressive Web Apps avec Stéphanie Alix](https://slash-podcast.fr/podcasts/progressive-web-app/)
 - [Live Share pour Visual Studio Code et des news](https://slash-podcast.fr/podcasts/pair-coding/)
-- [jQuery en 2020](https://slash-podcast.fr/podcasts/jquery/)
 <!-- BLOG-POST-LIST:END -->
 
 # Double Slash Podcast Website
