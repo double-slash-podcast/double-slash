@@ -4,8 +4,8 @@ status: published
 author: Double Slash
 categories:
   - Technology
-duration: 4302
-url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_014_ecommerce2020.mp3
+duration: 3012
+url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_015_newsOCT.mp3
 episodeNumber: 15
 episodeType: full
 explicit: false
