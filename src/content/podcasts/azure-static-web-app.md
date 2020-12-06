@@ -27,7 +27,7 @@ Actuellement, le service Azure Static Web Apps est en "preview". Durant cette p�
 
 Nous vous laissons découvrir le service plus en détail en écoutant l'épisode numéro 16 avec notre invité:
 
-Wassim Chegham, **Senior Developer Advocate specialized in JavaScript**
+Wassim Chegham, **Senior Developer Advocate spécialisé JavaScript**
 [https://github.com/manekinekko](https://github.com/manekinekko)
 
 ## Les liens de l'épisode :
