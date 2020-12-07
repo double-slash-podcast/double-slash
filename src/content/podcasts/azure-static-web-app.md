@@ -28,11 +28,14 @@ Actuellement, le service Azure Static Web Apps est en "preview". Durant cette p�
 Nous vous laissons découvrir le service plus en détail en écoutant l'épisode numéro 16 avec notre invité:
 
 Wassim Chegham, **Senior Developer Advocate spécialisé JavaScript**
-[https://github.com/manekinekko](https://github.com/manekinekko)
+[https://github.com/manekinekko](https://github.com/manekinekko) et [http://wassim.dev](http://wassim.dev)
 
 ## Les liens de l'épisode :
 
-- [Azure static Web Apps](https://azure.microsoft.com/fr-fr/services/app-service/static/)
+- [Azure static Web Apps](https://azure.microsoft.com/fr-fr/services/app-service/static/?WT.mc_id=javascript-00000-wachegha)
+- [Documentation Azure static Web Apps](https://docs.microsoft.com/fr-fr/azure/static-web-apps/overview?WT.mc_id=javascript-00000-wachegha)
+- [Documentation serverless](https://docs.microsoft.com/fr-fr/azure/azure-functions/create-first-function-vs-code-node?WT.mc_id=javascript-00000-wachegha)
+- [Cours gratuit sur Node JS](https://docs.microsoft.com/fr-fr/learn/paths/build-javascript-applications-nodejs/?WT.mc_id=javascript-00000-wachegha)
 - [Static Web Apps Emulator](https://github.com/manekinekko/swa-emulator)
 - [Acheter un arbre sur Ecologi](https://ecologi.com/wassimchegham?r=5facf70521660a001d024120)
 
