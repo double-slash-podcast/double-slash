@@ -2,11 +2,11 @@
 
 ## :studio_microphone: Last episodes
 <!-- BLOG-POST-LIST:START -->
+- [Azure Static Web Apps avec Wassim Chegham](https://slash-podcast.fr/podcasts/azure-static-web-app/)
 - [Épisode spécial news avec React 17, Webpack 5, Next JS 10, Gatsby...](https://slash-podcast.fr/podcasts/news-octobre-2020/)
 - [Les plateformes e-commerce en 2020 avec Aurélien Lavorel](https://slash-podcast.fr/podcasts/e-commerce-state-2020/)
 - [GraphQL, Hype ou Révolution](https://slash-podcast.fr/podcasts/graphql-hype-or-revolution/)
 - [Utiliser le Github README comme Portfolio](https://slash-podcast.fr/podcasts/github-readme/)
-- [Les Progressive Web Apps avec Stéphanie Alix](https://slash-podcast.fr/podcasts/progressive-web-app/)
 <!-- BLOG-POST-LIST:END -->
 
 # Double Slash Podcast Website
