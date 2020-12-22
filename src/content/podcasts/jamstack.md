@@ -48,3 +48,8 @@ Outils pour développer un site statique :
 Entre temps, Gatsby a annoncé l'incremental builds :
 
 [https://www.gatsbyjs.com/docs/incremental-builds/](https://www.gatsbyjs.com/docs/incremental-builds/)
+
+Communauté JAMStack française :
+
+- site web (billets originaux et traductions) : [https://jamstatic.fr/](https://jamstatic.fr/)
+- Slack avec beaucoup de sujets abordés et une communauté active (et accueillante) : [https://jamstatic.fr/slack/](https://jamstatic.fr/slack/)
