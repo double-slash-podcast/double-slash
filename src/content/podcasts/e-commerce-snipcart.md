@@ -46,6 +46,7 @@ Dans l'épisode, nous discutons avec François du monde de la JAMStack, des soci
 - [Snipcart](https://snipcart.com/)
 - [Documentation Snipcart](https://docs.snipcart.com/v3/)
 - [Blog Snipcart](https://snipcart.com/blog)
+- [Un exemple de site](https://www.mercredibiscuiterie.com/)
 
 ### Podcast présenté par :
 
