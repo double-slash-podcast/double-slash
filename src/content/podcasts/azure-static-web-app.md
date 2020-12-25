@@ -1,5 +1,5 @@
 ---
-publicationDate: 2020-12-7
+publicationDate: 2020-12-07
 status: published
 author: Double Slash
 categories:
