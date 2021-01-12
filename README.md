@@ -2,11 +2,11 @@
 
 ## :studio_microphone: Last episodes
 <!-- BLOG-POST-LIST:START -->
+- [Alpine JS, petit mais costaud !](https://slash-podcast.fr/podcasts/javascript-alpine-js/)
 - [Snipcart avec François Lanthier Nadeau](https://slash-podcast.fr/podcasts/e-commerce-snipcart/)
 - [Azure Static Web Apps avec Wassim Chegham](https://slash-podcast.fr/podcasts/azure-static-web-app/)
 - [Épisode spécial news avec React 17, Webpack 5, Next JS 10, Gatsby...](https://slash-podcast.fr/podcasts/news-octobre-2020/)
 - [Les plateformes e-commerce en 2020 avec Aurélien Lavorel](https://slash-podcast.fr/podcasts/e-commerce-state-2020/)
-- [GraphQL, Hype ou Révolution](https://slash-podcast.fr/podcasts/graphql-hype-or-revolution/)
 <!-- BLOG-POST-LIST:END -->
 
 # Double Slash Podcast Website
