@@ -8,7 +8,7 @@
     Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
   --fontFamily: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-  --bgColor: #ffd800;
+  --bgColor: linear-gradient(#ffd800, #f5d905, #ffea00);
   --bgMain: #f6f4f8;
   --bgEpisodeList: #fff;
   --authorLinkColor: #777;
@@ -30,7 +30,11 @@
 }
 
 [data-theme='dark'] {
-  --bgColor: rgb(100, 18, 145);
+  --bgColor: linear-gradient(
+    rgba(167, 0, 255, 1),
+    rgba(167, 0, 255, 0.84),
+    rgba(167, 0, 255, 1)
+  );
   --bgMain: rgb(65, 77, 85);
   --bgEpisodeList: rgb(61, 63, 65);
   --headerColor: #e2e0e0;
