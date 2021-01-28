@@ -4,9 +4,9 @@ status: published
 author: Double Slash
 categories:
   - Technology
-duration: 3277
-url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_017_snipcart.mp3
-episodeNumber: 17
+duration: 4531
+url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_019_jamstatic.mp3
+episodeNumber: 19
 episodeType: full
 explicit: false
 season: 1
