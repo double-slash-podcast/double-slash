@@ -10,43 +10,38 @@ episodeNumber: 19
 episodeType: full
 explicit: false
 season: 1
-title: Jamstatic fr et forestry.io avec Frank Taillandier
-subtitle: Un épisode sur la communauté Jamstatic FR et Forestry avec notre invité Frank Tallandier
+title: Jamstatic fr, Forestry.io et Tina CMS avec Frank Taillandier
+subtitle: Un épisode avec notre invité Frank Taillandier qui a créé la communauté Jamstatic FR et qui travaille pour Forestry.io. Un épisode orienté statique !
 ---
 
-Dans cet épisode, nous allons parler d'un service ecommerce qui vous permet de mettre en place rapidement une boutique en ligne sur n'importe quel système. Snipcart est une solution qui se place entre les systèmes monolithiques du type Prestashop ou Magento et les services API First du type Commerce JS ou Swell.
+## Dans le première partie, nous allons parler de la communauté "Jamstatic FR"
 
-Lancé il y a environ 7 ans, Snipcart en est à sa troisième version. Cette troisième version lancée début 2020 offre une solution complète pour mettre en place rapidement une solution ecommerce.
+Une communauté qui souhaite réunir les personnes pour échanger autour des sites statiques, des services et des outils.
+Sur le site, vous pouvez suivre l'actualité de la JAMStack et du statique. Sur le slack, vous pouvez échanger avec d'autres acteurs de la communauté pour avoir des avis, des retours d'expériences.
+Vous pouvez également contribuer en écrivant des articles pour le site en ouvrant une PR sur le Github.
 
-Il vous suffit d'inclure le script Javascript sur votre site. D'implémenter les bons attributs sur votre élément html (button) pour ajouter un produit dans le panier Snipcart. Et vous êtes prêt pour vendre.
+**La communauté "Jamstatic FR" accueillante se retrouve sur différents canaux :**
 
-Mais Snipcart offre beaucoup d'autres avantages :
+- Le site internet : [https://jamstatic.fr/](https://jamstatic.fr/)
+- Le compte Twitter : [@jamstatic_fr](https://twitter.com/jamstatic_fr)
+- Le slack : [https://jamstatic.herokuapp.com/](https://jamstatic.herokuapp.com/)
+- Le github : [https://github.com/jamstatic](https://github.com/jamstatic)
+- Le podcast : [https://anchor.fm/jamstatic/](https://anchor.fm/jamstatic/)
 
-- personnalisation des éléments (panier, page de check out)
-- une API pour brancher d'autres services
-- personnalisation des expéditions
-- webhooks
-- etc..
+## Dans la deuxième partie, nous abordons Forestry.io et Tina CMS
 
-Nous vous laissons découvrir le service plus en détail en écoutant l'épisode numéro 17 avec notre invité:
+[Forestry](https://forestry.io/) est un cms basé sur Git. Il se connecte à des services type Github, Gitlab pour éditer directement les fichiers dans le repository. Rien n'est stocké chez Forestry, dès que vous sauvez des valeurs dans l'administration Forestry, il effectue un commit sur le repository.
 
-- François Lanthier Nadeau, **CEO de Snipcart**
-  - [@the_fln](https://twitter.com/the_fln)
-  - [@snipcart](https://twitter.com/snipcart)
+L'administration de Forestry est assez claire et assez configurable. Tout est configuré sur un fichier stocké sur votre projet.
 
-## Un article sur les acteurs de la JAMStack indépendants
+[Tina CMS](https://tina.io/) est un système qui permet d'avoir une édition visuelle de votre contenu et directement sur votre site/app. Pour le moment, il est principalement orienté React JS mais il est prévu d'ouvrir à d'autre framework.
+Forestry croit beaucoup au projet Tina CMS et investit de plus en plus sur le projet.
 
-Dans l'épisode, nous discutons avec François du monde de la JAMStack, des sociétés qui font des levées de fond et de l'état d'esprit de Snipcart. François a fait un article sur le sujet.
+Nous vous laissons découvrir le service plus en détail en écoutant l'épisode numéro 19 avec notre invité:
 
-- [The Bootstrap Jamstack: How Independent Players Compete
-  (en)](https://snipcart.com/blog/bootstrap-jamstack)
-
-## Les liens de l'épisode :
-
-- [Snipcart](https://snipcart.com/)
-- [Documentation Snipcart](https://docs.snipcart.com/v3/)
-- [Blog Snipcart](https://snipcart.com/blog)
-- [Un exemple de site](https://www.mercredibiscuiterie.com/)
+- Frank Taillandier,
+  - [https://twitter.com/FrankTLDR](https://twitter.com/FrankTLDR)
+  - [https://github.com/DirtyF](https://github.com/DirtyF)
 
 ### Podcast présenté par :
 
