@@ -2,11 +2,11 @@
 
 ## :studio_microphone: Last episodes
 <!-- BLOG-POST-LIST:START -->
+- [Strapi, le CMS headless open source 100% JavaScript avec Jim Laurie](https://slash-podcast.fr/podcasts/strapi/)
 - [Fastify, le framework rapide pour Node JS avec Vincent Le Goff](https://slash-podcast.fr/podcasts/fastify-node-js-open-source/)
 - [Jamstatic fr, Forestry.io et Tina CMS avec Frank Taillandier](https://slash-podcast.fr/podcasts/jamstatic-fr-forestry/)
 - [Alpine JS, petit mais costaud !](https://slash-podcast.fr/podcasts/javascript-alpine-js/)
 - [Snipcart avec François Lanthier Nadeau](https://slash-podcast.fr/podcasts/e-commerce-snipcart/)
-- [Azure Static Web Apps avec Wassim Chegham](https://slash-podcast.fr/podcasts/azure-static-web-app/)
 <!-- BLOG-POST-LIST:END -->
 
 # Double Slash Podcast Website
