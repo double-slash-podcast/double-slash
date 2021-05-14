@@ -27,6 +27,11 @@ C'est lors d'un stage chez un gros acteur du e-commerce français qu'ils sont co
 Plus tard, vers fin 2018, l'aventure continue avec une nouvelle version basée sur Rust.
 
 
+## Rust
+
+Dans l'épisode, nous parlons aussi du langage Rust. Petit retour d’expérience de nos deux invités qui utilisent le langage au quotidien pour en savoir un peu plus sur Rust.
+
+
 Nous vous laissons découvrir MeiliSearch et Rust plus en détail en écoutant l'épisode numéro 23 avec nos invités:
 
 - Thomas,
