@@ -10,7 +10,7 @@ episodeNumber: 23
 episodeType: full
 explicit: false
 season: 1
-title: MeiliSearch, un moteur de recherche open-source
+title: MeiliSearch, rustique à la française !
 subtitle: "Un épisode avec 2 invités : Thomas cofondateur et Marin développeur Core de MeiliSearch. Nous allons parler de ce moteur de recherche open source et du langage Rust"
 ---
 
