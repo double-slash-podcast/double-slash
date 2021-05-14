@@ -34,10 +34,8 @@ Dans l'épisode, nous parlons aussi du langage Rust. Petit retour d’expérienc
 
 Nous vous laissons découvrir MeiliSearch et Rust plus en détail en écoutant l'épisode numéro 23 avec nos invités:
 
-- Thomas,
-  - [@totolapaille](https://twitter.com/totolapaille)
-- Marin,
-  - [@Marinpostma](https://twitter.com/Marinpostma)
+- Thomas,[@totolapaille](https://twitter.com/totolapaille)
+- Marin, [@Marinpostma](https://twitter.com/Marinpostma)
 
 
 ### Les liens de l'épisode :
