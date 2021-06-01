@@ -10,8 +10,8 @@ episodeNumber: 24
 episodeType: full
 explicit: false
 season: 1
-title: Audit des Google web core vitals
-subtitle: Comment faire un audit des web core vitals en 2021 et comment améliorer le score d’un site sur chaque critère.
+title: Audit des Google core web vitals
+subtitle: Comment faire un audit des core web vitals en 2021 et comment améliorer le score d’un site sur chaque critère.
 ---
 
 En juin 2021, Google introduit de nouveaux indicateurs de performance pour les sites web. Ils annoncent qu'ils sont désormais pris en compte dans les critères pour le classement dans le résultat de recherches.
