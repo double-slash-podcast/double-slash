@@ -8,8 +8,8 @@ body {
   color: var(--textColor);
   margin: 0;
   padding: 0 0 10rem 0;
-  background-color: var(--bgColor);
-  background-image: var(--bgImage);
+  background: var(--bgColor);
+  /* background-image: var(--bgImage); */
 }
 
 a {
