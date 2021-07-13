@@ -2,11 +2,11 @@
 
 ## :studio_microphone: Last episodes
 <!-- BLOG-POST-LIST:START -->
+- [What the WASM !](https://slash-podcast.fr/podcasts/wasm/)
 - [Un site statique de 11000 pages](https://slash-podcast.fr/podcasts/site-statique-10000-pages/)
 - [Audit des Google core web vitals](https://slash-podcast.fr/podcasts/core-web-vitals/)
 - [MeiliSearch, rustique à la française !](https://slash-podcast.fr/podcasts/meilisearch/)
 - [Vite.., un bundler !](https://slash-podcast.fr/podcasts/vite-bundler/)
-- [Strapi, le CMS headless open source 100% JavaScript avec Jim Laurie](https://slash-podcast.fr/podcasts/strapi/)
 <!-- BLOG-POST-LIST:END -->
 
 # Double Slash Podcast Website
