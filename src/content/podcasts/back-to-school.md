@@ -88,7 +88,7 @@ Au-delà de la version 4, Strapi a annoncé un changement de pricing :
 
 ## Astro JS
 
-> Faire l'inverse des autre !
+> Faire l'inverse des autres !
 
 Astro est un générateur de site statique qui par défaut, ne met aucun JavaScript dans le navigateur.
 Vous pouvez développer vos templates avec le langage ".astro" mais aussi avec vos frameworks JS préférés : lit, Vue, React, Preact, Svelte ou Solid. Astro compile sans problème avec plusieurs frameworks.
