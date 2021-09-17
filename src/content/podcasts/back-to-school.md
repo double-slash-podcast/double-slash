@@ -30,6 +30,7 @@ Encore en version technical preview, vous pouvez l'essayer en allant sur cette p
 
 Quand vous êtes dans un repository sur github.com, il vous suffit d'appuyer sur la touche "." de votre clavier pour passer sur github.dev et éditer le projet sur un VSCode en ligne.
 Vous pouvez importer vos settings et travailler comme si vous étiez dans votre VSCode installé sur votre ordinateur.
+**Les notes de cet épisode sont créées directement sur github.dev**
 
 ## Alpine JS 3
 
