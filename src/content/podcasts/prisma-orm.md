@@ -16,9 +16,11 @@ subtitle: Un épisode "explore" dans lequel Alex nous présente l'ORM Prisma.
 
 ## Un épisode "explore" dans lequel Alex nous présente l'ORM Prisma
 
+- Le son de Patrick est pas terrible, toutes nos escuses pour ça. Nous allons améliorer ça dans les prochains épisodes.
+
 ## Prisma ORM
 
-> V2, j’oublie la V1 et je reprends depuis le début !
+> **"V2, j’oublie la V1 et je reprends depuis le début !"**
 
 **Prisma** est un ORM (object-relational mapping) open source écrit en **Rust**. Il est compatible **JavaScript/TypeScript** et **Go**.
 
