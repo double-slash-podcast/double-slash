@@ -17,11 +17,11 @@ module.exports = {
   // episodic || serial
   podcastType: `episodic`,
   siteUrl: `https://slash-podcast.fr`,
-  imageUrl: `https://slash-podcast.fr/double-slash.png`,
+  imageUrl: `https://slash-podcast.fr/new-double-slash.jpg`,
   feedUrl: `https://slash-podcast.fr/pocast-rss-feed.xml`,
   language: `fr-FR`,
-  copyright: `Copyright © 2020 Double Slash`,
-  authorName: `Double Slash`,
+  copyright: `Copyright © 2021 Double Slash`,
+  authorName: `Alex Duval/Patrick Faramaz`,
   ownerName: `Double Slash`,
   ownerEmail: `info@slash-podcast.fr`,
   managingEditor: `info@slash-podcast.fr`,
@@ -31,4 +31,4 @@ module.exports = {
   category1: `Technology`,
   timeToLive: `60`,
   outputPath: `/podcast-rss-feed.xml`,
-}
+};
