@@ -1,5 +1,6 @@
 /* eslint "jsx-a11y/media-has-caption": 0 */
 import React, {useContext, useEffect} from 'react';
+import Img from 'gatsby-image';
 import {MDXRenderer} from 'gatsby-plugin-mdx';
 import {graphql} from 'gatsby';
 import SEO from '../../components/Seo';
@@ -34,6 +35,7 @@ const Podcast = ({data, location}) => {
     episodeNumber,
     duration,
     publicationDate,
+    sponsor,
   } = frontmatter;
   const d = new Date(publicationDate);
 
@@ -74,6 +76,19 @@ const Podcast = ({data, location}) => {
             <br />
             {`Durée : ${secondToTime(duration)}`}
           </span>
+          {sponsor && (
+            <div className={styles.sponsor}>
+              <strong>Support de l'épisode :</strong>
+              <div className={styles.sponsor_img}>
+                <a href={sponsor?.url} target="_blank" rel="noreferrer">
+                  <Img
+                    fluid={sponsor?.img.childImageSharp.fluid}
+                    alt={sponsor?.title}
+                  />
+                </a>
+              </div>
+            </div>
+          )}
         </div>
         <div className={styles.notes}>
           <MDXRenderer>{mdx.body}</MDXRenderer>
@@ -125,6 +140,18 @@ export const query = graphql`
         duration
         season
         episodeNumber
+        sponsor {
+          title
+          url
+          img {
+            publicURL
+            childImageSharp {
+              fluid(maxWidth: 600, quality: 100) {
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
+              }
+            }
+          }
+        }
       }
       id
       body

@@ -1,0 +1,8 @@
+@import '../../assets/variable.css';
+
+.bloc_border {
+  border: 1px solid var(--accentColor);
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
