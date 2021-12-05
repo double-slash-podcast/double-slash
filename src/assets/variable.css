@@ -27,6 +27,7 @@
   --pauseBtn: #a700ff;
   --sunIconColor: rgb(232, 155, 12);
   --moonIconColor: #777;
+  --bgBlocBorder: #fff;
 }
 
 [data-theme='dark'] {
@@ -49,4 +50,5 @@
   --pauseBtn: #ffd800;
   --sunIconColor: gold;
   --moonIconColor: #fff;
+  --bgBlocBorder: rgb(54, 61, 66);
 }
