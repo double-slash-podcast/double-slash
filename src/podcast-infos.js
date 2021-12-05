@@ -4,9 +4,9 @@
 module.exports = {
   title: `Double Slash`,
   // baseline
-  subtitle: `Podcast sur le développement web moderne`,
+  subtitle: `Le podcast sur le développement web moderne`,
   // short description
-  summary: `Le podcast dédié aux outils et aux techniques pour le développement web moderne`,
+  summary: `Double Slash, un podcast sur le développement web. Retrouvez-nous régulièrement pour parler de sujets variés tels que la JAMStack, l’accessibilité, l’écoconception, React.js, Vue.js, Next.js, Nuxt.js, le CSS et des retours d’expériences sur des implémentations.`,
   // long description
   description: `Double Slash, un podcast avec 2 animateurs qui se retrouvent pour discuter des outils et des techniques pour le développement moderne de site web et d’application web.
   Retrouvez-nous régulièrement pour parler de sujets variés tels que la JAMStack, l’accessibilité, l’écoconception, React JS, Vue JS et des retours d’expériences sur des implémentations.
