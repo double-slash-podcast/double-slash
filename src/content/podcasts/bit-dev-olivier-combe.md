@@ -4,8 +4,8 @@ status: published
 author: Double Slash
 categories:
   - Technology
-duration: 3885
-url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_029_nuxt.mp3
+duration: 3747
+url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_030_bit.mp3
 episodeNumber: 30
 episodeType: full
 explicit: false
