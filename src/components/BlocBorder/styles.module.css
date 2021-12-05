@@ -2,7 +2,8 @@
 
 .bloc_border {
   border: 1px solid var(--accentColor);
-  background-color: #fff;
+  background-color: var(--bgBlocBorder);
   padding: 1rem;
+  color: var(--textEpisode);
   margin-bottom: 1rem;
 }
