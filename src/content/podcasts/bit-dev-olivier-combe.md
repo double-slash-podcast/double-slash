@@ -18,11 +18,12 @@ sponsor:
   url: https://bit.ly/3dojgDo
 ---
 
-<BlocBorder>
-  <strong>Support de l'épisode</strong><br /><br />
-  Indy, la comptabilité des indépendants tout simplement. Synchronisation bancaire sécurisée, déclarations fiscales préremplies et télétransmises, support client avec réponse sous 4 minutes.<br /><br />
-  Obtenez 2 mois gratuits avec notre code sponsor. <a href="https://bit.ly/3dojgDo" target="_blank">Cliquez sur ici pour profiter du code</a>
-</BlocBorder>
+## Support de l'épisode
+
+Indy, la comptabilité des indépendants tout simplement. Synchronisation bancaire sécurisée, déclarations fiscales préremplies et télétransmises, support client avec réponse sous 4 minutes.
+
+Obtenez 2 mois gratuits avec notre code sponsor. [Cliquez sur ici pour profiter du code](https://bit.ly/3dojgDo)
+
 
 ## Dans cet épisode, nous avons le plaisir de recevoir Olivier Combe pour parler du service Bitdev. Un service qui vous facilite le quotidien pour la gestion de vos components.
 
@@ -67,3 +68,9 @@ Dans cet épisode, nous profitons de l’expertise d’olivier pour parler rapid
 
 - Alexandre Duval [@xlanex6](https://twitter.com/xlanex6)
 - Patrick Faramaz [@PatrickFaramaz](https://twitter.com/PatrickFaramaz)
+
+<BlocBorder>
+  <strong>Support de l'épisode</strong><br /><br />
+  Indy, la comptabilité des indépendants tout simplement. Synchronisation bancaire sécurisée, déclarations fiscales préremplies et télétransmises, support client avec réponse sous 4 minutes.<br /><br />
+  Obtenez 2 mois gratuits avec notre code sponsor. <a href="https://bit.ly/3dojgDo" target="_blank">Cliquez sur ici pour profiter du code</a>
+</BlocBorder>
