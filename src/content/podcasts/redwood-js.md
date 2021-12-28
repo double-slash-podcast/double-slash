@@ -5,7 +5,7 @@ author: Double Slash
 categories:
   - Technology
 duration: 2776
-url: http://double-slash.ams3.cdn.digitaloceanspaces.com/DS_031_redwood.mp3
+url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_031_redwood.mp3
 episodeNumber: 31
 episodeType: full
 explicit: false
