@@ -28,7 +28,31 @@ Obtenez 2 mois gratuits avec notre code sponsor. [Cliquez sur ici pour profiter 
 ## Dans cet épisode, nous avons le plaisir de recevoir Simon Gagnon en direct de Montréal (Canada) pour parler de RedwoodJS.
 
 
-[redwoodjs.com](https://redwoodjs.com/)
+[Redwoodjs](https://redwoodjs.com/) est un framework basé sur les meilleurs outils autours de la librairie ReactJS.
+Vous avez à disposition des outils préconfigurés tel que :
+
+- webpack
+- Prisma
+- Storybook
+- Jest
+- Fastify
+- Pino
+
+Vous pouvez démarrer un projet ultra rapidement sans aucune configuration.
+Avec des lignes de commandes disponible dans votre console, vous pouvez créer facilement des éléments dans votre projet, tel que des formulaires, sections, services ou pages.
+
+Par exemple, avec la commande :
+
+```shell
+yarn redwood generate page home
+```
+
+Vous allez générer une page home et "Redwoodjs" va vous générer automatiquement la route, le template et la storie qui va avec.
+
+Redwood est un framework développé autour de la philosophie [Ruby on Rails](https://rubyonrails.org/) et tout est pensé pour vous faciliter et optimiser le développement. Cela vous permet de vous concentrer sur votre application au lieu de perdre votre temps à configurer, à choisir les outils ou à structurer votre projet.
+
+Bonne écoute :)
+
 
 ## Pour retrouver notre invité
 
