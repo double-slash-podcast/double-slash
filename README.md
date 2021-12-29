@@ -2,11 +2,11 @@
 
 ## :studio_microphone: Last episodes
 <!-- BLOG-POST-LIST:START -->
+- [RedwoodJS avec Simon Gagnon](https://slash-podcast.fr/podcasts/redwood-js/)
 - [Bit.dev avec Olivier Combe](https://slash-podcast.fr/podcasts/bit-dev-olivier-combe/)
 - [Nuxt.JS avec Sébastien Chopin](https://slash-podcast.fr/podcasts/nuxt-sebastien-chopin/)
 - [Prisma ORM](https://slash-podcast.fr/podcasts/prisma-orm/)
 - [Back to school](https://slash-podcast.fr/podcasts/back-to-school/)
-- [What the WASM !](https://slash-podcast.fr/podcasts/wasm/)
 <!-- BLOG-POST-LIST:END -->
 
 # Double Slash Podcast Website
