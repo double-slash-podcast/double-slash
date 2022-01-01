@@ -27,6 +27,7 @@ Obtenez 2 mois gratuits avec notre code sponsor. [Cliquez sur ici pour profiter 
 
 ## Dans cet épisode, nous avons le plaisir de recevoir Simon Gagnon en direct de Montréal (Canada) pour parler de RedwoodJS.
 
+### Retrouvez la vidéo de l'enregistrement sur [YouTube](https://www.youtube.com/watch?v=eEY03v7RBy0)
 
 [Redwoodjs](https://redwoodjs.com/) est un framework basé sur les meilleurs outils autours de la librairie ReactJS.
 Vous avez à disposition des outils préconfigurés tel que :
