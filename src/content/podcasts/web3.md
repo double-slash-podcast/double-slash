@@ -10,16 +10,29 @@ episodeNumber: 33
 episodeType: full
 explicit: false
 season: 1
-title: Web3 c'est quoi
-subtitle: On part du Web3, qu'est que c'est et a quoi ca sert.
+title: Découverte du Web3
+subtitle: Alex nous fait découvrir le Web3 et nous explique les fondamentaux de ce web décentralisé prometteur.
 ---
 
+## Alex nous fait découvrir le Web3 et nous explique les fondamentaux de ce web décentralisé prometteur.
 
-## Le WEB 3.0 
+### Retrouvez la vidéo de l'enregistrement sur [YouTube](https://youtu.be/A8yk7NT__HM)
 
-On parle de blockchain, et de toutes les technos sous jacente. Comment elle vont jouer un role dans le futur dans le metier de developeur. 
+## Le WEB 3.0, Pourquoi ?
 
-Alex nous explique comment le web peut tendre vers plus de transparence, confiance et résilience avec les architectures décentralisées. 
+En 2008, le bitcoin voyait le jour. Suite à la crise des subprimes, **Satoshi Nakamoto**, publia un livre blanc sur le fonctionnement d'une monnaie cryptographique. Une monnaie avec un fonctionnement décentralisé. Le concept avait comme moteur principal : une économie s'affranchissant de tout organisme tiers, tel que les institutions financières.
+
+Aujourd'hui, le **web3** part d'une même idée. Le web, tel que nous le connaissons, et aujourd'hui principalement détenue par les grands groupes américains.
+Le **web3** serait un web décentralisé à l'image des cryptomonnaies avec des mécanismes basés sur des blockchains qui pourrait améliorer la sécurité et la confidentialité des données
+
+
+## Le WEB 3.0, comment ça marche ?
+
+
+Alex nous explique comment le web peut tendre vers plus de transparence, confiance et résilience avec les architectures décentralisées.
+On parle de blockchain, et de toutes les technos sous-jacentes (NFT,...). Comment vont-elles jouer un rôle dans le futur de nos métiers de développeur.
+
+Bonne écoute !
 
 
 
