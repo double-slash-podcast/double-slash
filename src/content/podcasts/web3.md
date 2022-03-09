@@ -10,7 +10,7 @@ episodeNumber: 33
 episodeType: full
 explicit: false
 season: 1
-title: Découverte du Web3
+title: Web3, bullshit ou révolution
 subtitle: Alex nous fait découvrir le Web3 et nous explique les fondamentaux de ce web décentralisé prometteur.
 ---
 
