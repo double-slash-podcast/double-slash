@@ -10,7 +10,7 @@ episodeNumber: 34
 episodeType: full
 explicit: false
 season: 1
-title: La chasses aux news - Avril 2022
+title: La chasse aux news - Avril 2022
 subtitle: Un passage en revue des news et releases de nos outils et technologies de développement web des dernières semaines
 ---
 
