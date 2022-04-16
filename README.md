@@ -2,11 +2,11 @@
 
 ## :studio_microphone: Last episodes
 <!-- BLOG-POST-LIST:START -->
+- [La chasse aux news - Avril 2022](https://slash-podcast.fr/podcasts/news-avril-2022/)
 - [Web3, bullshit ou révolution ?](https://slash-podcast.fr/podcasts/web3/)
 - [Hasura, une API GraphQL qui assure !](https://slash-podcast.fr/podcasts/hasura/)
 - [RedwoodJS avec Simon Gagnon](https://slash-podcast.fr/podcasts/redwood-js/)
 - [Bit.dev avec Olivier Combe](https://slash-podcast.fr/podcasts/bit-dev-olivier-combe/)
-- [Nuxt.JS avec Sébastien Chopin](https://slash-podcast.fr/podcasts/nuxt-sebastien-chopin/)
 <!-- BLOG-POST-LIST:END -->
 
 # Double Slash Podcast Website
