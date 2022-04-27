@@ -5,7 +5,7 @@ author: Double Slash
 categories:
   - Technology
 duration: 4068
-url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_035_state-front-end-22
+url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_035_state-front-end-22.mp3
 episodeNumber: 35
 episodeType: full
 explicit: false
