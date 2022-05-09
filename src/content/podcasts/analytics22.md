@@ -10,30 +10,45 @@ episodeNumber: 36
 episodeType: full
 explicit: false
 season: 1
-title: Analytiques et Vie privée
-subtitle: Privacy et Open Source avec François Best
+title: Outils de web Analytics et Vie privée
+subtitle: Web Analytics, privacy et Open Source avec François Best
 ---
 
-### Solution pour sortir de Google Analytics
+## Dans cet épisode, nous avons le plaisir de recevoir François Best pour des outils de web Analytics et la protection de notre vie privée
 
-[https://plausible.io/](https://plausible.io/)
+### Retrouvez la vidéo de l'enregistrement sur [le Youtube de DoubleSlash](https://youtu.be/AjY6K2WFTD0)
 
-[https://usefathom.com/](https://usefathom.com/)
+### Notre invité
 
-[https://umami.is/](https://umami.is/)
+- François Best [https://francoisbest.com/](https://francoisbest.com/), [@fortysevenfx](https://twitter.com/fortysevenfx)
 
-[https://ackee.electerious.com/](https://ackee.electerious.com/)
+La solution analytics de notre invité : [https://chiffre.io](https://chiffre.io)
 
-[https://www.piratepx.com/](https://www.piratepx.com/)
 
-[https://chiffre.io](https://chiffre.io) 
+### Les autres solutions pour sortir ou remplacer Google Analytics
 
-[https://posthog.com/](https://posthog.com/)
+#### Open-source et possibilité d'auto hébergement :
 
-[https://www.kokoanalytics.com/](https://www.kokoanalytics.com/)
+- [https://ackee.electerious.com/](https://ackee.electerious.com/)
+- [https://plausible.io/](https://plausible.io/)
+- [https://www.piratepx.com/](https://www.piratepx.com/)
+- [https://umami.is/](https://umami.is/)
+- [https://matomo.org/](https://matomo.org/)
+- [https://posthog.com/](https://posthog.com/)
+- [https://www.kokoanalytics.com/](https://www.kokoanalytics.com/) solution pour WordPress
+
+#### Autres solutions
+
+- [https://usefathom.com/](https://usefathom.com/)
+- [https://simpleanalytics.com/](https://simpleanalytics.com/)
+
+
+### Repo qui liste plusieurs solutions
 
 [https://privacyfocusedanalytics.netlify.app/](https://privacyfocusedanalytics.netlify.app/)
 
+
+Bonne écoute !
 
 ### Podcast présenté par :
 
