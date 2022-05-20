@@ -32,7 +32,7 @@ Nous allons écrire du code TypeScript qui sera ensuite transcompiler en Javascr
 
 Il a été créé en 2012 mais personnellement, j’ai entendu parler de typescript avec la sortie d’angular 2.
 
-Avant l’utilisation de typescript, j’utilisais Flow (<https://flow.org/>) projet FB. Et Babel, si je voulais utiliser des choses non présentes dans JS.
+Avant l’utilisation de typescript, j’utilisais Flow ([https://flow.org/](https://flow.org/)) projet FB. Et Babel, si je voulais utiliser des choses non présentes dans JS.
 Exemple : les classes.
 
 ### Important !
