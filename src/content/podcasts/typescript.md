@@ -18,6 +18,14 @@ subtitle: Doit-on utiliser TypeScript sur nos projets en 2022
 
 ### Retrouvez la vidéo de l'enregistrement sur [le Youtube de DoubleSlash](https://youtu.be/kVdeiE-hod0)
 
+**Précision sur les types et interfaces**
+Durant l'épisode, on évoque la différence entre les types et les interfaces. Je dois préciser que l'on peut également faire des objets avec les types.
+
+Les principales différences :
+- Les types ne peuvent pas être réimplementés et étendus
+- Les interfaces peuvent être réassignées, ce qui provoque un fusion. Elles peuvent être implémentées contrairement aux types.  
+Nous vous renvoyons sur cette vidéo explicative : https://youtu.be/sFNQeh5Oc08
+
 ## TypeScript c’est quoi exactement ?
 
 En prenant la documentation officielle, TypeScript est un langage de programmation construit par-dessus Javascript et offrant de nouvelles fonctionnalités pour combler les manques.
