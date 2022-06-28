@@ -28,6 +28,11 @@ En tant que développeurs web, nous devons nous tenir à jour sur les nouvelles 
 
 Dans cet épisode, nous passons en revue les importantes implémentations qui vont vraiment changer notre quotidien de développeur web.
 
+Suite à la Google IO 2022, la conférence annuelle Google pour les développeurs, différentes vidéos ont été publiées pour présenter les nouveautés.
+Également, suite à la WWDC 2022, la conférence annuelle Apple pour les développeurs, différentes vidéos ont été publiées pour présenter les évolutions de Safari et de WebKit.
+
+Nous avons visionné ces vidéos pour vous faire un résumé des principales fonctionnalités implémentées ou qui vont être implémentées dans les navigateurs.
+
 
 
 ### Les liens des articles
