@@ -11,10 +11,10 @@ episodeType: full
 explicit: false
 season: 1
 title: Les Web Platforms en 2022
-subtitle: Un passage en revue des implémentations futures et actuelles dans les navigateurs après à la Google IO et à la WWDC Apple.
+subtitle: Un passage en revue des implémentations futures et actuelles dans les navigateurs après la Google IO et la WWDC Apple.
 ---
 
-## Un passage en revue des implémentations futures et actuelles dans les navigateurs après à la Google IO et à la WWDC Apple.
+## Un passage en revue des implémentations futures et actuelles dans les navigateurs après la Google IO et la WWDC Apple.
 
 ### Retrouvez la vidéo de l'enregistrement sur [le Youtube de DoubleSlash](https://youtu.be/41oHH_opXKg)
 
