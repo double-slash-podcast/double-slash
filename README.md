@@ -2,11 +2,11 @@
 
 ## :studio_microphone: Last episodes
 <!-- BLOG-POST-LIST:START -->
+- [Les Web Platforms en 2022](https://slash-podcast.fr/podcasts/web-platform-2022/)
 - [Spécial news - Juin 2022](https://slash-podcast.fr/podcasts/news-juin-2022/)
 - [Doit-on utiliser TypeScript ?](https://slash-podcast.fr/podcasts/typescript/)
 - [Héberger une application web en 2022](https://slash-podcast.fr/podcasts/state-of-hosting-2022/)
 - [Outils de web Analytics et Vie privée](https://slash-podcast.fr/podcasts/analytics22/)
-- [State of Front-end 2022](https://slash-podcast.fr/podcasts/state-of-front-2022/)
 <!-- BLOG-POST-LIST:END -->
 
 # Double Slash Podcast Website
