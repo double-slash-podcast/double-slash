@@ -5,7 +5,7 @@ author: Double Slash
 categories:
   - Technology
 duration: 2629
-url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_039_lottie.mp3
+url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_042_lottie.mp3
 episodeNumber: 42
 episodeType: full
 explicit: false
