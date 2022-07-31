@@ -36,6 +36,7 @@ const Podcast = ({data, location}) => {
     duration,
     publicationDate,
     sponsor,
+    url,
   } = frontmatter;
   const d = new Date(publicationDate);
 
@@ -69,6 +70,15 @@ const Podcast = ({data, location}) => {
         height: '2048px',
         width: '2048px',
       },
+    },
+    associatedMedia: {
+      '@type': 'MediaObject',
+      contentUrl: url,
+    },
+    partOfSeries: {
+      '@type': 'PodcastSeries',
+      name: 'Double Slash',
+      url: 'https://slash-podcast.fr',
     },
   };
 
