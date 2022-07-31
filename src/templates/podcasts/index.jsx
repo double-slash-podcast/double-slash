@@ -48,12 +48,40 @@ const Podcast = ({data, location}) => {
     }
   }, [id, state, dispatch]);
 
+  const podcastData = {
+    '@context': 'http://schema.org/',
+    '@type': 'PodcastEpisode',
+    description: subtitle && subtitle !== '' ? subtitle : mdx.excerpt,
+    image: {
+      '@type': 'ImageObject',
+      url: getImgURL({episodeNumber, title}),
+      height: '630px',
+      width: '1200px',
+    },
+    name: title,
+    url: location.href,
+    publisher: {
+      '@type': 'Organization',
+      name: 'Double Slash',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://slash-podcast.fr/new-double-slash.jpg',
+        height: '2048px',
+        width: '2048px',
+      },
+    },
+  };
+
   return (
     <>
       <SEO
         title={title}
         image={getImgURL({episodeNumber, title})}
         description={subtitle && subtitle !== '' ? subtitle : mdx.excerpt}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html: JSON.stringify(podcastData)}}
       />
       <div className={styles.episode}>
         <BreadCrumb location={location} title={title} />
