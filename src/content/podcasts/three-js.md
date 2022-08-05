@@ -26,7 +26,7 @@ Three.js peut être utilisée avec la balise canvas disponible avec HTML5 sans a
 ## Bruno Simon
 
 Bruno est ce qu'on appelle, un créative Developpeur. Il créer des animations 3D très avancées qui s'approche de ce que l'on peut trouver dans le gaming.
-Bruno aime aussi partager, il a donc créé une formation en ligne qui permet à ceux qui sont intéressés d'apprendre Three.JS et son écosystème.
+Bruno aime aussi partager, il a donc créé une formation en ligne qui permet à ceux qui sont intéressés d'apprendre Three.JS et son écosystème : [https://threejs-journey.com](https://threejs-journey.com)
 
 Pour retrouver Bruno Simon :
 
