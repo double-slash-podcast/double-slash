@@ -5,7 +5,7 @@ author: Double Slash
 categories:
   - Technology
 duration: 3070
-url: https://double-slash.ams3.cdn.digitaloceanspaces.com/DS_043_threejs.mp3
+url: https://chtbl.com/track/79E812/double-slash.ams3.cdn.digitaloceanspaces.com/DS_043_threejs.mp3
 episodeNumber: 43
 episodeType: full
 explicit: false
