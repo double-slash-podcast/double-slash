@@ -2,11 +2,11 @@
 
 ## :studio_microphone: Last episodes
 <!-- BLOG-POST-LIST:START -->
+- [Three.js avec Bruno Simon](https://slash-podcast.fr/podcasts/three-js/)
 - [Lottie, une solution pour les animations](https://slash-podcast.fr/podcasts/lottie-svg-animation/)
 - [Edge computing, le serverless à la sauce CDN](https://slash-podcast.fr/podcasts/edge-computing/)
 - [Les Web Platforms en 2022](https://slash-podcast.fr/podcasts/web-platform-2022/)
 - [Spécial news - Juin 2022](https://slash-podcast.fr/podcasts/news-juin-2022/)
-- [Doit-on utiliser TypeScript ?](https://slash-podcast.fr/podcasts/typescript/)
 <!-- BLOG-POST-LIST:END -->
 
 # Double Slash Podcast Website
