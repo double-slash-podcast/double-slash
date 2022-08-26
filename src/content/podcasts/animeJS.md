@@ -10,15 +10,15 @@ episodeNumber: 45
 episodeType: full
 explicit: false
 season: 1
-title: Animation en JS
-subtitle: Faire des animations en JS
+title: Animations web avec JavaScript
+subtitle: Les solutions pour faire des animations en JS
 ---
 
 
-### Retrouvez la vidéo de l'enregistrement sur [le Youtube de DoubleSlash](https://youtu.be/rM4OMNDxYAM)
+### Retrouvez la vidéo de l'enregistrement sur [le YouTube de DoubleSlash](https://youtu.be/rM4OMNDxYAM)
 
 
-Pour finir la série sur les animations dans le naviguateur, on termine avec un tour d'horizon des solutions avec du Javasript. 
+Pour finir la série sur les animations dans le navigateur, on termine avec un tour d'horizon des solutions avec du JavaScript. 
 
 On évoque les concepts de **keyFrames**, de **Staggering**, les **Timelines** ou autres **Triggers**
 
