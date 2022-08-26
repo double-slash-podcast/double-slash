@@ -10,7 +10,7 @@ episodeNumber: 44
 episodeType: full
 explicit: false
 season: 1
-title: Les animation avec CSS
+title: Les animations avec CSS
 subtitle: Comment faire des animations avec CSS et optimiser les performances de vos animations
 ---
 ## Dans cet épisode, nous allons expliquer comment faire des animations avec CSS et comment optimiser les performances de vos animations
