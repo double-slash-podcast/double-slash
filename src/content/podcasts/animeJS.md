@@ -13,10 +13,9 @@ season: 1
 title: Animations web avec JavaScript
 subtitle: Les solutions pour faire des animations en JS
 ---
-
+## Dans cet épisode, nous allons expliquer comment faire des animations avec JavaScript, les concepts de base et les outils.
 
 ### Retrouvez la vidéo de l'enregistrement sur [le YouTube de DoubleSlash](https://youtu.be/rM4OMNDxYAM)
-
 
 Pour finir la série sur les animations dans le navigateur, on termine avec un tour d'horizon des solutions avec du JavaScript. 
 
