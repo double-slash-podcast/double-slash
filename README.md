@@ -2,7 +2,7 @@
 
 ## :studio_microphone: Last episodes
 <!-- BLOG-POST-LIST:START -->
-- [Les animation avec CSS](https://slash-podcast.fr/podcasts/animeCSS/)
+- [Les animations avec CSS](https://slash-podcast.fr/podcasts/animeCSS/)
 - [Three.js avec Bruno Simon](https://slash-podcast.fr/podcasts/three-js/)
 - [Lottie, une solution pour les animations](https://slash-podcast.fr/podcasts/lottie-svg-animation/)
 - [Edge computing, le serverless à la sauce CDN](https://slash-podcast.fr/podcasts/edge-computing/)
