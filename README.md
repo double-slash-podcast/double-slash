@@ -2,11 +2,11 @@
 
 ## :studio_microphone: Last episodes
 <!-- BLOG-POST-LIST:START -->
+- [Back to school 2022](https://slash-podcast.fr/podcasts/back-to-school-22/)
 - [Animations web avec JavaScript](https://slash-podcast.fr/podcasts/animeJS/)
 - [Les animations avec CSS](https://slash-podcast.fr/podcasts/animeCSS/)
 - [Three.js avec Bruno Simon](https://slash-podcast.fr/podcasts/three-js/)
 - [Lottie, une solution pour les animations](https://slash-podcast.fr/podcasts/lottie-svg-animation/)
-- [Edge computing, le serverless à la sauce CDN](https://slash-podcast.fr/podcasts/edge-computing/)
 <!-- BLOG-POST-LIST:END -->
 
 # Double Slash Podcast Website
