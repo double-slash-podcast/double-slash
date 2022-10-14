@@ -14,7 +14,7 @@ title: Les News pour octobre 2022
 subtitle: Un épisode en format "news" pour le mois d'octobre 2022.
 ---
 
-## Un épisode de en format "news". Nous revenons sur les différentes news que nous avons retenues.
+## Un épisode en format "news". Nous revenons sur les différentes news des dernières semaines que nous avons retenues
 
 ### Retrouvez la vidéo de l'enregistrement sur [le Youtube de DoubleSlash](https://youtu.be/jJT14P0u5E8)
 
@@ -49,7 +49,7 @@ Partial Hydration via React serveur component
 ## Redwood V3
 
 [https://community.redwoodjs.com/t/redwood-3-0-0-is-now-available/3989]
-(https://community.redwoodjs.com/t/redwood-3-0-0-is-now-available/3989)
+(<https://community.redwoodjs.com/t/redwood-3-0-0-is-now-available/3989>)
 
 ## Strapi
 
@@ -78,8 +78,7 @@ The Universal UI Library
 - [https://jsoncrack.com/](https://jsoncrack.com/)
 - [https://jsonhero.io/](https://jsonhero.io/)
 
-
-### Podcast présenté par :
+### Podcast présenté par
 
 - Alexandre Duval [@xlanex6](https://twitter.com/xlanex6)
 - Patrick Faramaz [@PatrickFaramaz](https://twitter.com/PatrickFaramaz)
