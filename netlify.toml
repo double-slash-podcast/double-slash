@@ -6,6 +6,6 @@
   
 [[redirects]]
   from = "/"
-  to = "www.double-slash.dev"
+  to = "https://www.double-slash.dev"
   status = 301
   force = true
