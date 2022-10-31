@@ -5,7 +5,7 @@
   package = "netlify-plugin-gatsby-cache"
   
 [[redirects]]
-  from = "/*"
-  to = "www.double-slash.dev/:splat"
+  from = "/"
+  to = "www.double-slash.dev"
   status = 301
   force = true
