@@ -3,3 +3,9 @@
 
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
+  
+[[redirects]]
+  from = "/*"
+  to = "www.double-slash.dev/:slat"
+  status = 301
+  force = true
