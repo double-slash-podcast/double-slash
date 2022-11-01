@@ -2,11 +2,11 @@
 
 ## :studio_microphone: Last episodes
 <!-- BLOG-POST-LIST:START -->
-- [Les News pour octobre 2022](https://slash-podcast.fr/podcasts/news-octobre-22/)
-- [SEO 2022 avec Dan Bernier](https://slash-podcast.fr/podcasts/seo-2022/)
-- [PWA Builder avec David Rousset](https://slash-podcast.fr/podcasts/pwa_builder/)
-- [Back to school 2022](https://slash-podcast.fr/podcasts/back-to-school-22/)
-- [Animations web avec JavaScript](https://slash-podcast.fr/podcasts/animeJS/)
+- [Épisode spécial 50 en live](https://www.double-slash.dev/podcasts/episode-50)
+- [Les News pour octobre 2022](https://www.double-slash.dev/podcasts/news-octobre-22)
+- [SEO 2022 avec Dan Bernier](https://www.double-slash.dev/podcasts/seo-2022)
+- [PWA Builder avec David Rousset](https://www.double-slash.dev/podcasts/pwa_builder)
+- [Back to school 2022](https://www.double-slash.dev/podcasts/back-to-school-22)
 <!-- BLOG-POST-LIST:END -->
 
 # Double Slash Podcast Website
