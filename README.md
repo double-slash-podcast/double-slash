@@ -2,11 +2,11 @@
 
 ## :studio_microphone: Last episodes
 <!-- BLOG-POST-LIST:START -->
+- [Ruby on rails, le développement intuitif](https://double-slash.dev/podcasts/ruby-on-rails/)
 - [Les News pour novembre 2022](https://double-slash.dev/podcasts/news-novembre-2022/)
 - [Docusaurus et React Hebdo](https://double-slash.dev/podcasts/docusaurus/)
 - [Épisode spécial 50 en live](https://double-slash.dev/podcasts/episode-50/)
 - [Les News pour octobre 2022](https://double-slash.dev/podcasts/news-octobre-22/)
-- [SEO 2022 avec Dan Bernier](https://double-slash.dev/podcasts/seo-2022/)
 <!-- BLOG-POST-LIST:END -->
 
 # Double Slash Podcast Website
